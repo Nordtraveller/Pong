@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TeyonPong.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{6F88886A-2C89-403D-B6B7-A65CCF449BC5}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TeyonPong.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TeyonPongEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{410B933F-E5CC-4055-9ED6-C237D1F327A1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TeyonPong">
+      <UniqueIdentifier>{1E8B83D5-9E89-4D02-8556-2936F66D2EFE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TeyonPong\TeyonPong.Build.cs">
+      <Filter>Source\TeyonPong</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TeyonPong\TeyonPong.cpp">
+      <Filter>Source\TeyonPong</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TeyonPong\TeyonPong.h">
+      <Filter>Source\TeyonPong</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TeyonPong\TeyonPongGameModeBase.cpp">
+      <Filter>Source\TeyonPong</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TeyonPong\TeyonPongGameModeBase.h">
+      <Filter>Source\TeyonPong</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
