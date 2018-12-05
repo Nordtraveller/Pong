@@ -13,5 +13,9 @@ UCLASS()
 class TEYONPONG_API ATeyonPongGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+
+public:
+	ATeyonPongGameModeBase(const FObjectInitializer& ObjectInitializer);
+
+	virtual void StartPlay() override;	
 };

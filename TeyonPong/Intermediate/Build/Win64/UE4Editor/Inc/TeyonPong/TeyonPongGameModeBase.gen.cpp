@@ -43,6 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeTeyonPongGameModeBase() {}
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "TeyonPongGameModeBase.h" },
 		{ "ModuleRelativePath", "TeyonPongGameModeBase.h" },
+		{ "ObjectInitializerConstructorDeclared", "" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
@@ -69,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodeTeyonPongGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATeyonPongGameModeBase, 3450105552);
+	IMPLEMENT_CLASS(ATeyonPongGameModeBase, 2265103391);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATeyonPongGameModeBase(Z_Construct_UClass_ATeyonPongGameModeBase, &ATeyonPongGameModeBase::StaticClass, TEXT("/Script/TeyonPong"), TEXT("ATeyonPongGameModeBase"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATeyonPongGameModeBase);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

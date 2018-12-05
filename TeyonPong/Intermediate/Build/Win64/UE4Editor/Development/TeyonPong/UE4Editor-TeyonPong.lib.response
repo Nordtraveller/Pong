@@ -6,10 +6,10 @@
 /NAME:"UE4Editor-TeyonPong.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\Engine\SharedPCH.Engine.h.obj"
-"E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\TeyonPong.cpp.obj"
-"E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\TeyonPongGameModeBase.cpp.obj"
-"E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\TeyonPong.init.gen.cpp.obj"
-"E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\TeyonPongGameModeBase.gen.cpp.obj"
-"E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\PCLaunch.rc.res"
-/OUT:"E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.lib"
+"C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\TeyonPong.cpp.obj"
+"C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\TeyonPongGameModeBase.cpp.obj"
+"C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\TeyonPong.init.gen.cpp.obj"
+"C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\TeyonPongGameModeBase.gen.cpp.obj"
+"C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\PCLaunch.rc.res"
+/OUT:"C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.lib"

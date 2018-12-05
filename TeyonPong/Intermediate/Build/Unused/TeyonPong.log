@@ -1,20 +1,21 @@
 ﻿  Cleaning TeyonPongEditor Binaries...
+  Performing full C++ include scan (building a new target)
   Creating makefile for TeyonPongEditor (no existing makefile)
   Performing full C++ include scan (no include cache file)
   Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Parsing headers for TeyonPongEditor
-    Running UnrealHeaderTool "E:\Praca\Teyon test\TeyonPong\TeyonPong.uproject" "E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for TeyonPongEditor in 16,2055333 seconds
+    Running UnrealHeaderTool "C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\TeyonPong.uproject" "C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for TeyonPongEditor in 12,6907847 seconds
   Building 8 actions with 4 processes...
     [1/8] PCLaunch.rc
     [2/8] SharedPCH.Engine.cpp
-    [3/8] TeyonPong.cpp
+    [3/8] TeyonPongGameModeBase.cpp
     [4/8] TeyonPong.init.gen.cpp
-    [5/8] TeyonPongGameModeBase.cpp
+    [5/8] TeyonPong.cpp
     [6/8] TeyonPongGameModeBase.gen.cpp
     [7/8] UE4Editor-TeyonPong.lib
-       Creating library E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.lib and object E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.exp
+       Creating library C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.lib and object C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.exp
     [8/8] UE4Editor-TeyonPong.dll
-       Creating library E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.suppressed.lib and object E:\Praca\Teyon test\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.suppressed.exp
+       Creating library C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.suppressed.lib and object C:\Users\Nord\Downloads\Pong-master\Pong-master\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.suppressed.exp
   Deploying TeyonPongEditor Win64 Development...
-  Total build time: 212,99 seconds (Parallel executor: 88,66 seconds)
+  Total build time: 58,06 seconds (Parallel executor: 39,83 seconds)
