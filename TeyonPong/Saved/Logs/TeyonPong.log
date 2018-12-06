@@ -1,4 +1,4 @@
-﻿Log file open, 12/05/18 19:10:00
+﻿Log file open, 12/06/18 09:25:34
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogInit: Display: Running engine for game: TeyonPong
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 11 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.135441
+LogStats: Stats thread started at 0.396412
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -94,7 +94,7 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.049s to configure plugins.
+LogStreaming: Display: Took  1.789s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -149,1133 +149,469 @@ LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
 LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 17
 LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 4
 LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
-LogStreaming: Display: Took  0.000s to delete old logs.
+LogStreaming: Display: Took  0.056s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.05-18.10.01:075][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2018.12.05-18.10.01:075][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.05-18.10.01:075][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2018.12.05-18.10.01:076][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.05-18.10.01:076][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.05-18.10.01:078][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2018.12.05-18.10.01:078][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2018.12.05-18.10.01:079][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2018.12.05-18.10.01:079][  0]LogInit: Selected Device Profile: [Windows]
-[2018.12.05-18.10.01:079][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.12.05-18.10.01:085][  0]LogHAL: Display: Platform has ~ 16 GB [17103699968 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2018.12.05-18.10.01:085][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
-[2018.12.05-18.10.01:085][  0]LogInit: Going up to parent DeviceProfile []
-[2018.12.05-18.10.01:085][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2018.12.05-18.10.01:086][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2018.12.05-18.10.01:087][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2018.12.05-18.10.01:087][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.05-18.10.01:087][  0]LogInit: Computer: NORD-KOMPUTER
-[2018.12.05-18.10.01:087][  0]LogInit: User: Nord
-[2018.12.05-18.10.01:087][  0]LogInit: CPU Page size=4096, Cores=2
-[2018.12.05-18.10.01:087][  0]LogInit: High frequency timer resolution =2.825566 MHz
-[2018.12.05-18.10.01:087][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2018.12.05-18.10.01:087][  0]LogMemory: Platform Memory Stats for Windows
-[2018.12.05-18.10.01:087][  0]LogMemory: Process Physical Memory: 103.22 MB used, 103.22 MB peak
-[2018.12.05-18.10.01:087][  0]LogMemory: Process Virtual Memory: 87.27 MB used, 87.27 MB peak
-[2018.12.05-18.10.01:087][  0]LogMemory: Physical Memory: 5595.45 MB used,  10715.91 MB free, 16311.36 MB total
-[2018.12.05-18.10.01:087][  0]LogMemory: Virtual Memory: 478.05 MB used,  8388130.00 MB free, 8388608.00 MB total
-[2018.12.05-18.10.01:114][  0]LogInit: Using OS detected language (pl-PL).
-[2018.12.05-18.10.01:114][  0]LogInit: Using OS detected locale (pl-PL).
-[2018.12.05-18.10.01:115][  0]LogTextLocalizationManager: No specific localization for 'pl-PL' exists, so the 'pl' localization will be used.
-[2018.12.05-18.10.01:116][  0]LogStreaming: Display: Took  0.002s to InitEngineTextLocalization.
-[2018.12.05-18.10.01:117][  0]LogWindows: Failed to load 'shcore.dll' (GetLastError=126)
-[2018.12.05-18.10.01:117][  0]LogWindows: File 'shcore.dll' does not exist
-[2018.12.05-18.10.01:117][  0]LogInit: Setting process to DPI aware
-[2018.12.05-18.10.01:143][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2018.12.05-18.10.01:143][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2018.12.05-18.10.01:350][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.12.05-18.10.01:350][  0]LogD3D11RHI: D3D11 adapters:
-[2018.12.05-18.10.01:448][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
-[2018.12.05-18.10.01:448][  0]LogD3D11RHI:       1986/0/7899 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2018.12.05-18.10.01:474][  0]LogD3D11RHI:    1. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
-[2018.12.05-18.10.01:474][  0]LogD3D11RHI:       1986/0/7899 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
-[2018.12.05-18.10.01:474][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.12.05-18.10.01:484][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.12.05-18.10.01:484][  0]LogD3D11RHI:     GPU DeviceId: 0x1392 (for the marketing name, search the web for "GPU Device Id")
-[2018.12.05-18.10.01:484][  0]LogWindows: EnumDisplayDevices:
-[2018.12.05-18.10.01:485][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
-[2018.12.05-18.10.01:485][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2018.12.05-18.10.01:485][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2018.12.05-18.10.01:485][  0]LogWindows:    3. 'NVIDIA GeForce GTX 860M' (P:0 D:0)
-[2018.12.05-18.10.01:486][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
-[2018.12.05-18.10.01:486][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
-[2018.12.05-18.10.01:486][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
-[2018.12.05-18.10.01:486][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter 
-[2018.12.05-18.10.01:486][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 860M
-[2018.12.05-18.10.01:486][  0]LogD3D11RHI:   Driver Version: 398.11 (internal:24.21.13.9811, unified:398.11)
-[2018.12.05-18.10.01:486][  0]LogD3D11RHI:      Driver Date: 6-1-2018
-[2018.12.05-18.10.01:486][  0]LogRHI: Texture pool is 1390 MB (70% of 1986 MB)
-[2018.12.05-18.10.01:508][  0]LogD3D11RHI: Async texture creation enabled
-[2018.12.05-18.10.01:523][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.12.05-18.10.01:816][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.12.05-18.10.01:830][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.12.05-18.10.01:845][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.12.05-18.10.01:858][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.12.05-18.10.01:871][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.12.05-18.10.01:884][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.12.05-18.10.01:897][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.12.05-18.10.01:911][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.12.05-18.10.01:917][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:003][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.05-18.10.02:004][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.12.05-18.10.02:060][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.12.05-18.10.02:060][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.12.05-18.10.02:082][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.12.05-18.10.02:082][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.12.05-18.10.02:093][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.12.05-18.10.02:105][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.12.05-18.10.02:118][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.12.05-18.10.02:130][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.12.05-18.10.02:174][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2018.12.05-18.10.02:174][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2018.12.05-18.10.02:174][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.12.05-18.10.02:224][  0]LogShaderCompilers: Guid format shader working directory is 11 characters bigger than the processId version (E:/Praca/Teyon test/Pong/TeyonPong/Intermediate/Shaders/WorkingDirectory/9352/).
-[2018.12.05-18.10.02:224][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Nord/AppData/Local/Temp/UnrealShaderWorkingDir/F46F0E8A472E21E55C2278A541358B32/'.
-[2018.12.05-18.10.02:226][  0]LogXGEController: Cleaning working directory: C:/Users/Nord/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2018.12.05-18.10.02:226][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2018.12.05-18.10.02:226][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2018.12.05-18.10.02:226][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.12.05-18.10.02:799][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.12.05-18.10.02:856][  0]LogDerivedDataCache: Loaded boot cache 0.06s 71MB C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2018.12.05-18.10.02:856][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
-[2018.12.05-18.10.02:856][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file E:/Praca/Teyon test/Pong/TeyonPong/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.12.05-18.10.02:856][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.12.05-18.10.02:856][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file E:/Praca/Teyon test/Pong/TeyonPong/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.12.05-18.10.02:856][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.12.05-18.10.02:870][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.12.05-18.10.02:870][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.12.05-18.10.02:870][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2018.12.05-18.10.02:881][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Nord/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.12.05-18.10.02:881][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2018.12.05-18.10.02:881][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2018.12.05-18.10.02:903][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.12.05-18.10.02:905][  0]LogSlate: Using FreeType 2.6.0
-[2018.12.05-18.10.02:905][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.12.05-18.10.02:995][  0]LogAssetRegistry: FAssetRegistry took 0.0309 seconds to start up
-[2018.12.05-18.10.03:312][  0]LogInit: Selected Device Profile: [Windows]
-[2018.12.05-18.10.03:477][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.12.05-18.10.03:480][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.12.05-18.10.03:480][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2018.12.05-18.10.03:480][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.12.05-18.10.03:480][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.12.05-18.10.03:495][  0]LogNetVersion: TeyonPong 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2572377658)
-[2018.12.05-18.10.04:185][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.074544 seconds
-[2018.12.05-18.10.04:192][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
-[2018.12.05-18.10.04:192][  0]LogUObjectAllocator: 6914664 out of 0 bytes used by permanent object pool.
-[2018.12.05-18.10.04:192][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.12.05-18.10.05:176][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.12.05-18.10.05:189][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.12.05-18.10.05:965][  0]SourceControl: Source control is disabled
-[2018.12.05-18.10.05:965][  0]SourceControl: Source control is disabled
-[2018.12.05-18.10.05:967][  0]SourceControl: Source control is disabled
-[2018.12.05-18.10.05:969][  0]SourceControl: Source control is disabled
-[2018.12.05-18.10.06:114][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.12.05-18.10.06:197][  0]LogOcInput: OculusInput pre-init called
-[2018.12.05-18.10.06:332][  0]LogEngine: Initializing Engine...
-[2018.12.05-18.10.06:333][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.12.05-18.10.06:334][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.12.05-18.10.06:334][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.12.05-18.10.06:334][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.12.05-18.10.06:334][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.12.05-18.10.06:640][  0]LogInit: Initializing FReadOnlyCVARCache
-[2018.12.05-18.10.06:656][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.12.05-18.10.06:671][  0]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.12.05-18.10.06:679][  0]LogInit: FAudioDevice initialized.
-[2018.12.05-18.10.06:679][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2018.12.05-18.10.06:884][  0]LogDerivedDataCache: Saved boot cache 0.20s 71MB C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2018.12.05-18.10.06:888][  0]LogInit: Texture streaming: Enabled
-[2018.12.05-18.10.06:906][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.12.05-18.10.06:943][  0]LogInit: Transaction tracking system initialized
-[2018.12.05-18.10.06:968][  0]BlueprintLog: New page: Editor Load
-[2018.12.05-18.10.07:042][  0]LocalizationService: Localization service is disabled
-[2018.12.05-18.10.07:545][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/' took 0.01s
-[2018.12.05-18.10.07:545][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.12.05-18.10.07:545][  0]LogCook: Display: Mobile HDR setting 1
-[2018.12.05-18.10.07:545][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.12.05-18.10.07:545][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.12.05-18.10.07:545][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.12.05-18.10.07:545][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.12.05-18.10.07:545][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.12.05-18.10.07:683][  0]SourceControl: Source control is disabled
-[2018.12.05-18.10.07:683][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.12.05-18.10.07:684][  0]LightingResults: New page: Lighting Build
-[2018.12.05-18.10.07:687][  0]MapCheck: New page: Map Check
-[2018.12.05-18.10.07:687][  0]LightingResults: New page: Lighting Build
-[2018.12.05-18.10.07:899][  0]LogAIModule: Creating AISystem for world Untitled_1
-[2018.12.05-18.10.07:907][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.12.05-18.10.07:932][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.12.05-18.10.07:933][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,134ms to complete.
-[2018.12.05-18.10.07:933][  0]LogFileHelpers: Loading map 'Template_Default' took 0.249
-[2018.12.05-18.10.08:039][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.05-18.10.08:053][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.05-18.10.08:067][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.05-18.10.08:081][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.05-18.10.08:091][  0]LogCollectionManager: Loaded 0 collections in 0.003474 seconds
-[2018.12.05-18.10.08:112][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/Collections/' took 0.01s
-[2018.12.05-18.10.08:113][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Developers/Nord/Collections/' took 0.00s
-[2018.12.05-18.10.08:113][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Collections/' took 0.00s
-[2018.12.05-18.10.08:113][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2018.12.05-18.10.08:129][  0]LogContentBrowser: Native class hierarchy populated in 0.0166 seconds. Added 2652 classes and 622 folders.
-[2018.12.05-18.10.08:141][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2018.12.05-18.10.08:143][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:144][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:145][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:145][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:146][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:147][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:148][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:148][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:149][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:149][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:150][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:151][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:152][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:152][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:153][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:154][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:154][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:156][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:157][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:158][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:160][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:160][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:161][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:162][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:163][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:164][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.05-18.10.08:227][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
-[2018.12.05-18.10.08:235][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 1 classes and 2 folders.
-[2018.12.05-18.10.08:350][  0]LogSlate: Took 0.000908 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.12.05-18.10.08:352][  0]LogSlate: Took 0.000235 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.12.05-18.10.08:362][  0]LogSlate: Took 0.000429 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.12.05-18.10.08:482][  0]LogRenderer: Reallocating scene render targets to support 820x372 Format 10 NumSamples 1 (Frame:1).
-[2018.12.05-18.10.08:633][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2018.12.05-18.10.08:633][  0]LogLoad: (Engine Initialization) Total time: 9.00 seconds
-[2018.12.05-18.10.08:633][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.12.05-18.10.08:704][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.12.05-18.10.08:821][  2]LogAssetRegistry: Asset discovery search completed in 5.8467 seconds
-[2018.12.05-18.10.08:825][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2018.12.05-18.10.08:825][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000080 seconds (updated 0 objects)
-[2018.12.05-18.10.20:840][126]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.05-18.10.23:115][252]LogSlate: Took 0.016143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.12.05-18.10.25:589][388]LogSlate: Took 0.000199 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.12.05-18.10.26:160][388]LogSlate: Took 0.012483 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2018.12.05-18.10.34:079][817]Running C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -projectfiles -project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -game -rocket -progress
-[2018.12.05-18.10.34:383][817]Discovering modules, targets and source code for project...
-[2018.12.05-18.10.36:483][817]Binding IntelliSense data...
-[2018.12.05-18.10.38:287][817]Binding IntelliSense data... 100%
-[2018.12.05-18.10.38:287][817]Writing project files...
-[2018.12.05-18.10.40:388][817]Writing project files... 100%
-[2018.12.05-18.10.40:501][817]LogVSAccessor: Warning: Couldn't access Visual Studio
-[2018.12.05-18.10.40:587][817]Candidate modules for hot reload:
-[2018.12.05-18.10.40:587][817]  TeyonPong
-[2018.12.05-18.10.40:588][817]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,6999 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
-[2018.12.05-18.11.37:939][817]CompilerResultsLog: New page: Compilation - 5 gru 2018, 20:11:37
-[2018.12.05-18.11.37:939][817]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
-[2018.12.05-18.11.37:939][817]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (no existing makefile)
-[2018.12.05-18.11.37:939][817]CompilerResultsLog: Compiling game modules for hot reload
-[2018.12.05-18.11.37:939][817]CompilerResultsLog: Performing full C++ include scan (no include cache file)
-[2018.12.05-18.11.37:939][817]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2018.12.05-18.11.37:940][817]CompilerResultsLog: Parsing headers for TeyonPongEditor
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   Running UnrealHeaderTool "E:\Praca\Teyon test\Pong\TeyonPong\TeyonPong.uproject" "E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.12.05-18.11.37:940][817]CompilerResultsLog: Reflection code generated for TeyonPongEditor in 11,5295749 seconds
-[2018.12.05-18.11.37:940][817]CompilerResultsLog: Building 10 actions with 4 processes...
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   [1/10] PCLaunch.rc
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   [2/10] SharedPCH.Engine.cpp
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   [3/10] TeyonPong.init.gen.cpp
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   [4/10] TeyonPongGameModeBase.cpp
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   [5/10] Paddle.gen.cpp
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   [6/10] TeyonPong.cpp
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   [7/10] TeyonPongGameModeBase.gen.cpp
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   [8/10] Paddle.cpp
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   [9/10] UE4Editor-TeyonPong-6999.lib
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6999.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6999.exp
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:   [10/10] UE4Editor-TeyonPong-6999.dll
-[2018.12.05-18.11.37:940][817]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6999.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6999.suppressed.exp
-[2018.12.05-18.11.37:940][817]CompilerResultsLog: Total build time: 57,10 seconds (Parallel executor: 40,29 seconds)
-[2018.12.05-18.11.37:940][817]LogMainFrame: MainFrame: Module compiling took 57.437 seconds
-[2018.12.05-18.11.38:157][817]LogClass: Could not find existing class Paddle in package /Script/TeyonPong for HotReload, assuming new class
-[2018.12.05-18.11.38:162][817]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 2 classes and 2 folders.
-[2018.12.05-18.11.38:164][817]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.12.05-18.11.38:852][817]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2654 classes and 624 folders.
-[2018.12.05-18.11.39:186][817]Display: HotReload took 58.7s.
-[2018.12.05-18.11.39:188][817]Warning: HotReload operation took 58.7s.
-[2018.12.05-18.11.39:332][817]LogSlate: Window 'Add C++ Class' being destroyed
-[2018.12.05-18.11.39:443][817]LogHotReload: New module detected: UE4Editor-TeyonPong-6999.dll
-[2018.12.05-18.11.40:079][818]LogHotReload: Starting Hot-Reload from IDE
-[2018.12.05-18.11.40:165][818]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 2 classes and 2 folders.
-[2018.12.05-18.11.40:167][818]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.12.05-18.11.40:201][818]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2654 classes and 624 folders.
-[2018.12.05-18.11.40:204][818]Display: HotReload took  0.1s.
-[2018.12.05-18.12.08:907][656]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (28.696 sec). This should never happen. Something is wrong with the timer delegate!
-[2018.12.05-18.12.14:373][937]LogEditorActor: Deleted Actor: PlayerStart
-[2018.12.05-18.12.14:404][937]LogEditorActor: Deleted Actor: StaticMeshActor
-[2018.12.05-18.12.14:404][937]LogEditorActor: Deleted Actor: AtmosphericFog
-[2018.12.05-18.12.14:406][937]LogEditorActor: Deleted Actor: BP_Sky_Sphere_C
-[2018.12.05-18.12.14:406][937]LogEditorActor: Deleted Actor: SkyLight
-[2018.12.05-18.12.14:407][937]LogEditorActor: Deleted Actor: SphereReflectionCapture
-[2018.12.05-18.12.14:434][937]LogEditorActor: Deleted 6 Actors (0.249 secs)
-[2018.12.05-18.21.15:389][872]Cmd: OBJ SAVEPACKAGE PACKAGE="/Temp/Untitled_1" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Saved/Autosaves/Temp/Untitled_1_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.12.05-18.21.15:456][872]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/Untitled_1_Auto1878C5B794F284DEA9E13B2862EB9E413.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/Autosaves/Temp/Untitled_1_Auto1.umap'
-[2018.12.05-18.21.15:494][872]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.190
-[2018.12.05-18.21.15:494][872]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.190
-[2018.12.05-18.25.32:326][949]Candidate modules for hot reload:
-[2018.12.05-18.25.32:326][949]  TeyonPong
-[2018.12.05-18.25.32:326][949]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,6917 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
-[2018.12.05-18.25.32:331][949]Warning: Starting HotReload took  0.1s.
-[2018.12.05-18.26.07:304][  6]CompilerResultsLog: New page: Compilation - 5 gru 2018, 20:26:07
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog: Compiling game modules for hot reload
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog: Parsing headers for TeyonPongEditor
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog:   Running UnrealHeaderTool "E:\Praca\Teyon test\Pong\TeyonPong\TeyonPong.uproject" "E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog: Reflection code generated for TeyonPongEditor in 20,7359785 seconds
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog: Building 7 actions with 4 processes...
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog:   [1/7] TeyonPong.init.gen.cpp
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog:   [2/7] Paddle.cpp
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog:   [3/7] TeyonPongGameModeBase.cpp
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog:   [4/7] Paddle.gen.cpp
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog:   [5/7] TeyonPongGameModeBase.gen.cpp
-[2018.12.05-18.26.07:308][  6]CompilerResultsLog:   [6/7] UE4Editor-TeyonPong-6917.lib
-[2018.12.05-18.26.07:309][  6]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6917.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6917.exp
-[2018.12.05-18.26.07:311][  6]CompilerResultsLog:   [7/7] UE4Editor-TeyonPong-6917.dll
-[2018.12.05-18.26.07:311][  6]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6917.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6917.suppressed.exp
-[2018.12.05-18.26.07:311][  6]CompilerResultsLog: Total build time: 34,56 seconds (Parallel executor: 4,53 seconds)
-[2018.12.05-18.26.07:312][  6]LogMainFrame: MainFrame: Module compiling took 34.986 seconds
-[2018.12.05-18.26.07:376][  6]LogClass: Could not find existing class Paddle in package /Script/TeyonPong for HotReload, assuming new class
-[2018.12.05-18.26.07:376][  6]LogClass: Could not find existing class TeyonPongGameModeBase in package /Script/TeyonPong for HotReload, assuming new class
-[2018.12.05-18.26.07:379][  6]LogHotReload: Re-instancing Paddle after hot-reload.
-[2018.12.05-18.26.07:470][  6]LogHotReload: Re-instancing TeyonPongGameModeBase after hot-reload.
-[2018.12.05-18.26.07:535][  6]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 2 classes and 2 folders.
-[2018.12.05-18.26.07:537][  6]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.12.05-18.26.07:580][  6]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2654 classes and 624 folders.
-[2018.12.05-18.26.07:580][  6]Display: HotReload took 35.3s.
-[2018.12.05-18.29.09:145][374]LogSlate: Window 'Save Level As' being destroyed
-[2018.12.05-18.29.09:324][374]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.12.05-18.29.09:450][374]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMapAAFA245B42FA93F8FEAE3EBB8B0C3C72.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap'
-[2018.12.05-18.29.09:468][374]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap_BuiltData" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset" SILENT=true
-[2018.12.05-18.29.09:550][374]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap_BuiltDataCD5B8C2F4C8B1E20BFDBC6B95DCC7B72.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset'
-[2018.12.05-18.29.09:558][374]LogFileHelpers: Saving map 'GameMap' took 0.381
-[2018.12.05-18.29.13:889][617]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
-[2018.12.05-18.29.20:063][981]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.12.05-18.29.20:162][981]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap922CD7E144BADBA4FFC75EA9714BD03C.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap'
-[2018.12.05-18.29.20:175][981]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap_BuiltData" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset" SILENT=true
-[2018.12.05-18.29.20:187][981]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap_BuiltData018067544A6E6B0DB62CD1872CBF5975.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset'
-[2018.12.05-18.29.29:151][513]LogTemp: Repeating last play command: Selected Viewport
-[2018.12.05-18.29.29:224][513]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
-[2018.12.05-18.29.29:224][513]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.12.05-18.29.29:225][513]PIE: New page: PIE session: GameMap (5 gru 2018, 20:29:29)
-[2018.12.05-18.29.29:251][513]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
-[2018.12.05-18.29.29:253][513]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001653s)
-[2018.12.05-18.29.29:253][513]LogAIModule: Creating AISystem for world GameMap
-[2018.12.05-18.29.29:254][513]LogPlayLevel: PIE: World Init took: (0.000858s)
-[2018.12.05-18.29.29:254][513]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.002750s)
-[2018.12.05-18.29.29:276][513]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.12.05-18.29.29:284][513]LogInit: FAudioDevice initialized.
-[2018.12.05-18.29.29:337][513]LogLoad: Game class is 'TeyonPongGameModeBase'
-[2018.12.05-18.29.29:378][513]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.05-19.29.29
-[2018.12.05-18.29.29:378][513]LogWorld: Bringing up level for play took: 0.000660
-[2018.12.05-18.29.29:583][513]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
-[2018.12.05-18.29.29:583][513]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap 1,235
-[2018.12.05-18.29.29:583][513]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
-[2018.12.05-18.29.49:025][603]LogSlate: Took 0.000209 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2018.12.05-18.29.58:589][156]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
-[2018.12.05-18.29.58:590][156]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.05-18.29.58:620][156]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.12.05-18.29.58:621][156]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
-[2018.12.05-18.29.58:643][156]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.05-18.29.58:700][157]LogPlayLevel: Display: Destroying online subsystem :Context_1
-[2018.12.05-18.38.28:038][322]LogSlate: Window 'Pick Parent Class' being destroyed
-[2018.12.05-18.39.49:764][645]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/GameMap' took 0.033
-[2018.12.05-18.39.49:766][645]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BP_Paddle] ([1] browsable assets)...
-[2018.12.05-18.39.49:766][645]OBJ SavePackage: Finished generating thumbnails for package [/Game/BP_Paddle]
-[2018.12.05-18.39.49:766][645]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_Paddle" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Saved/Autosaves/Game/BP_Paddle_Auto2.uasset" SILENT=false AUTOSAVING=true
-[2018.12.05-18.39.49:802][645]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/BP_Paddle_Auto2A5EA28D1496B53A138E17E86146E8EBA.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/Autosaves/Game/BP_Paddle_Auto2.uasset'
-[2018.12.05-18.39.49:802][645]LogFileHelpers: Auto-saving content packages took 0.037
-[2018.12.05-18.40.04:128][837]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.12.05-18.40.04:266][837]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap394D1F574E34FD45FAE94B8257641EC2.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap'
-[2018.12.05-18.40.04:284][837]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap_BuiltData" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset" SILENT=true
-[2018.12.05-18.40.04:299][837]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap_BuiltDataD189A836412DA759D6F59D86D57C4D7B.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset'
-[2018.12.05-18.40.06:870][982]Candidate modules for hot reload:
-[2018.12.05-18.40.06:870][982]  TeyonPong
-[2018.12.05-18.40.06:870][982]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,902 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
-[2018.12.05-18.40.06:876][982]Warning: Starting HotReload took  0.0s.
-[2018.12.05-18.40.10:295][176]CompilerResultsLog: New page: Compilation - 5 gru 2018, 20:40:10
-[2018.12.05-18.40.10:295][176]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
-[2018.12.05-18.40.10:295][176]CompilerResultsLog: Compiling game modules for hot reload
-[2018.12.05-18.40.10:295][176]CompilerResultsLog: Target is up to date
-[2018.12.05-18.40.10:295][176]CompilerResultsLog: Total build time: 2,92 seconds (NoActionsToExecute executor: 0,01 seconds)
-[2018.12.05-18.40.10:295][176]LogMainFrame: MainFrame: Module compiling took 3.427 seconds
-[2018.12.05-18.40.10:348][176]LogContentBrowser: Native class hierarchy populated in 0.0149 seconds. Added 2654 classes and 624 folders.
-[2018.12.05-18.40.10:348][176]Display: HotReload took  3.5s.
-[2018.12.05-18.40.17:120][573]LogMetaData: Removing '/Game/Blueprints/BP_Paddle.BP_Paddle:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/BP_Paddle.PackageMetaData'
-[2018.12.05-18.40.17:120][573]LogMetaData: Removing '/Game/Blueprints/BP_Paddle.SKEL_BP_Paddle_C:UserConstructionScript' ref from Metadata '/Game/BP_Paddle.PackageMetaData'
-[2018.12.05-18.40.17:120][573]LogMetaData: Removing '/Game/Blueprints/BP_Paddle.SKEL_BP_Paddle_C' ref from Metadata '/Game/BP_Paddle.PackageMetaData'
-[2018.12.05-18.40.17:120][573]LogMetaData: Removing '/Game/Blueprints/BP_Paddle.BP_Paddle_C' ref from Metadata '/Game/BP_Paddle.PackageMetaData'
-[2018.12.05-18.40.17:120][573]LogMetaData: Removing '/Game/Blueprints/BP_Paddle.BP_Paddle:EventGraph.K2Node_Event_0' ref from Metadata '/Game/BP_Paddle.PackageMetaData'
-[2018.12.05-18.40.17:120][573]LogMetaData: Removing '/Game/Blueprints/BP_Paddle.BP_Paddle:EventGraph.K2Node_Event_1' ref from Metadata '/Game/BP_Paddle.PackageMetaData'
-[2018.12.05-18.40.17:120][573]LogMetaData: Removing '/Game/Blueprints/BP_Paddle.BP_Paddle:EventGraph.K2Node_Event_2' ref from Metadata '/Game/BP_Paddle.PackageMetaData'
-[2018.12.05-18.40.17:194][573]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Paddle" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Blueprints/BP_Paddle.uasset" SILENT=true
-[2018.12.05-18.40.17:201][573]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/BP_Paddle8A8A37BF403CAE2617FE41AE622DF8A0.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Blueprints/BP_Paddle.uasset'
-[2018.12.05-18.40.19:047][661]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/BP_Paddle.BP_Paddle
-[2018.12.05-18.40.20:903][661]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 117 classes and 0 folders.
-[2018.12.05-18.40.23:457][661]LogRenderer: Reallocating scene render targets to support 820x400 Format 10 NumSamples 1 (Frame:1).
-[2018.12.05-18.41.05:720][ 16]LogSlate: Window 'BP_Paddle' being destroyed
-[2018.12.05-18.41.12:647][404]LogActorFactory: Actor Factory created Cube
-[2018.12.05-18.41.13:289][420]LogActorFactory: Actor Factory created Cube
-[2018.12.05-18.41.16:912][509]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.05-18.41.39:159][697]LogEditorActor: Deleted Actor: StaticMeshActor
-[2018.12.05-18.41.39:214][697]LogEditorActor: Deleted 1 Actors (0.058 secs)
-[2018.12.05-18.41.40:724][781]LogSlate: Window 'BP_Paddle' being destroyed
-[2018.12.05-18.41.54:384][505]BlueprintLog: New page: Compile BP_Paddle
-[2018.12.05-18.41.55:719][555]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Paddle" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Blueprints/BP_Paddle.uasset" SILENT=true
-[2018.12.05-18.41.55:736][555]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/BP_PaddleA0A294074605EAC641F358BFB64416F9.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Blueprints/BP_Paddle.uasset'
-[2018.12.05-18.42.04:364][ 69]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.12.05-18.42.04:555][ 69]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMapD31A04EC44229FE2F66F4DABFADA60F6.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap'
-[2018.12.05-18.42.04:571][ 69]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap_BuiltData" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset" SILENT=true
-[2018.12.05-18.42.04:585][ 69]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap_BuiltData27F635704FBF9451773FDCBFA1E0941A.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset'
-[2018.12.05-18.46.49:170][ 89]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.05-18.46.51:518][214]Candidate modules for hot reload:
-[2018.12.05-18.46.51:518][214]  TeyonPong
-[2018.12.05-18.46.51:518][214]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,9026 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
-[2018.12.05-18.46.51:523][214]Warning: Starting HotReload took  0.0s.
-[2018.12.05-18.47.01:540][799]CompilerResultsLog: New page: Compilation - 5 gru 2018, 20:47:01
-[2018.12.05-18.47.01:541][799]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
-[2018.12.05-18.47.01:541][799]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
-[2018.12.05-18.47.01:541][799]CompilerResultsLog: Compiling game modules for hot reload
-[2018.12.05-18.47.01:541][799]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2018.12.05-18.47.01:541][799]CompilerResultsLog: Building 3 actions with 4 processes...
-[2018.12.05-18.47.01:541][799]CompilerResultsLog:   [1/3] Paddle.cpp
-[2018.12.05-18.47.01:541][799]CompilerResultsLog:   [2/3] UE4Editor-TeyonPong-9026.lib
-[2018.12.05-18.47.01:541][799]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-9026.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-9026.exp
-[2018.12.05-18.47.01:541][799]CompilerResultsLog:   [3/3] UE4Editor-TeyonPong-9026.dll
-[2018.12.05-18.47.01:541][799]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-9026.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-9026.suppressed.exp
-[2018.12.05-18.47.01:541][799]CompilerResultsLog: Total build time: 9,55 seconds (Parallel executor: 2,46 seconds)
-[2018.12.05-18.47.01:541][799]LogMainFrame: MainFrame: Module compiling took 10.025 seconds
-[2018.12.05-18.47.01:630][799]LogHotReload: Re-instancing Paddle after hot-reload.
-[2018.12.05-18.47.01:857][799]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 2 classes and 2 folders.
-[2018.12.05-18.47.01:860][799]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.12.05-18.47.02:237][799]LogContentBrowser: Native class hierarchy populated in 0.0150 seconds. Added 2654 classes and 624 folders.
-[2018.12.05-18.47.02:238][799]Display: HotReload took 10.7s.
-[2018.12.05-18.47.04:660][931]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/BP_Paddle.BP_Paddle
-[2018.12.05-18.47.26:951][223]LogEditorViewport: Clicking Background
-[2018.12.05-18.47.27:797][271]LogEditorViewport: Clicking on Actor (LMB): BP_Paddle_C (BP_Paddle)
-[2018.12.05-18.47.28:295][299]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.05-18.47.43:174][165]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.12.05-18.47.43:466][165]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMapE30E29434AF692B7738262B7424EEBDE.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap'
-[2018.12.05-18.47.43:482][165]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap_BuiltData" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset" SILENT=true
-[2018.12.05-18.47.43:495][165]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap_BuiltData8B85E39E43A92A873EF2C080E89B995C.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset'
-[2018.12.05-18.47.45:858][296]LogEditorActor: Deleted Actor: BP_Paddle_C
-[2018.12.05-18.47.45:912][296]LogEditorActor: Deleted 1 Actors (0.054 secs)
-[2018.12.05-18.48.19:846][538]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/BP_Paddle.BP_Paddle
-[2018.12.05-18.53.26:215][229]Candidate modules for hot reload:
-[2018.12.05-18.53.26:215][229]  TeyonPong
-[2018.12.05-18.53.26:215][229]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,2451 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
-[2018.12.05-18.53.26:219][229]Warning: Starting HotReload took  0.0s.
-[2018.12.05-18.53.57:893][ 83]CompilerResultsLog: New page: Compilation - 5 gru 2018, 20:53:57
-[2018.12.05-18.53.57:893][ 83]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
-[2018.12.05-18.53.57:893][ 83]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
-[2018.12.05-18.53.57:893][ 83]CompilerResultsLog: Compiling game modules for hot reload
-[2018.12.05-18.53.57:893][ 83]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2018.12.05-18.53.57:893][ 83]CompilerResultsLog: Parsing headers for TeyonPongEditor
-[2018.12.05-18.53.57:893][ 83]CompilerResultsLog:   Running UnrealHeaderTool "E:\Praca\Teyon test\Pong\TeyonPong\TeyonPong.uproject" "E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.12.05-18.53.57:893][ 83]CompilerResultsLog: Reflection code generated for TeyonPongEditor in 19,9703836 seconds
-[2018.12.05-18.53.57:893][ 83]CompilerResultsLog: Building 4 actions with 4 processes...
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog:   [1/4] TeyonPongGameModeBase.cpp
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog:    C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime\CoreUObject\Public\Templates/SubclassOf.h(55) : error C2027: wykorzystanie niezdefiniowanego przez u?ytkownika typu "ACubeActor"
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog:   e:\praca\teyon test\pong\teyonpong\source\teyonpong\TeyonPongGameModeBase.h(22): note: zobacz deklaracj? "ACubeActor"
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime\CoreUObject\Public\Templates/SubclassOf.h(54): note: podczas kompilowania funkcji sk?adowej "<Nieznany>" klasy klasa <Nieznany>
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime\CoreUObject\Public\Templates/SubclassOf.h(77): note: zobacz odwo?anie do funkcji szablon; wyst?pienie "UClass *TSubclassOf<ACubeActor>::operator *(void) const" jest kompilowane
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog:   e:\praca\teyon test\pong\teyonpong\source\teyonpong\TeyonPongGameModeBase.h(22): note: zobacz odwo?anie do klasy klasa szablon; wyst?pienie "TSubclassOf<ACubeActor>" jest kompilowane
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog:    C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime\CoreUObject\Public\Templates/SubclassOf.h(55) : error C3861: "StaticClass": identyfikatora nie odnaleziono
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog:   [2/4] TeyonPongGameModeBase.gen.cpp
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: E:\Praca\Teyon test\Pong\TeyonPong\Binaries\Win64\UE4Editor-TeyonPong-2451.dll
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
-[2018.12.05-18.53.57:894][ 83]CompilerResultsLog: Total build time: 31,23 seconds (Parallel executor: 0,00 seconds)
-[2018.12.05-18.53.57:894][ 83]LogMainFrame: MainFrame: Module compiling took 31.681 seconds
-[2018.12.05-18.53.57:894][ 83]Warning: HotReload failed, recompile failed
-[2018.12.05-18.57.44:653][516]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Saved/Autosaves/Game/Maps/GameMap_Auto3.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
-[2018.12.05-18.57.44:801][516]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap_Auto31E3115D84234680AEB94C09094ACC418.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/Autosaves/Game/Maps/GameMap_Auto3.umap'
-[2018.12.05-18.57.44:803][516]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/GameMap' took 0.187
-[2018.12.05-18.57.44:803][516]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.187
-[2018.12.05-18.58.26:003][797]LogSlate: Window 'Delete Assets' being destroyed
-[2018.12.05-18.58.28:638][862]Candidate modules for hot reload:
-[2018.12.05-18.58.28:639][862]  TeyonPong
-[2018.12.05-18.58.28:639][862]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,8308 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
-[2018.12.05-18.58.28:642][862]Warning: Starting HotReload took  0.0s.
-[2018.12.05-18.58.54:216][894]CompilerResultsLog: New page: Compilation - 5 gru 2018, 20:58:54
-[2018.12.05-18.58.54:216][894]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
-[2018.12.05-18.58.54:216][894]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
-[2018.12.05-18.58.54:216][894]CompilerResultsLog: Compiling game modules for hot reload
-[2018.12.05-18.58.54:216][894]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2018.12.05-18.58.54:216][894]CompilerResultsLog: Parsing headers for TeyonPongEditor
-[2018.12.05-18.58.54:216][894]CompilerResultsLog:   Running UnrealHeaderTool "E:\Praca\Teyon test\Pong\TeyonPong\TeyonPong.uproject" "E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-[2018.12.05-18.58.54:216][894]CompilerResultsLog: Reflection code generated for TeyonPongEditor in 15,7434464 seconds
-[2018.12.05-18.58.54:216][894]CompilerResultsLog: Building 5 actions with 4 processes...
-[2018.12.05-18.58.54:216][894]CompilerResultsLog:   [1/5] Paddle.cpp
-[2018.12.05-18.58.54:216][894]CompilerResultsLog:    E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Paddle.cpp(15) : error C2440: "=": nie mo?na konwertowa? z "ConstructorHelpers::FObjectFinder<UStaticMeshComponent>" na "UStaticMeshComponent *"
-[2018.12.05-18.58.54:216][894]CompilerResultsLog:   E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Paddle.cpp(15): note: Nie jest dost?pny ?aden operator konwersji zdefiniowany przez u?ytkownika, kt?ry m?g?by wykona? t? konwersj? lub operator nie mo?e zosta? wywo?any
-[2018.12.05-18.58.54:216][894]CompilerResultsLog:   [2/5] TeyonPongGameModeBase.gen.cpp
-[2018.12.05-18.58.54:216][894]CompilerResultsLog:   [3/5] TeyonPongGameModeBase.cpp
-[2018.12.05-18.58.54:216][894]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: E:\Praca\Teyon test\Pong\TeyonPong\Binaries\Win64\UE4Editor-TeyonPong-8308.dll
-[2018.12.05-18.58.54:216][894]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
-[2018.12.05-18.58.54:216][894]CompilerResultsLog: Total build time: 24,86 seconds (Parallel executor: 0,00 seconds)
-[2018.12.05-18.58.54:216][894]LogMainFrame: MainFrame: Module compiling took 25.578 seconds
-[2018.12.05-18.58.54:216][894]Warning: HotReload failed, recompile failed
-[2018.12.05-18.59.36:080][604]Candidate modules for hot reload:
-[2018.12.05-18.59.36:080][604]  TeyonPong
-[2018.12.05-18.59.36:080][604]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,9712 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
-[2018.12.05-18.59.36:084][604]Warning: Starting HotReload took  0.0s.
-[2018.12.05-18.59.44:749][106]CompilerResultsLog: New page: Compilation - 5 gru 2018, 20:59:44
-[2018.12.05-18.59.44:750][106]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
-[2018.12.05-18.59.44:750][106]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
-[2018.12.05-18.59.44:750][106]CompilerResultsLog: Compiling game modules for hot reload
-[2018.12.05-18.59.44:750][106]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2018.12.05-18.59.44:750][106]CompilerResultsLog: Building 4 actions with 4 processes...
-[2018.12.05-18.59.44:750][106]CompilerResultsLog:   [1/4] Paddle.cpp
-[2018.12.05-18.59.44:750][106]CompilerResultsLog:    E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Paddle.cpp(16) : error C2440: "=": nie mo?na konwertowa? z "ConstructorHelpers::FObjectFinder<UStaticMeshComponent>" na "UStaticMeshComponent *"
-[2018.12.05-18.59.44:751][106]CompilerResultsLog:   E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Paddle.cpp(16): note: Nie jest dost?pny ?aden operator konwersji zdefiniowany przez u?ytkownika, kt?ry m?g?by wykona? t? konwersj? lub operator nie mo?e zosta? wywo?any
-[2018.12.05-18.59.44:751][106]CompilerResultsLog:   [2/4] TeyonPongGameModeBase.cpp
-[2018.12.05-18.59.44:751][106]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: E:\Praca\Teyon test\Pong\TeyonPong\Binaries\Win64\UE4Editor-TeyonPong-9712.dll
-[2018.12.05-18.59.44:751][106]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
-[2018.12.05-18.59.44:751][106]CompilerResultsLog: Total build time: 8,30 seconds (Parallel executor: 0,00 seconds)
-[2018.12.05-18.59.44:751][106]LogMainFrame: MainFrame: Module compiling took 8.673 seconds
-[2018.12.05-18.59.44:751][106]Warning: HotReload failed, recompile failed
-[2018.12.05-19.00.06:843][826]Candidate modules for hot reload:
-[2018.12.05-19.00.06:843][826]  TeyonPong
-[2018.12.05-19.00.06:844][826]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,1312 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
-[2018.12.05-19.00.06:847][826]Warning: Starting HotReload took  0.0s.
-[2018.12.05-19.00.15:216][310]CompilerResultsLog: New page: Compilation - 5 gru 2018, 21:00:15
-[2018.12.05-19.00.15:216][310]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
-[2018.12.05-19.00.15:216][310]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
-[2018.12.05-19.00.15:216][310]CompilerResultsLog: Compiling game modules for hot reload
-[2018.12.05-19.00.15:216][310]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2018.12.05-19.00.15:216][310]CompilerResultsLog: Building 3 actions with 4 processes...
-[2018.12.05-19.00.15:216][310]CompilerResultsLog:   [1/3] Paddle.cpp
-[2018.12.05-19.00.15:216][310]CompilerResultsLog:    E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Paddle.cpp(16) : error C2100: niedozwolony operator po?redni
-[2018.12.05-19.00.15:216][310]CompilerResultsLog:    E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Paddle.cpp(16) : error C2440: "=": nie mo?na konwertowa? z "ConstructorHelpers::FObjectFinder<UStaticMeshComponent>" na "UStaticMeshComponent *"
-[2018.12.05-19.00.15:216][310]CompilerResultsLog:   E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Paddle.cpp(16): note: Nie jest dost?pny ?aden operator konwersji zdefiniowany przez u?ytkownika, kt?ry m?g?by wykona? t? konwersj? lub operator nie mo?e zosta? wywo?any
-[2018.12.05-19.00.15:216][310]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: E:\Praca\Teyon test\Pong\TeyonPong\Binaries\Win64\UE4Editor-TeyonPong-1312.dll
-[2018.12.05-19.00.15:216][310]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
-[2018.12.05-19.00.15:216][310]CompilerResultsLog: Total build time: 8,03 seconds (Parallel executor: 0,00 seconds)
-[2018.12.05-19.00.15:216][310]LogMainFrame: MainFrame: Module compiling took 8.376 seconds
-[2018.12.05-19.00.15:217][310]Warning: HotReload failed, recompile failed
-[2018.12.05-19.00.57:495][866]Candidate modules for hot reload:
-[2018.12.05-19.00.57:495][866]  TeyonPong
-[2018.12.05-19.00.57:495][866]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,7878 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
-[2018.12.05-19.00.57:500][866]Warning: Starting HotReload took  0.0s.
-[2018.12.05-19.01.06:070][379]CompilerResultsLog: New page: Compilation - 5 gru 2018, 21:01:06
-[2018.12.05-19.01.06:070][379]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
-[2018.12.05-19.01.06:070][379]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
-[2018.12.05-19.01.06:070][379]CompilerResultsLog: Compiling game modules for hot reload
-[2018.12.05-19.01.06:070][379]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2018.12.05-19.01.06:070][379]CompilerResultsLog: Building 3 actions with 4 processes...
-[2018.12.05-19.01.06:070][379]CompilerResultsLog:   [1/3] Paddle.cpp
-[2018.12.05-19.01.06:070][379]CompilerResultsLog:    E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Paddle.cpp(16) : error C2440: "typ rzutowania": nie mo?na konwertowa? z "ConstructorHelpers::FObjectFinder<UStaticMeshComponent>" na "UStaticMeshComponent *"
-[2018.12.05-19.01.06:070][379]CompilerResultsLog:   E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Paddle.cpp(16): note: Nie jest dost?pny ?aden operator konwersji zdefiniowany przez u?ytkownika, kt?ry m?g?by wykona? t? konwersj? lub operator nie mo?e zosta? wywo?any
-[2018.12.05-19.01.06:070][379]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: E:\Praca\Teyon test\Pong\TeyonPong\Binaries\Win64\UE4Editor-TeyonPong-7878.dll
-[2018.12.05-19.01.06:070][379]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
-[2018.12.05-19.01.06:070][379]CompilerResultsLog: Total build time: 7,94 seconds (Parallel executor: 0,00 seconds)
-[2018.12.05-19.01.06:070][379]LogMainFrame: MainFrame: Module compiling took 8.577 seconds
-[2018.12.05-19.01.06:070][379]Warning: HotReload failed, recompile failed
-[2018.12.05-19.03.32:524][607]Candidate modules for hot reload:
-[2018.12.05-19.03.32:524][607]  TeyonPong
-[2018.12.05-19.03.32:524][607]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,6835 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
-[2018.12.05-19.03.32:529][607]Warning: Starting HotReload took  0.0s.
-[2018.12.05-19.03.44:368][297]CompilerResultsLog: New page: Compilation - 5 gru 2018, 21:03:44
-[2018.12.05-19.03.44:368][297]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
-[2018.12.05-19.03.44:368][297]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
-[2018.12.05-19.03.44:368][297]CompilerResultsLog: Compiling game modules for hot reload
-[2018.12.05-19.03.44:368][297]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-[2018.12.05-19.03.44:368][297]CompilerResultsLog: Building 3 actions with 4 processes...
-[2018.12.05-19.03.44:368][297]CompilerResultsLog:   [1/3] Paddle.cpp
-[2018.12.05-19.03.44:368][297]CompilerResultsLog:   [2/3] UE4Editor-TeyonPong-6835.lib
-[2018.12.05-19.03.44:368][297]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6835.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6835.exp
-[2018.12.05-19.03.44:368][297]CompilerResultsLog:   [3/3] UE4Editor-TeyonPong-6835.dll
-[2018.12.05-19.03.44:368][297]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6835.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6835.suppressed.exp
-[2018.12.05-19.03.44:368][297]CompilerResultsLog: Total build time: 11,05 seconds (Parallel executor: 2,52 seconds)
-[2018.12.05-19.03.44:368][297]LogMainFrame: MainFrame: Module compiling took 11.847 seconds
-[2018.12.05-19.03.44:441][297]LogHotReload: Re-instancing Paddle after hot-reload.
-[2018.12.05-19.03.44:559][297]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 2 classes and 2 folders.
-[2018.12.05-19.03.44:562][297]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
-[2018.12.05-19.03.44:950][297]LogContentBrowser: Native class hierarchy populated in 0.0132 seconds. Added 2654 classes and 624 folders.
-[2018.12.05-19.03.44:950][297]Display: HotReload took 12.4s.
-[2018.12.05-19.03.48:445][501]LogTemp: Repeating last play command: Selected Viewport
-[2018.12.05-19.03.48:454][501]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
-[2018.12.05-19.03.48:454][501]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.12.05-19.03.48:455][501]PIE: New page: PIE session: GameMap (5 gru 2018, 21:03:48)
-[2018.12.05-19.03.48:455][501]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
-[2018.12.05-19.03.48:456][501]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001349s)
-[2018.12.05-19.03.48:457][501]LogAIModule: Creating AISystem for world GameMap
-[2018.12.05-19.03.48:457][501]LogPlayLevel: PIE: World Init took: (0.000728s)
-[2018.12.05-19.03.48:457][501]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.002217s)
-[2018.12.05-19.03.48:543][501]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
-[2018.12.05-19.03.48:550][501]LogInit: FAudioDevice initialized.
-[2018.12.05-19.03.48:580][501]LogLoad: Game class is 'TeyonPongGameModeBase'
-[2018.12.05-19.03.48:580][501]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.05-20.03.48
-[2018.12.05-19.03.48:580][501]LogWorld: Bringing up level for play took: 0.000403
-[2018.12.05-19.03.48:592][501]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap 0,192
-[2018.12.05-19.03.48:593][501]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
-[2018.12.05-19.04.03:486][386]Cmd: CAMERA SNAP
-[2018.12.05-19.04.03:487][386]Snapped camera to the first selected object.
-[2018.12.05-19.04.16:882][168]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.12.05-19.04.25:000][655]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
-[2018.12.05-19.04.25:001][655]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.05-19.04.25:033][655]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.12.05-19.04.25:034][655]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
-[2018.12.05-19.04.25:074][655]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.05-19.04.25:107][656]LogPlayLevel: Display: Destroying online subsystem :Context_8
-[2018.12.05-19.05.18:334][877]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.05-19.05.18:551][877]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.12.05-19.05.18:693][877]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMapBA3CF5604732856C2DB120904139B9C1.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap'
-[2018.12.05-19.05.18:705][877]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap_BuiltData" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset" SILENT=true
-[2018.12.05-19.05.18:717][877]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap_BuiltData1BD5E1D44337B5FBDE6EBB8493E3A68A.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset'
-[2018.12.05-19.05.20:281][963]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.05-19.05.20:400][969]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
-[2018.12.05-19.05.20:538][969]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMapECF1AE204139CAE2625D15812304A49E.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap'
-[2018.12.05-19.05.20:550][969]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap_BuiltData" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset" SILENT=true
-[2018.12.05-19.05.20:561][969]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap_BuiltDataD55EC5DD491745D2875C75B951B24223.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset'
-[2018.12.05-19.05.22:107][ 53]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.05-19.05.22:263][ 59]LogSlate: Window 'TeyonPong - Unreal Editor' being destroyed
-[2018.12.05-19.05.22:421][ 60]Cmd: QUIT_EDITOR
-[2018.12.05-19.05.22:566][ 60]LogExit: Preparing to exit.
-[2018.12.05-19.05.23:507][ 60]LogExit: Editor shut down
-[2018.12.05-19.05.23:508][ 60]LogExit: Transaction tracking system shut down
-[2018.12.05-19.05.23:777][ 60]LogExit: Object subsystem successfully closed.
-[2018.12.05-19.05.23:785][ 60]LogShaderCompilers: Display: Shaders left to compile 0
-[2018.12.05-19.05.23:788][ 60]LogD3D11RHI: Shutdown
-[2018.12.05-19.05.23:788][ 60]LogD3D11RHI: CleanupD3DDevice
-[2018.12.05-19.05.23:791][ 60]LogD3D11RHI: ~FD3D11DynamicRHI
-[2018.12.05-19.05.23:805][ 60]LogModuleManager: Shutting down and abandoning module TeyonPong (637)
-[2018.12.05-19.05.23:805][ 60]LogModuleManager: Shutting down and abandoning module BlueprintGraph (635)
-[2018.12.05-19.05.23:805][ 60]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (633)
-[2018.12.05-19.05.23:805][ 60]LogModuleManager: Shutting down and abandoning module Voice (631)
-[2018.12.05-19.05.23:884][ 60]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (626)
-[2018.12.05-19.05.23:884][ 60]LogModuleManager: Shutting down and abandoning module SceneOutliner (624)
-[2018.12.05-19.05.23:884][ 60]LogModuleManager: Shutting down and abandoning module AddContentDialog (622)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module WidgetCarousel (621)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module EditorWidgets (618)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module CollectionManager (616)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (614)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module StatsViewer (612)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module FoliageEdit (610)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module LandscapeEditor (608)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module MeshPaintMode (606)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (604)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module ActorPickerMode (602)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module GeometryMode (600)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module TextureAlignMode (598)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module BspMode (596)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (594)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (592)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module AutomationWorker (590)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (588)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (586)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (584)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module PlacementMode (583)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module MaterialEditor (582)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (578)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (576)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (574)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (572)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module WebMMedia (570)
-[2018.12.05-19.05.23:885][ 60]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (568)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (566)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module SequenceRecorder (565)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (562)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (560)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (558)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (556)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (554)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (552)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (550)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (548)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (546)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (544)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module CharacterAI (542)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module SmartSnapping (540)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module SessionServices (538)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module ViewportSnapping (536)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module ViewportInteraction (534)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module ClothPainter (532)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (531)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module LogVisualizer (528)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module IntroTutorials (526)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (525)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (522)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (520)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (518)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (516)
-[2018.12.05-19.05.23:886][ 60]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (515)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (512)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (510)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (508)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (506)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (504)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module InputBindingEditor (502)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module MergeActors (500)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (498)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module LocalizationService (497)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module HardwareTargeting (494)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (492)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module UndoHistory (490)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module XmlParser (488)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module Blutility (486)
-[2018.12.05-19.05.24:451][ 60]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (484)
-[2018.12.05-19.05.24:452][ 60]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (483)
-[2018.12.05-19.05.24:452][ 60]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (480)
-[2018.12.05-19.05.24:452][ 60]LogModuleManager: Shutting down and abandoning module SettingsEditor (478)
-[2018.12.05-19.05.24:452][ 60]LogModuleManager: Shutting down and abandoning module ProjectLauncher (476)
-[2018.12.05-19.05.24:452][ 60]LogModuleManager: Shutting down and abandoning module SessionFrontend (474)
-[2018.12.05-19.05.24:452][ 60]LogModuleManager: Shutting down and abandoning module ProfilerClient (472)
-[2018.12.05-19.05.24:452][ 60]LogModuleManager: Shutting down and abandoning module DeviceManager (470)
-[2018.12.05-19.05.24:452][ 60]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (469)
-[2018.12.05-19.05.24:502][ 60]LogModuleManager: Shutting down and abandoning module AutomationController (466)
-[2018.12.05-19.05.24:502][ 60]LogModuleManager: Shutting down and abandoning module AutomationWindow (464)
-[2018.12.05-19.05.24:502][ 60]LogModuleManager: Shutting down and abandoning module Layers (462)
-[2018.12.05-19.05.24:502][ 60]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (460)
-[2018.12.05-19.05.24:502][ 60]LogModuleManager: Shutting down and abandoning module DetailCustomizations (458)
-[2018.12.05-19.05.24:502][ 60]LogModuleManager: Shutting down and abandoning module PackagesDialog (456)
-[2018.12.05-19.05.24:502][ 60]LogModuleManager: Shutting down and abandoning module Persona (454)
-[2018.12.05-19.05.24:502][ 60]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (453)
-[2018.12.05-19.05.24:502][ 60]LogModuleManager: Shutting down and abandoning module AnimGraph (451)
-[2018.12.05-19.05.24:502][ 60]LogModuleManager: Shutting down and abandoning module Kismet (448)
-[2018.12.05-19.05.24:512][ 60]LogModuleManager: Shutting down and abandoning module GraphEditor (446)
-[2018.12.05-19.05.24:512][ 60]LogModuleManager: Shutting down and abandoning module ClassViewer (444)
-[2018.12.05-19.05.24:513][ 60]LogModuleManager: Shutting down and abandoning module Toolbox (442)
-[2018.12.05-19.05.24:513][ 60]LogModuleManager: Shutting down and abandoning module DesktopPlatform (441)
-[2018.12.05-19.05.24:513][ 60]LogModuleManager: Shutting down and abandoning module ModuleUI (438)
-[2018.12.05-19.05.24:513][ 60]LogModuleManager: Shutting down and abandoning module MovieSceneTools (436)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module OutputLog (434)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module GammaUI (432)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module Documentation (430)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (428)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module MovieScene (426)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (424)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module LauncherPlatform (422)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module AnalyticsET (420)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module PortalServices (418)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module PortalRpc (416)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module MessagingRpc (414)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module AIModule (412)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module GameplayDebugger (411)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module AITestSuite (409)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module NavigationSystem (407)
-[2018.12.05-19.05.24:514][ 60]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (404)
-[2018.12.05-19.05.24:516][ 60]LogModuleManager: Shutting down and abandoning module ProfilerService (402)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module TaskGraph (400)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module SteamVRController (398)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (396)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (394)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module OculusInput (392)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (390)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module EditableMesh (388)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (386)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module CableComponent (384)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module AudioCapture (382)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (380)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module AndroidPermission (378)
-[2018.12.05-19.05.24:671][ 60]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (376)
-[2018.12.05-19.05.24:672][ 60]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (374)
-[2018.12.05-19.05.24:672][ 60]LogModuleManager: Shutting down and abandoning module MediaCompositing (372)
-[2018.12.05-19.05.24:672][ 60]LogModuleManager: Shutting down and abandoning module LinearTimecode (370)
-[2018.12.05-19.05.24:672][ 60]LogModuleManager: Shutting down and abandoning module ImgMedia (368)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module HTML5Networking (366)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (364)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (362)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module BackChannel (360)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module AppleVision (358)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (356)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module AppleImageUtils (354)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module AlembicImporter (352)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module AlembicLibrary (351)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module GeometryCache (350)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (349)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module VariantManagerContent (344)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (342)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (340)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module PluginBrowser (338)
-[2018.12.05-19.05.24:674][ 60]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (336)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module PolygonModeling (334)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module MeshEditor (332)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (330)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module CryptoKeys (328)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (326)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (324)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module UObjectPlugin (322)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (320)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (318)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module GitSourceControl (316)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module SourceControl (315)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (312)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (310)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (308)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (306)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (304)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (302)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module Paper2DEditor (300)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module MeshPaint (299)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (294)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (292)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module PhysXVehicles (290)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module OculusEditor (288)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (286)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module ActorSequence (284)
-[2018.12.05-19.05.24:675][ 60]LogModuleManager: Shutting down and abandoning module UdpMessaging (282)
-[2018.12.05-19.05.24:775][ 60]LogModuleManager: Shutting down and abandoning module TcpMessaging (280)
-[2018.12.05-19.05.24:875][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (278)
-[2018.12.05-19.05.24:875][ 60]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (276)
-[2018.12.05-19.05.24:875][ 60]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (274)
-[2018.12.05-19.05.24:875][ 60]LogModuleManager: Shutting down and abandoning module FacialAnimation (272)
-[2018.12.05-19.05.24:875][ 60]LogModuleManager: Shutting down and abandoning module DataValidation (270)
-[2018.12.05-19.05.24:875][ 60]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (268)
-[2018.12.05-19.05.24:875][ 60]LogModuleManager: Shutting down and abandoning module LevelEditor (267)
-[2018.12.05-19.05.24:875][ 60]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (266)
-[2018.12.05-19.05.24:876][ 60]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (264)
-[2018.12.05-19.05.24:876][ 60]LogModuleManager: Shutting down and abandoning module MainFrame (262)
-[2018.12.05-19.05.24:876][ 60]LogModuleManager: Shutting down and abandoning module HotReload (261)
-[2018.12.05-19.05.24:876][ 60]LogModuleManager: Shutting down and abandoning module ContentBrowser (257)
-[2018.12.05-19.05.24:877][ 60]LogModuleManager: Shutting down and abandoning module TreeMap (255)
-[2018.12.05-19.05.24:877][ 60]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (252)
-[2018.12.05-19.05.24:877][ 60]LogModuleManager: Shutting down and abandoning module AISupportModule (250)
-[2018.12.05-19.05.24:877][ 60]LogModuleManager: Shutting down and abandoning module Paper2D (248)
-[2018.12.05-19.05.24:877][ 60]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (246)
-[2018.12.05-19.05.24:877][ 60]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (244)
-[2018.12.05-19.05.24:877][ 60]LogModuleManager: Shutting down and abandoning module WmfMedia (242)
-[2018.12.05-19.05.24:878][ 60]LogModuleManager: Shutting down and abandoning module Media (241)
-[2018.12.05-19.05.24:884][ 60]LogModuleManager: Shutting down and abandoning module PacketHandler (238)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (236)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (234)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module MediaAssets (232)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module Overlay (230)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module OverlayEditor (229)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module VREditor (226)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module StringTableEditor (224)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (222)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (220)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module FunctionalTesting (218)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (216)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (215)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module UMG (212)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module UMGEditor (211)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module Sequencer (210)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module MessageLog (207)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module SlateReflector (202)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module Slate (200)
-[2018.12.05-19.05.24:885][ 60]LogModuleManager: Shutting down and abandoning module EditorStyle (198)
-[2018.12.05-19.05.24:886][ 60]LogModuleManager: Shutting down and abandoning module MRMesh (196)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (194)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (192)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module XAudio2 (190)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module Networking (188)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module Core (186)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module LevelSequence (184)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module KismetCompiler (182)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module MeshUtilities (180)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (179)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (178)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (177)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (175)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (173)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (171)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module MaterialBaking (167)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (163)
-[2018.12.05-19.05.24:887][ 60]LogModuleManager: Shutting down and abandoning module DerivedDataCache (160)
-[2018.12.05-19.05.24:937][ 60]LogDerivedDataCache: Shutdown
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module XGEController (158)
-[2018.12.05-19.05.24:937][ 60]LogXGEController: Cleaning working directory: C:/Users/Nord/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module TargetPlatform (156)
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (155)
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (153)
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (151)
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (149)
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (147)
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (145)
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (143)
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (141)
-[2018.12.05-19.05.24:937][ 60]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (139)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (137)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module ImageWrapper (136)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (133)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (131)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (129)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (127)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (125)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (121)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (119)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (117)
-[2018.12.05-19.05.24:938][ 60]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (115)
-[2018.12.05-19.05.24:939][ 60]LogModuleManager: Shutting down and abandoning module Messaging (113)
-[2018.12.05-19.05.24:939][ 60]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (111)
-[2018.12.05-19.05.24:940][ 60]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (109)
-[2018.12.05-19.05.24:940][ 60]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (107)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (105)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (103)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (101)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (99)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (97)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (95)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (93)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (91)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (89)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module InputCore (86)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module Settings (84)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module PhysXCooking (82)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module SteamVR (80)
-[2018.12.05-19.05.24:945][ 60]LogHMD: Freeing OpenVRDLLHandle.
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module OculusHMD (78)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (76)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (74)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (72)
-[2018.12.05-19.05.24:945][ 60]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (68)
-[2018.12.05-19.05.24:946][ 60]LogModuleManager: Shutting down and abandoning module XMPP (63)
-[2018.12.05-19.05.24:946][ 60]LogModuleManager: Shutting down and abandoning module WebSockets (62)
-[2018.12.05-19.05.24:968][ 60]LogModuleManager: Shutting down and abandoning module HTTP (59)
-[2018.12.05-19.05.24:969][ 60]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2018.12.05-19.05.24:969][ 60]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD80F24BE-4BC8-5A04-9C39-5FBDE4D209E3%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.21.1-4613538%2B%2B%2BUE4%2BRelease-4.21&UserID=db18026b46ac53e8eeebd3a7293257fc%7C0e501aece8f444dc820be096c4415ee0%7Cbc539f50-f83d-4566-acca-4d6b531eb6f8&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2018.12.05-19.05.25:002][ 60]LogModuleManager: Shutting down and abandoning module SSL (58)
-[2018.12.05-19.05.25:002][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (54)
-[2018.12.05-19.05.25:002][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (52)
-[2018.12.05-19.05.25:002][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (50)
-[2018.12.05-19.05.25:002][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (48)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (46)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (44)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module MagicLeapController (42)
-[2018.12.05-19.05.25:003][ 60]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module MagicLeap (40)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module DatasmithContent (38)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2018.12.05-19.05.25:003][ 60]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2018.12.05-19.05.25:004][ 60]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2018.12.05-19.05.25:006][ 60]LogExit: Exiting.
-[2018.12.05-19.05.25:012][ 60]Log file closed, 12/05/18 20:05:25
+[2018.12.06-08.26.05:542][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2018.12.06-08.26.05:542][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2018.12.06-08.26.05:542][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.06-08.26.05:542][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2018.12.06-08.26.05:542][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.06-08.26.05:542][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.06-08.26.05:542][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2018.12.06-08.26.05:543][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.06-08.26.05:543][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.06-08.26.06:079][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:079][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2018.12.06-08.26.06:079][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2018.12.06-08.26.06:079][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:079][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2018.12.06-08.26.06:079][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:079][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2018.12.06-08.26.06:079][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2018.12.06-08.26.06:079][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2018.12.06-08.26.06:079][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2018.12.06-08.26.06:080][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2018.12.06-08.26.06:184][  0]LogInit: Selected Device Profile: [Windows]
+[2018.12.06-08.26.06:228][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.12.06-08.26.06:647][  0]LogHAL: Display: Platform has ~ 16 GB [17103699968 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.12.06-08.26.06:777][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2018.12.06-08.26.06:777][  0]LogInit: Going up to parent DeviceProfile []
+[2018.12.06-08.26.06:796][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2018.12.06-08.26.06:796][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2018.12.06-08.26.06:797][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2018.12.06-08.26.06:829][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2018.12.06-08.26.06:829][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.06-08.26.06:920][  0]LogInit: Computer: NORD-KOMPUTER
+[2018.12.06-08.26.06:920][  0]LogInit: User: Nord
+[2018.12.06-08.26.06:920][  0]LogInit: CPU Page size=4096, Cores=2
+[2018.12.06-08.26.06:920][  0]LogInit: High frequency timer resolution =2.825527 MHz
+[2018.12.06-08.26.06:921][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.12.06-08.26.06:921][  0]LogMemory: Platform Memory Stats for Windows
+[2018.12.06-08.26.06:921][  0]LogMemory: Process Physical Memory: 103.28 MB used, 103.28 MB peak
+[2018.12.06-08.26.06:921][  0]LogMemory: Process Virtual Memory: 87.22 MB used, 87.22 MB peak
+[2018.12.06-08.26.06:921][  0]LogMemory: Physical Memory: 5492.18 MB used,  10819.18 MB free, 16311.36 MB total
+[2018.12.06-08.26.06:921][  0]LogMemory: Virtual Memory: 478.05 MB used,  8388130.00 MB free, 8388608.00 MB total
+[2018.12.06-08.26.14:819][  0]LogInit: Using OS detected language (pl-PL).
+[2018.12.06-08.26.14:819][  0]LogInit: Using OS detected locale (pl-PL).
+[2018.12.06-08.26.15:239][  0]LogTextLocalizationManager: No specific localization for 'pl-PL' exists, so the 'pl' localization will be used.
+[2018.12.06-08.26.16:278][  0]LogStreaming: Display: Took  1.530s to InitEngineTextLocalization.
+[2018.12.06-08.26.16:333][  0]LogWindows: Failed to load 'shcore.dll' (GetLastError=126)
+[2018.12.06-08.26.16:333][  0]LogWindows: File 'shcore.dll' does not exist
+[2018.12.06-08.26.16:333][  0]LogInit: Setting process to DPI aware
+[2018.12.06-08.26.20:458][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.12.06-08.26.20:459][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.12.06-08.26.35:894][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.06-08.26.35:894][  0]LogD3D11RHI: D3D11 adapters:
+[2018.12.06-08.26.37:947][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
+[2018.12.06-08.26.37:947][  0]LogD3D11RHI:       1986/0/7899 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.12.06-08.26.37:974][  0]LogD3D11RHI:    1. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
+[2018.12.06-08.26.37:974][  0]LogD3D11RHI:       1986/0/7899 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
+[2018.12.06-08.26.37:974][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.12.06-08.26.38:021][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.12.06-08.26.38:021][  0]LogD3D11RHI:     GPU DeviceId: 0x1392 (for the marketing name, search the web for "GPU Device Id")
+[2018.12.06-08.26.38:021][  0]LogWindows: EnumDisplayDevices:
+[2018.12.06-08.26.38:021][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2018.12.06-08.26.38:022][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.12.06-08.26.38:022][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.12.06-08.26.38:022][  0]LogWindows:    3. 'NVIDIA GeForce GTX 860M' (P:0 D:0)
+[2018.12.06-08.26.38:023][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2018.12.06-08.26.38:023][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2018.12.06-08.26.38:023][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2018.12.06-08.26.38:023][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter 
+[2018.12.06-08.26.38:023][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 860M
+[2018.12.06-08.26.38:125][  0]LogD3D11RHI:   Driver Version: 398.11 (internal:24.21.13.9811, unified:398.11)
+[2018.12.06-08.26.38:125][  0]LogD3D11RHI:      Driver Date: 6-1-2018
+[2018.12.06-08.26.38:126][  0]LogRHI: Texture pool is 1390 MB (70% of 1986 MB)
+[2018.12.06-08.26.38:578][  0]LogD3D11RHI: Async texture creation enabled
+[2018.12.06-08.26.40:323][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 14)
+[2018.12.06-08.26.55:450][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.12.06-08.26.55:682][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.12.06-08.26.56:004][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.12.06-08.26.56:195][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.12.06-08.26.56:485][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.12.06-08.26.57:399][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.12.06-08.26.57:924][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.12.06-08.26.58:128][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.12.06-08.26.58:680][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:376][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.06-08.26.59:553][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.12.06-08.27.00:702][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.12.06-08.27.00:702][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.12.06-08.27.00:960][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.12.06-08.27.00:961][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.12.06-08.27.01:107][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.12.06-08.27.01:406][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.12.06-08.27.01:622][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.12.06-08.27.01:811][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.12.06-08.27.02:034][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.12.06-08.27.02:034][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.12.06-08.27.02:034][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.12.06-08.27.09:538][  0]LogShaderCompilers: Guid format shader working directory is 11 characters bigger than the processId version (E:/Praca/Teyon test/Pong/TeyonPong/Intermediate/Shaders/WorkingDirectory/4800/).
+[2018.12.06-08.27.09:538][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Nord/AppData/Local/Temp/UnrealShaderWorkingDir/34E0F5B74AAC895A68F4FB91DFE9AC15/'.
+[2018.12.06-08.27.09:711][  0]LogXGEController: Cleaning working directory: C:/Users/Nord/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.12.06-08.27.09:712][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.12.06-08.27.09:712][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.12.06-08.27.09:712][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.12.06-08.27.31:096][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.12.06-08.27.33:348][  0]LogDerivedDataCache: Loaded boot cache 1.98s 71MB C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2018.12.06-08.27.33:348][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
+[2018.12.06-08.27.33:348][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file E:/Praca/Teyon test/Pong/TeyonPong/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.12.06-08.27.33:348][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.12.06-08.27.33:348][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file E:/Praca/Teyon test/Pong/TeyonPong/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.12.06-08.27.33:348][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.12.06-08.27.33:627][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.12.06-08.27.33:628][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.12.06-08.27.33:628][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2018.12.06-08.27.33:676][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Nord/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.12.06-08.27.33:676][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.12.06-08.27.33:676][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.12.06-08.27.34:135][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.12.06-08.27.34:803][  0]LogSlate: Using FreeType 2.6.0
+[2018.12.06-08.27.34:959][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.12.06-08.27.46:660][  0]LogAssetRegistry: FAssetRegistry took 0.4472 seconds to start up
+[2018.12.06-08.28.09:604][  0]LogInit: Selected Device Profile: [Windows]
+[2018.12.06-08.28.23:891][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.12.06-08.28.26:532][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.12.06-08.28.26:595][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2018.12.06-08.28.26:718][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.12.06-08.28.26:718][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.12.06-08.28.30:049][  0]LogNetVersion: TeyonPong 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2572377658)
+[2018.12.06-08.29.13:104][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.588694 seconds
+[2018.12.06-08.29.13:198][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
+[2018.12.06-08.29.13:198][  0]LogUObjectAllocator: 6914664 out of 0 bytes used by permanent object pool.
+[2018.12.06-08.29.13:198][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.12.06-08.31.29:044][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.12.06-08.31.29:636][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.12.06-08.31.44:893][  0]SourceControl: Source control is disabled
+[2018.12.06-08.31.44:916][  0]SourceControl: Source control is disabled
+[2018.12.06-08.31.46:326][  0]SourceControl: Source control is disabled
+[2018.12.06-08.31.46:727][  0]SourceControl: Source control is disabled
+[2018.12.06-08.32.06:089][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.12.06-08.32.07:732][  0]LogOcInput: OculusInput pre-init called
+[2018.12.06-08.32.17:082][  0]LogAutomationTest: Warning: Smoke tests took > 2s to run: 4.51s
+[2018.12.06-08.32.17:622][  0]LogEngine: Initializing Engine...
+[2018.12.06-08.32.17:736][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.06-08.32.17:952][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.041 s
+[2018.12.06-08.32.17:952][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.06-08.32.17:952][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.06-08.32.17:996][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.044 s
+[2018.12.06-08.32.22:107][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.12.06-08.32.24:966][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.12.06-08.32.25:870][  0]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.06-08.32.25:948][  0]LogInit: FAudioDevice initialized.
+[2018.12.06-08.32.25:948][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.12.06-08.32.26:343][  0]LogDerivedDataCache: Saved boot cache 0.40s 71MB C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2018.12.06-08.32.26:348][  0]LogInit: Texture streaming: Enabled
+[2018.12.06-08.32.27:509][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.12.06-08.32.31:325][  0]LogInit: Transaction tracking system initialized
+[2018.12.06-08.32.41:210][  0]BlueprintLog: New page: Editor Load
+[2018.12.06-08.33.04:280][  0]LocalizationService: Localization service is disabled
+[2018.12.06-08.33.26:960][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/' took 0.01s
+[2018.12.06-08.33.26:960][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.12.06-08.33.26:960][  0]LogCook: Display: Mobile HDR setting 1
+[2018.12.06-08.33.26:960][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.12.06-08.33.26:960][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.06-08.33.26:960][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.06-08.33.26:961][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.06-08.33.26:961][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.06-08.33.50:957][  0]SourceControl: Source control is disabled
+[2018.12.06-08.33.51:037][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.12.06-08.33.51:129][  0]LightingResults: New page: Lighting Build
+[2018.12.06-08.33.52:278][  0]MapCheck: New page: Map Check
+[2018.12.06-08.33.52:278][  0]LightingResults: New page: Lighting Build
+[2018.12.06-08.34.05:684][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2018.12.06-08.34.08:528][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.12.06-08.34.09:125][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.12.06-08.34.09:154][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,107ms to complete.
+[2018.12.06-08.34.09:154][  0]LogFileHelpers: Loading map 'Template_Default' took 18.170
+[2018.12.06-08.34.23:362][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.06-08.34.23:777][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.06-08.34.23:787][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.06-08.34.23:795][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.06-08.34.24:698][  0]LogCollectionManager: Loaded 0 collections in 0.002703 seconds
+[2018.12.06-08.34.27:569][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/Collections/' took 0.01s
+[2018.12.06-08.34.27:569][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Developers/Nord/Collections/' took 0.01s
+[2018.12.06-08.34.27:569][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Collections/' took 0.01s
+[2018.12.06-08.34.27:569][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.12.06-08.34.28:019][  0]LogContentBrowser: Native class hierarchy populated in 0.4494 seconds. Added 2653 classes and 622 folders.
+[2018.12.06-08.34.29:439][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2018.12.06-08.34.29:842][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.30:618][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.30:620][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.30:753][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.30:876][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:010][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:011][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:012][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:014][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:230][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:231][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:430][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:675][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:765][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:843][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.31:943][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.32:121][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.32:123][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.32:213][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.32:313][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.32:403][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.32:614][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.32:715][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.33:038][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.33:160][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.33:239][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.06-08.34.41:642][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.12.06-08.34.44:205][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2018.12.06-08.35.03:967][  0]LogSlate: Took 0.060636 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.12.06-08.35.04:174][  0]LogSlate: Took 0.188838 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.12.06-08.35.04:898][  0]LogSlate: Took 0.117491 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.12.06-08.35.08:733][  0]LogRenderer: Reallocating scene render targets to support 820x372 Format 10 NumSamples 1 (Frame:1).
+[2018.12.06-08.35.12:926][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.12.06-08.35.12:927][  0]LogLoad: (Engine Initialization) Total time: 651.84 seconds
+[2018.12.06-08.35.12:927][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.41 seconds
+[2018.12.06-08.35.14:608][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.12.06-08.35.14:935][  0]LogSlate: Took 0.038163 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.06-08.35.16:145][  5]LogAssetRegistry: Asset discovery search completed in 449.5244 seconds
+[2018.12.06-08.35.16:186][  5]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.12.06-08.35.16:186][  5]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000082 seconds (updated 0 objects)
+[2018.12.06-08.38.02:361][712]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.06-08.38.50:992][624]LogSlate: Took 0.000188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.06-08.38.52:604][624]LogSlate: Took 0.034624 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.12.06-08.39.30:313][369]Running C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -invalidatemakefilesonly
+[2018.12.06-08.39.33:018][369]Invalidating makefiles only in this run.
+[2018.12.06-08.39.33:390][369]Candidate modules for hot reload:
+[2018.12.06-08.39.33:390][369]  TeyonPong
+[2018.12.06-08.39.33:390][369]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,1328 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.06-08.43.03:641][369]CompilerResultsLog: New page: Compilation - 6 gru 2018, 10:43:03
+[2018.12.06-08.43.03:641][369]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.06-08.43.03:641][369]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (no existing makefile)
+[2018.12.06-08.43.03:641][369]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.06-08.43.03:641][369]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.06-08.43.03:641][369]CompilerResultsLog: Parsing headers for TeyonPongEditor
+[2018.12.06-08.43.03:641][369]CompilerResultsLog:   Running UnrealHeaderTool "E:\Praca\Teyon test\Pong\TeyonPong\TeyonPong.uproject" "E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.12.06-08.43.03:641][369]CompilerResultsLog: Reflection code generated for TeyonPongEditor in 13,624625 seconds
+[2018.12.06-08.43.03:641][369]CompilerResultsLog: Building 6 actions with 4 processes...
+[2018.12.06-08.43.03:641][369]CompilerResultsLog:   [1/6] TeyonPong.init.gen.cpp
+[2018.12.06-08.43.03:642][369]CompilerResultsLog:   [2/6] PongCamera.cpp
+[2018.12.06-08.43.03:642][369]CompilerResultsLog:   [3/6] Paddle.cpp
+[2018.12.06-08.43.03:642][369]CompilerResultsLog:   [4/6] PongCamera.gen.cpp
+[2018.12.06-08.43.03:642][369]CompilerResultsLog:   [5/6] UE4Editor-TeyonPong-1328.lib
+[2018.12.06-08.43.03:642][369]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-1328.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-1328.exp
+[2018.12.06-08.43.03:642][369]CompilerResultsLog:   [6/6] UE4Editor-TeyonPong-1328.dll
+[2018.12.06-08.43.03:642][369]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-1328.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-1328.suppressed.exp
+[2018.12.06-08.43.03:642][369]CompilerResultsLog: Total build time: 209,90 seconds (Parallel executor: 177,28 seconds)
+[2018.12.06-08.43.03:642][369]LogMainFrame: MainFrame: Module compiling took 210.337 seconds
+[2018.12.06-08.43.03:696][369]LogClass: Could not find existing class PongCamera in package /Script/TeyonPong for HotReload, assuming new class
+[2018.12.06-08.43.03:701][369]LogHotReload: Re-instancing Paddle after hot-reload.
+[2018.12.06-08.43.04:115][369]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 3 classes and 2 folders.
+[2018.12.06-08.43.04:119][369]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.06-08.43.04:243][369]LogContentBrowser: Native class hierarchy populated in 0.0125 seconds. Added 2655 classes and 624 folders.
+[2018.12.06-08.43.04:290][369]Display: HotReload took 211.0s.
+[2018.12.06-08.43.04:291][369]Warning: HotReload operation took 211.0s.
+[2018.12.06-08.43.04:728][369]LogSlate: Window 'Add C++ Class' being destroyed
+[2018.12.06-08.43.04:759][369]LogHotReload: New module detected: UE4Editor-TeyonPong-1328.dll
+[2018.12.06-08.43.04:917][370]LogHotReload: Starting Hot-Reload from IDE
+[2018.12.06-08.43.04:974][370]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 3 classes and 2 folders.
+[2018.12.06-08.43.04:976][370]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.06-08.43.05:021][370]LogContentBrowser: Native class hierarchy populated in 0.0146 seconds. Added 2655 classes and 624 folders.
+[2018.12.06-08.43.05:024][370]Display: HotReload took  0.1s.
+[2018.12.06-08.43.05:030][370]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2018.12.06-08.43.05:030][370]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (0.000 sec). This should never happen. Something is wrong with the timer delegate!
+[2018.12.06-08.43.13:046][394]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (8.016 sec). This should never happen. Something is wrong with the timer delegate!

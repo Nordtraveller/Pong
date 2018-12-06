@@ -17,8 +17,8 @@ APaddle::APaddle()
 	{
 		mesh->SetStaticMesh(cubeMesh.Object);
 	}
-	mesh->SetRelativeScale3D(FVector(8, 1, 1));
-
+	mesh->SetRelativeScale3D(FVector(0.1f, 0.1f, 0.5f));
+	mesh->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
 }
 
 // Called when the game starts or when spawned
