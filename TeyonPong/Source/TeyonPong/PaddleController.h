@@ -13,7 +13,15 @@ UCLASS()
 class TEYONPONG_API APaddleController : public APlayerController
 {
 	GENERATED_BODY()
+
+private:
 	
 public:
 	APaddleController(const FObjectInitializer& ObjectInitializer);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ID")
+	int id;
+
+	void SetId(int i);
+	int GetId();
 };

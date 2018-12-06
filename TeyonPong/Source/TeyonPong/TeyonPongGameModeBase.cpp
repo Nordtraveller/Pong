@@ -17,9 +17,11 @@ void ATeyonPongGameModeBase::StartPlay()
 	UWorld* const world = GetWorld();
 	if (world)
 	{
-		UGameplayStatics::CreatePlayer(world, 0, true);
-		UGameplayStatics::CreatePlayer(world, 1, true);
-		ChoosePlayerStart(world->GetFirstPlayerController());
+		APaddleController* control0 = Cast<APaddleController>(UGameplayStatics::GetPlayerController(world, 0));
+		control0->SetId(0);
+		APaddleController* control1 = Cast<APaddleController>(UGameplayStatics::CreatePlayer(world, 1, true));
+		control1->SetId(1);
+		ChoosePlayerStart(world->GetFirstPlayerController());		
 	}
 	Super::StartPlay();
 }

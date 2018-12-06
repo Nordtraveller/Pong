@@ -4,5 +4,15 @@
 
 APaddleController::APaddleController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
+	
+}
 
+void APaddleController::SetId(int i)
+{
+	id = i;
+}
+
+int APaddleController::GetId()
+{
+	return id;
 }
