@@ -19,9 +19,7 @@ private:
 public:
 	APaddleController(const FObjectInitializer& ObjectInitializer);
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ID")
-	int id;
+	void SetupInputComponent() override;
 
-	void SetId(int i);
-	int GetId();
+	void Move(float axisValue);
 };

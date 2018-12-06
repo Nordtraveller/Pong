@@ -55,12 +55,18 @@
     <ClInclude Include="..\..\Source\TeyonPong\PaddleController.h">
       <Filter>Source\TeyonPong</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\TeyonPong\LocalViewportClient.h">
+      <Filter>Source\TeyonPong</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\TeyonPong\PongCamera.cpp">
       <Filter>Source\TeyonPong</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TeyonPong\PaddleController.cpp">
+      <Filter>Source\TeyonPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TeyonPong\LocalViewportClient.cpp">
       <Filter>Source\TeyonPong</Filter>
     </ClCompile>
   </ItemGroup>

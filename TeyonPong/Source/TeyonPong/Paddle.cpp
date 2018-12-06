@@ -22,14 +22,13 @@ APaddle::APaddle()
 		mesh->SetStaticMesh(cubeMesh.Object);
 	}
 	mesh->SetRelativeScale3D(FVector(0.1f, 0.1f, 0.5f));
-	mesh->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
 }
 
 // Called when the game starts or when spawned
 void APaddle::BeginPlay()
 {
-	Super::BeginPlay();
-	
+	mesh->SetRelativeLocation(startingPosition);
+	Super::BeginPlay();	
 }
 
 // Called every frame
@@ -42,20 +41,15 @@ void APaddle::Tick(float DeltaTime)
 void APaddle::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	int id = (Cast<APaddleController>(GetController()))->GetId();
-	//int id = 0;
-	if (id == 0)
-	{
-		InputComponent->BindAxis("Player0.Move", this, &APaddle::Move);
-	}
-	else if (id == 1)
-	{
-		InputComponent->BindAxis("Player1.Move", this, &APaddle::Move);
-	}
 }
 
 void APaddle::Move(float axisValue)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, *FString("Input " + FString::FromInt((int)axisValue)));
+	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, *FString("Input " + FString::FromInt((int)axisValue)));
+}
+
+void APaddle::SetStartingPosition(FVector vec)
+{
+	startingPosition = vec;
 }
 

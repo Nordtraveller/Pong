@@ -11,22 +11,21 @@ class TEYONPONG_API APaddle : public APawn
 {
 	GENERATED_BODY()
 
-public:
-	// Sets default values for this pawn's properties
-	APaddle();
+private:
+	FVector startingPosition;
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 public:	
-	// Called every frame
+	APaddle();
 	virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	void Move(float axisValue);
+
+	void SetStartingPosition(FVector vec);
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PaddleMesh")
 	UStaticMeshComponent* mesh;
