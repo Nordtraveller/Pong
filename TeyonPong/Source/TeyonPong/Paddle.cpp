@@ -23,6 +23,10 @@ APaddle::APaddle()
 	mesh->SetRelativeScale3D(FVector(0.1f, 0.1f, 0.5f));
 	mesh->SetSimulatePhysics(true);
 	mesh->SetEnableGravity(false);
+	mesh->BodyInstance.bLockXRotation = true;
+	mesh->BodyInstance.bLockYRotation = true;
+	mesh->BodyInstance.bLockZRotation = true;
+	mesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);
 }
 
 // Called when the game starts or when spawned

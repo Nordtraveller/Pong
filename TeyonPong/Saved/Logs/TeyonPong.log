@@ -789,3 +789,780 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2018.12.07-09.26.15:224][731]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
 [2018.12.07-09.26.15:298][731]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2657 classes and 624 folders.
 [2018.12.07-09.26.15:298][731]Display: HotReload took 11.6s.
+[2018.12.07-10.06.16:561][328]LogEditorViewport: Clicking Background
+[2018.12.07-10.06.17:000][354]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.07-10.06.17:138][361]LogRenderer: Reallocating scene render targets to support 800x444 Format 10 NumSamples 1 (Frame:5156).
+[2018.12.07-10.06.20:777][526]LogSlate: Took 0.009108 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.12.07-10.06.32:803][181]Running C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -invalidatemakefilesonly
+[2018.12.07-10.06.34:309][181]Invalidating makefiles only in this run.
+[2018.12.07-10.06.34:708][181]Candidate modules for hot reload:
+[2018.12.07-10.06.34:708][181]  TeyonPong
+[2018.12.07-10.06.34:708][181]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,1372 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-10.06.58:598][181]CompilerResultsLog: New page: Compilation - 7 gru 2018, 12:06:58
+[2018.12.07-10.06.58:598][181]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-10.06.58:598][181]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (no existing makefile)
+[2018.12.07-10.06.58:598][181]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-10.06.58:598][181]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-10.06.58:598][181]CompilerResultsLog: Parsing headers for TeyonPongEditor
+[2018.12.07-10.06.58:598][181]CompilerResultsLog:   Running UnrealHeaderTool "E:\Praca\Teyon test\Pong\TeyonPong\TeyonPong.uproject" "E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.12.07-10.06.58:598][181]CompilerResultsLog: Reflection code generated for TeyonPongEditor in 14,5095924 seconds
+[2018.12.07-10.06.58:598][181]CompilerResultsLog: Building 5 actions with 4 processes...
+[2018.12.07-10.06.58:598][181]CompilerResultsLog:   [1/5] TeyonPong.init.gen.cpp
+[2018.12.07-10.06.58:598][181]CompilerResultsLog:   [2/5] Ball.cpp
+[2018.12.07-10.06.58:598][181]CompilerResultsLog:   [3/5] Ball.gen.cpp
+[2018.12.07-10.06.58:598][181]CompilerResultsLog:   [4/5] UE4Editor-TeyonPong-1372.lib
+[2018.12.07-10.06.58:598][181]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-1372.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-1372.exp
+[2018.12.07-10.06.58:598][181]CompilerResultsLog:   [5/5] UE4Editor-TeyonPong-1372.dll
+[2018.12.07-10.06.58:598][181]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-1372.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-1372.suppressed.exp
+[2018.12.07-10.06.58:598][181]CompilerResultsLog: Total build time: 23,50 seconds (Parallel executor: 2,62 seconds)
+[2018.12.07-10.06.58:598][181]LogMainFrame: MainFrame: Module compiling took 23.893 seconds
+[2018.12.07-10.06.58:656][181]LogClass: Could not find existing class Ball in package /Script/TeyonPong for HotReload, assuming new class
+[2018.12.07-10.06.58:673][181]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2018.12.07-10.06.58:675][181]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.07-10.06.58:777][181]LogContentBrowser: Native class hierarchy populated in 0.0120 seconds. Added 2658 classes and 624 folders.
+[2018.12.07-10.06.58:777][181]Display: HotReload took 24.3s.
+[2018.12.07-10.06.58:778][181]Warning: HotReload operation took 24.3s.
+[2018.12.07-10.06.59:191][181]LogSlate: Window 'Add C++ Class' being destroyed
+[2018.12.07-10.06.59:199][181]LogHotReload: New module detected: UE4Editor-TeyonPong-1372.dll
+[2018.12.07-10.06.59:285][182]LogHotReload: Starting Hot-Reload from IDE
+[2018.12.07-10.06.59:384][182]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2018.12.07-10.06.59:387][182]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.07-10.06.59:444][182]LogContentBrowser: Native class hierarchy populated in 0.0160 seconds. Added 2658 classes and 624 folders.
+[2018.12.07-10.06.59:446][182]Display: HotReload took  0.2s.
+[2018.12.07-10.07.32:737][326]LogUnrealEdMisc: Warning: Heartbeat event firing too frequently (33.284 sec). This should never happen. Something is wrong with the timer delegate!
+[2018.12.07-10.07.36:887][520]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.07-10.07.36:901][520]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-10.07.36:901][520]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.07-10.07.36:902][520]PIE: New page: PIE session: GameMap (7 gru 2018, 12:07:36)
+[2018.12.07-10.07.36:902][520]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
+[2018.12.07-10.07.36:904][520]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002020s)
+[2018.12.07-10.07.36:905][520]LogAIModule: Creating AISystem for world GameMap
+[2018.12.07-10.07.36:905][520]LogPlayLevel: PIE: World Init took: (0.001320s)
+[2018.12.07-10.07.36:905][520]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.003489s)
+[2018.12.07-10.07.36:940][520]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.07-10.07.36:948][520]LogInit: FAudioDevice initialized.
+[2018.12.07-10.07.36:978][520]LogLoad: Game class is 'TeyonPongGameModeBase'
+[2018.12.07-10.07.36:979][520]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.07-11.07.36
+[2018.12.07-10.07.36:979][520]LogWorld: Bringing up level for play took: 0.000636
+[2018.12.07-10.07.36:995][520]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap 0,537
+[2018.12.07-10.07.36:995][520]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-10.07.55:270][604]Cmd: SELECT NONE
+[2018.12.07-10.07.57:519][734]Cmd: SELECT NONE
+[2018.12.07-10.07.58:171][773]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-10.07.58:172][773]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-10.07.58:205][773]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.07-10.07.58:206][773]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-10.07.58:225][773]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-10.07.58:278][776]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2018.12.07-10.10.38:282][327]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.07-10.10.39:185][359]Candidate modules for hot reload:
+[2018.12.07-10.10.39:185][359]  TeyonPong
+[2018.12.07-10.10.39:185][359]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,3485 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-10.10.39:191][359]Warning: Starting HotReload took  0.0s.
+[2018.12.07-10.11.10:257][164]CompilerResultsLog: New page: Compilation - 7 gru 2018, 12:11:10
+[2018.12.07-10.11.10:257][164]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-10.11.10:257][164]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.07-10.11.10:257][164]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-10.11.10:257][164]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-10.11.10:257][164]CompilerResultsLog: Parsing headers for TeyonPongEditor
+[2018.12.07-10.11.10:257][164]CompilerResultsLog:   Running UnrealHeaderTool "E:\Praca\Teyon test\Pong\TeyonPong\TeyonPong.uproject" "E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.12.07-10.11.10:257][164]CompilerResultsLog: Reflection code generated for TeyonPongEditor in 18,1658301 seconds
+[2018.12.07-10.11.10:257][164]CompilerResultsLog: Building 9 actions with 4 processes...
+[2018.12.07-10.11.10:257][164]CompilerResultsLog:   [1/9] Paddle.gen.cpp
+[2018.12.07-10.11.10:257][164]CompilerResultsLog:   [2/9] Ball.gen.cpp
+[2018.12.07-10.11.10:257][164]CompilerResultsLog:   [3/9] PaddleController.cpp
+[2018.12.07-10.11.10:257][164]CompilerResultsLog:   [4/9] TeyonPong.init.gen.cpp
+[2018.12.07-10.11.10:257][164]CompilerResultsLog:   [5/9] Ball.cpp
+[2018.12.07-10.11.10:257][164]CompilerResultsLog:   [6/9] Paddle.cpp
+[2018.12.07-10.11.10:258][164]CompilerResultsLog:   [7/9] TeyonPongGameModeBase.cpp
+[2018.12.07-10.11.10:258][164]CompilerResultsLog:    E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\TeyonPongGameModeBase.cpp(23) : error C2248: "APaddle::mesh": nie mo?na uzyska? dost?pu do private sk?adowa zadeklarowanych w klasie "APaddle"
+[2018.12.07-10.11.10:258][164]CompilerResultsLog:   e:\praca\teyon test\pong\teyonpong\source\teyonpong\Paddle.h(16): note: zobacz deklaracj? "APaddle::mesh"
+[2018.12.07-10.11.10:258][164]CompilerResultsLog:   e:\praca\teyon test\pong\teyonpong\source\teyonpong\Paddle.h(10): note: zobacz deklaracj? "APaddle"
+[2018.12.07-10.11.10:258][164]CompilerResultsLog:    E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\TeyonPongGameModeBase.cpp(27) : error C2248: "APaddle::mesh": nie mo?na uzyska? dost?pu do private sk?adowa zadeklarowanych w klasie "APaddle"
+[2018.12.07-10.11.10:258][164]CompilerResultsLog:   e:\praca\teyon test\pong\teyonpong\source\teyonpong\Paddle.h(16): note: zobacz deklaracj? "APaddle::mesh"
+[2018.12.07-10.11.10:258][164]CompilerResultsLog:   e:\praca\teyon test\pong\teyonpong\source\teyonpong\Paddle.h(10): note: zobacz deklaracj? "APaddle"
+[2018.12.07-10.11.10:258][164]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: E:\Praca\Teyon test\Pong\TeyonPong\Binaries\Win64\UE4Editor-TeyonPong-3485.dll
+[2018.12.07-10.11.10:258][164]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.12.07-10.11.10:258][164]CompilerResultsLog: Total build time: 30,26 seconds (Parallel executor: 0,00 seconds)
+[2018.12.07-10.11.10:258][164]LogMainFrame: MainFrame: Module compiling took 31.074 seconds
+[2018.12.07-10.11.10:258][164]Warning: HotReload failed, recompile failed
+[2018.12.07-10.11.45:679][779]Candidate modules for hot reload:
+[2018.12.07-10.11.45:679][779]  TeyonPong
+[2018.12.07-10.11.45:679][779]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,2300 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-10.11.45:685][779]Warning: Starting HotReload took  0.0s.
+[2018.12.07-10.11.56:751][426]CompilerResultsLog: New page: Compilation - 7 gru 2018, 12:11:56
+[2018.12.07-10.11.56:751][426]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-10.11.56:751][426]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.07-10.11.56:751][426]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-10.11.56:751][426]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-10.11.56:751][426]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.07-10.11.56:751][426]CompilerResultsLog:   [1/3] TeyonPongGameModeBase.cpp
+[2018.12.07-10.11.56:751][426]CompilerResultsLog:   [2/3] UE4Editor-TeyonPong-2300.lib
+[2018.12.07-10.11.56:751][426]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-2300.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-2300.exp
+[2018.12.07-10.11.56:751][426]CompilerResultsLog:   [3/3] UE4Editor-TeyonPong-2300.dll
+[2018.12.07-10.11.56:751][426]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-2300.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-2300.suppressed.exp
+[2018.12.07-10.11.56:751][426]CompilerResultsLog: Total build time: 10,70 seconds (Parallel executor: 3,16 seconds)
+[2018.12.07-10.11.56:751][426]LogMainFrame: MainFrame: Module compiling took 11.080 seconds
+[2018.12.07-10.11.56:795][426]LogClass: Could not find existing class Ball in package /Script/TeyonPong for HotReload, assuming new class
+[2018.12.07-10.11.56:796][426]LogClass: Could not find existing class Paddle in package /Script/TeyonPong for HotReload, assuming new class
+[2018.12.07-10.11.56:801][426]LogHotReload: Re-instancing Ball after hot-reload.
+[2018.12.07-10.11.56:868][426]LogHotReload: Re-instancing Paddle after hot-reload.
+[2018.12.07-10.11.56:935][426]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2018.12.07-10.11.56:937][426]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.07-10.11.57:014][426]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2658 classes and 624 folders.
+[2018.12.07-10.11.57:014][426]Display: HotReload took 11.3s.
+[2018.12.07-10.12.27:905][271]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.07-10.12.27:915][271]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-10.12.27:915][271]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.07-10.12.27:915][271]PIE: New page: PIE session: GameMap (7 gru 2018, 12:12:27)
+[2018.12.07-10.12.27:915][271]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
+[2018.12.07-10.12.27:917][271]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001580s)
+[2018.12.07-10.12.27:917][271]LogAIModule: Creating AISystem for world GameMap
+[2018.12.07-10.12.27:918][271]LogPlayLevel: PIE: World Init took: (0.001016s)
+[2018.12.07-10.12.27:918][271]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.002786s)
+[2018.12.07-10.12.27:949][271]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.07-10.12.27:956][271]LogInit: FAudioDevice initialized.
+[2018.12.07-10.12.27:990][271]LogLoad: Game class is 'TeyonPongGameModeBase'
+[2018.12.07-10.12.27:991][271]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.07-11.12.27
+[2018.12.07-10.12.27:991][271]LogWorld: Bringing up level for play took: 0.000463
+[2018.12.07-10.12.28:004][271]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap -0,461
+[2018.12.07-10.12.28:005][271]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-10.12.37:470][839]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-10.12.37:470][839]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-10.12.37:503][839]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.07-10.12.37:504][839]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-10.12.37:526][839]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-10.12.37:579][842]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2018.12.07-11.03.03:647][ 12]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.07-11.03.04:995][ 54]LogEditor: Attempting to add actor of class 'Ball' to level at -110.00,290.00,-310.00
+[2018.12.07-11.03.05:600][ 89]LogEditor: Attempting to add actor of class 'Ball' to level at -110.00,290.00,-310.00
+[2018.12.07-11.03.14:158][580]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.07-11.03.17:472][770]LogSlate: Took 0.000203 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.12.07-11.03.36:533][853]LogEditorViewport: Clicking Background
+[2018.12.07-11.03.37:272][897]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.07-11.03.40:378][ 83]LogEditorActor: Deleted Actor: Ball
+[2018.12.07-11.03.40:396][ 83]LogEditorActor: Deleted 1 Actors (0.020 secs)
+[2018.12.07-11.03.41:924][174]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.12.07-11.03.42:044][174]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap6A59210440596A70E343BC9267E5B34D.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap'
+[2018.12.07-11.03.42:059][174]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap_BuiltData" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset" SILENT=true
+[2018.12.07-11.03.42:074][174]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap_BuiltDataFDF1F7204CA522B379CC889533F22363.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset'
+[2018.12.07-11.06.29:661][781]Candidate modules for hot reload:
+[2018.12.07-11.06.29:661][781]  TeyonPong
+[2018.12.07-11.06.29:661][781]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,4398 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-11.06.29:665][781]Warning: Starting HotReload took  0.0s.
+[2018.12.07-11.06.40:311][407]CompilerResultsLog: New page: Compilation - 7 gru 2018, 13:06:40
+[2018.12.07-11.06.40:311][407]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-11.06.40:311][407]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.07-11.06.40:311][407]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-11.06.40:311][407]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-11.06.40:311][407]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.07-11.06.40:311][407]CompilerResultsLog:   [1/3] TeyonPongGameModeBase.cpp
+[2018.12.07-11.06.40:311][407]CompilerResultsLog:   [2/3] UE4Editor-TeyonPong-4398.lib
+[2018.12.07-11.06.40:311][407]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4398.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4398.exp
+[2018.12.07-11.06.40:311][407]CompilerResultsLog:   [3/3] UE4Editor-TeyonPong-4398.dll
+[2018.12.07-11.06.40:311][407]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4398.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4398.suppressed.exp
+[2018.12.07-11.06.40:311][407]CompilerResultsLog: Total build time: 10,13 seconds (Parallel executor: 3,69 seconds)
+[2018.12.07-11.06.40:311][407]LogMainFrame: MainFrame: Module compiling took 10.658 seconds
+[2018.12.07-11.06.40:363][407]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2018.12.07-11.06.40:365][407]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.07-11.06.40:443][407]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2658 classes and 624 folders.
+[2018.12.07-11.06.40:443][407]Display: HotReload took 10.8s.
+[2018.12.07-11.06.42:395][524]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.07-11.06.42:405][524]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.06.42:405][524]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.07-11.06.42:405][524]PIE: New page: PIE session: GameMap (7 gru 2018, 13:06:42)
+[2018.12.07-11.06.42:405][524]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
+[2018.12.07-11.06.42:408][524]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002319s)
+[2018.12.07-11.06.42:408][524]LogAIModule: Creating AISystem for world GameMap
+[2018.12.07-11.06.42:408][524]LogPlayLevel: PIE: World Init took: (0.000677s)
+[2018.12.07-11.06.42:408][524]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.003137s)
+[2018.12.07-11.06.42:431][524]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.07-11.06.42:439][524]LogInit: FAudioDevice initialized.
+[2018.12.07-11.06.42:466][524]LogLoad: Game class is 'TeyonPongGameModeBase'
+[2018.12.07-11.06.42:466][524]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.07-12.06.42
+[2018.12.07-11.06.42:467][524]LogWorld: Bringing up level for play took: 0.000568
+[2018.12.07-11.06.42:480][524]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap -0,075
+[2018.12.07-11.06.42:480][524]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.06.45:132][683]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.06.45:133][683]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.06.45:163][683]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.07-11.06.45:164][683]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.06.45:185][683]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.06.45:237][686]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2018.12.07-11.08.02:088][974]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.07-11.08.02:855][  9]Candidate modules for hot reload:
+[2018.12.07-11.08.02:855][  9]  TeyonPong
+[2018.12.07-11.08.02:855][  9]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,7477 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-11.08.02:860][  9]Warning: Starting HotReload took  0.0s.
+[2018.12.07-11.08.12:694][585]CompilerResultsLog: New page: Compilation - 7 gru 2018, 13:08:12
+[2018.12.07-11.08.12:694][585]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-11.08.12:694][585]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.07-11.08.12:694][585]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-11.08.12:694][585]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-11.08.12:694][585]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.07-11.08.12:694][585]CompilerResultsLog:   [1/3] Ball.cpp
+[2018.12.07-11.08.12:694][585]CompilerResultsLog:    E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Ball.cpp(29) : error C2065: "axisValue": niezadeklarowany identyfikator
+[2018.12.07-11.08.12:694][585]CompilerResultsLog:    E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Ball.cpp(29) : error C2440: "<function-style-cast>": nie mo?na konwertowa? z "initializer list" na "FVector"
+[2018.12.07-11.08.12:694][585]CompilerResultsLog:   E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\Ball.cpp(29): note: ?aden konstruktor nie m?g? przyj?? typu ?r?d?owego lub rozpoznanie przeci??enia konstruktora by?o niejednoznaczne
+[2018.12.07-11.08.12:694][585]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: E:\Praca\Teyon test\Pong\TeyonPong\Binaries\Win64\UE4Editor-TeyonPong-7477.dll
+[2018.12.07-11.08.12:694][585]CompilerResultsLog:        (see ../Programs/UnrealBuildTool/Log.txt for full exception trace)
+[2018.12.07-11.08.12:694][585]CompilerResultsLog: Total build time: 9,45 seconds (Parallel executor: 0,00 seconds)
+[2018.12.07-11.08.12:694][585]LogMainFrame: MainFrame: Module compiling took 9.850 seconds
+[2018.12.07-11.08.12:694][585]Warning: HotReload failed, recompile failed
+[2018.12.07-11.08.25:620][ 85]Candidate modules for hot reload:
+[2018.12.07-11.08.25:620][ 85]  TeyonPong
+[2018.12.07-11.08.25:620][ 85]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,4697 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-11.08.25:624][ 85]Warning: Starting HotReload took  0.0s.
+[2018.12.07-11.08.35:269][650]CompilerResultsLog: New page: Compilation - 7 gru 2018, 13:08:35
+[2018.12.07-11.08.35:269][650]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-11.08.35:269][650]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.07-11.08.35:269][650]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-11.08.35:269][650]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-11.08.35:269][650]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.07-11.08.35:269][650]CompilerResultsLog:   [1/3] Ball.cpp
+[2018.12.07-11.08.35:269][650]CompilerResultsLog:   [2/3] UE4Editor-TeyonPong-4697.lib
+[2018.12.07-11.08.35:269][650]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4697.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4697.exp
+[2018.12.07-11.08.35:269][650]CompilerResultsLog:   [3/3] UE4Editor-TeyonPong-4697.dll
+[2018.12.07-11.08.35:269][650]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4697.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4697.suppressed.exp
+[2018.12.07-11.08.35:269][650]CompilerResultsLog: Total build time: 9,31 seconds (Parallel executor: 2,53 seconds)
+[2018.12.07-11.08.35:270][650]LogMainFrame: MainFrame: Module compiling took 9.662 seconds
+[2018.12.07-11.08.35:331][650]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2018.12.07-11.08.35:334][650]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.07-11.08.35:428][650]LogContentBrowser: Native class hierarchy populated in 0.0105 seconds. Added 2658 classes and 624 folders.
+[2018.12.07-11.08.35:428][650]Display: HotReload took  9.8s.
+[2018.12.07-11.08.37:592][772]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.07-11.08.37:604][772]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.08.37:604][772]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.07-11.08.37:604][772]PIE: New page: PIE session: GameMap (7 gru 2018, 13:08:37)
+[2018.12.07-11.08.37:604][772]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
+[2018.12.07-11.08.37:607][772]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002280s)
+[2018.12.07-11.08.37:607][772]LogAIModule: Creating AISystem for world GameMap
+[2018.12.07-11.08.37:607][772]LogPlayLevel: PIE: World Init took: (0.000704s)
+[2018.12.07-11.08.37:607][772]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.003121s)
+[2018.12.07-11.08.37:636][772]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.07-11.08.37:644][772]LogInit: FAudioDevice initialized.
+[2018.12.07-11.08.37:677][772]LogLoad: Game class is 'TeyonPongGameModeBase'
+[2018.12.07-11.08.37:677][772]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.07-12.08.37
+[2018.12.07-11.08.37:677][772]LogWorld: Bringing up level for play took: 0.000460
+[2018.12.07-11.08.37:691][772]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap -0,866
+[2018.12.07-11.08.37:692][772]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.08.48:115][393]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.08.48:115][393]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.08.48:148][393]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.07-11.08.48:149][393]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.08.48:171][393]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.08.48:221][396]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2018.12.07-11.11.07:258][ 60]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.07-11.11.07:962][ 78]Candidate modules for hot reload:
+[2018.12.07-11.11.07:962][ 78]  TeyonPong
+[2018.12.07-11.11.07:962][ 78]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,6774 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-11.11.07:967][ 78]Warning: Starting HotReload took  0.0s.
+[2018.12.07-11.11.19:385][733]CompilerResultsLog: New page: Compilation - 7 gru 2018, 13:11:19
+[2018.12.07-11.11.19:385][733]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-11.11.19:385][733]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.07-11.11.19:386][733]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-11.11.19:386][733]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-11.11.19:386][733]CompilerResultsLog: Building 4 actions with 4 processes...
+[2018.12.07-11.11.19:386][733]CompilerResultsLog:   [1/4] Ball.cpp
+[2018.12.07-11.11.19:386][733]CompilerResultsLog:   [2/4] Paddle.cpp
+[2018.12.07-11.11.19:386][733]CompilerResultsLog:   [3/4] UE4Editor-TeyonPong-6774.lib
+[2018.12.07-11.11.19:386][733]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6774.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6774.exp
+[2018.12.07-11.11.19:386][733]CompilerResultsLog:   [4/4] UE4Editor-TeyonPong-6774.dll
+[2018.12.07-11.11.19:386][733]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6774.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-6774.suppressed.exp
+[2018.12.07-11.11.19:386][733]CompilerResultsLog: Total build time: 10,69 seconds (Parallel executor: 3,06 seconds)
+[2018.12.07-11.11.19:386][733]LogMainFrame: MainFrame: Module compiling took 11.433 seconds
+[2018.12.07-11.11.19:438][733]LogHotReload: Re-instancing Ball after hot-reload.
+[2018.12.07-11.11.19:514][733]LogHotReload: Re-instancing Paddle after hot-reload.
+[2018.12.07-11.11.19:583][733]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2018.12.07-11.11.19:585][733]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.07-11.11.19:659][733]LogContentBrowser: Native class hierarchy populated in 0.0101 seconds. Added 2658 classes and 624 folders.
+[2018.12.07-11.11.19:659][733]Display: HotReload took 11.7s.
+[2018.12.07-11.11.21:999][868]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.07-11.11.22:010][868]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.11.22:010][868]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.07-11.11.22:010][868]PIE: New page: PIE session: GameMap (7 gru 2018, 13:11:22)
+[2018.12.07-11.11.22:010][868]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
+[2018.12.07-11.11.22:012][868]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001605s)
+[2018.12.07-11.11.22:013][868]LogAIModule: Creating AISystem for world GameMap
+[2018.12.07-11.11.22:013][868]LogPlayLevel: PIE: World Init took: (0.000911s)
+[2018.12.07-11.11.22:013][868]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.002658s)
+[2018.12.07-11.11.22:043][868]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.07-11.11.22:052][868]LogInit: FAudioDevice initialized.
+[2018.12.07-11.11.22:083][868]LogLoad: Game class is 'TeyonPongGameModeBase'
+[2018.12.07-11.11.22:084][868]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.07-12.11.22
+[2018.12.07-11.11.22:085][868]LogWorld: Bringing up level for play took: 0.000730
+[2018.12.07-11.11.22:190][868]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap -0,372
+[2018.12.07-11.11.22:191][868]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.11.24:936][ 32]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.11.24:937][ 32]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.11.24:965][ 32]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.07-11.11.24:966][ 32]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.11.24:988][ 32]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.11.25:039][ 35]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2018.12.07-11.11.41:073][140]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.07-11.11.42:054][182]Candidate modules for hot reload:
+[2018.12.07-11.11.42:054][182]  TeyonPong
+[2018.12.07-11.11.42:054][182]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,3008 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-11.11.42:058][182]Warning: Starting HotReload took  0.0s.
+[2018.12.07-11.11.51:384][575]CompilerResultsLog: New page: Compilation - 7 gru 2018, 13:11:51
+[2018.12.07-11.11.51:384][575]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-11.11.51:384][575]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.07-11.11.51:384][575]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-11.11.51:384][575]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-11.11.51:384][575]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.07-11.11.51:384][575]CompilerResultsLog:   [1/3] Paddle.cpp
+[2018.12.07-11.11.51:384][575]CompilerResultsLog:   [2/3] UE4Editor-TeyonPong-3008.lib
+[2018.12.07-11.11.51:384][575]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-3008.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-3008.exp
+[2018.12.07-11.11.51:384][575]CompilerResultsLog:   [3/3] UE4Editor-TeyonPong-3008.dll
+[2018.12.07-11.11.51:384][575]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-3008.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-3008.suppressed.exp
+[2018.12.07-11.11.51:384][575]CompilerResultsLog: Total build time: 8,78 seconds (Parallel executor: 2,49 seconds)
+[2018.12.07-11.11.51:384][575]LogMainFrame: MainFrame: Module compiling took 9.332 seconds
+[2018.12.07-11.11.51:431][575]LogHotReload: Re-instancing Paddle after hot-reload.
+[2018.12.07-11.11.51:507][575]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2018.12.07-11.11.51:510][575]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.07-11.11.51:588][575]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2658 classes and 624 folders.
+[2018.12.07-11.11.51:588][575]Display: HotReload took  9.5s.
+[2018.12.07-11.11.54:172][623]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.07-11.11.54:184][623]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.11.54:184][623]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.07-11.11.54:184][623]PIE: New page: PIE session: GameMap (7 gru 2018, 13:11:54)
+[2018.12.07-11.11.54:184][623]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
+[2018.12.07-11.11.54:186][623]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001957s)
+[2018.12.07-11.11.54:187][623]LogAIModule: Creating AISystem for world GameMap
+[2018.12.07-11.11.54:187][623]LogPlayLevel: PIE: World Init took: (0.000816s)
+[2018.12.07-11.11.54:187][623]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.002910s)
+[2018.12.07-11.11.54:215][623]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.07-11.11.54:223][623]LogInit: FAudioDevice initialized.
+[2018.12.07-11.11.54:251][623]LogLoad: Game class is 'TeyonPongGameModeBase'
+[2018.12.07-11.11.54:252][623]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.07-12.11.54
+[2018.12.07-11.11.54:252][623]LogWorld: Bringing up level for play took: 0.000698
+[2018.12.07-11.11.54:267][623]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap -0,297
+[2018.12.07-11.11.54:267][623]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.12.01:970][ 85]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.12.01:971][ 85]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.12.02:000][ 85]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.07-11.12.02:001][ 85]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.12.02:023][ 85]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.12.02:076][ 88]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2018.12.07-11.12.24:678][351]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.07-11.12.25:664][387]Candidate modules for hot reload:
+[2018.12.07-11.12.25:664][387]  TeyonPong
+[2018.12.07-11.12.25:665][387]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,113 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-11.12.25:670][387]Warning: Starting HotReload took  0.0s.
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog: New page: Compilation - 7 gru 2018, 13:12:37
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog:   [1/3] Paddle.cpp
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog:   [2/3] UE4Editor-TeyonPong-113.lib
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-113.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-113.exp
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog:   [3/3] UE4Editor-TeyonPong-113.dll
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-113.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-113.suppressed.exp
+[2018.12.07-11.12.37:292][ 64]CompilerResultsLog: Total build time: 11,30 seconds (Parallel executor: 3,53 seconds)
+[2018.12.07-11.12.37:292][ 64]LogMainFrame: MainFrame: Module compiling took 11.629 seconds
+[2018.12.07-11.12.37:341][ 64]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2018.12.07-11.12.37:343][ 64]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.07-11.12.37:420][ 64]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2658 classes and 624 folders.
+[2018.12.07-11.12.37:420][ 64]Display: HotReload took 11.8s.
+[2018.12.07-11.12.38:821][148]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.07-11.12.38:831][148]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.12.38:832][148]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.07-11.12.38:832][148]PIE: New page: PIE session: GameMap (7 gru 2018, 13:12:38)
+[2018.12.07-11.12.38:832][148]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
+[2018.12.07-11.12.38:833][148]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001387s)
+[2018.12.07-11.12.38:834][148]LogAIModule: Creating AISystem for world GameMap
+[2018.12.07-11.12.38:834][148]LogPlayLevel: PIE: World Init took: (0.000584s)
+[2018.12.07-11.12.38:834][148]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.002080s)
+[2018.12.07-11.12.38:854][148]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.07-11.12.38:862][148]LogInit: FAudioDevice initialized.
+[2018.12.07-11.12.38:890][148]LogLoad: Game class is 'TeyonPongGameModeBase'
+[2018.12.07-11.12.38:890][148]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.07-12.12.38
+[2018.12.07-11.12.38:891][148]LogWorld: Bringing up level for play took: 0.000442
+[2018.12.07-11.12.38:904][148]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap 0,339
+[2018.12.07-11.12.38:904][148]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.12.47:576][668]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.07-11.13.30:741][249]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.13.30:742][249]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.13.30:773][249]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.07-11.13.30:774][249]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.13.30:796][249]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.13.30:841][252]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2018.12.07-11.15.40:257][845]Candidate modules for hot reload:
+[2018.12.07-11.15.40:257][845]  TeyonPong
+[2018.12.07-11.15.40:257][845]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,4323 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-11.15.40:261][845]Warning: Starting HotReload took  0.0s.
+[2018.12.07-11.15.50:462][441]CompilerResultsLog: New page: Compilation - 7 gru 2018, 13:15:50
+[2018.12.07-11.15.50:462][441]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-11.15.50:462][441]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.07-11.15.50:462][441]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-11.15.50:462][441]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-11.15.50:462][441]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.07-11.15.50:462][441]CompilerResultsLog:   [1/3] Paddle.cpp
+[2018.12.07-11.15.50:462][441]CompilerResultsLog:   [2/3] UE4Editor-TeyonPong-4323.lib
+[2018.12.07-11.15.50:462][441]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4323.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4323.exp
+[2018.12.07-11.15.50:462][441]CompilerResultsLog:   [3/3] UE4Editor-TeyonPong-4323.dll
+[2018.12.07-11.15.50:462][441]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4323.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-4323.suppressed.exp
+[2018.12.07-11.15.50:462][441]CompilerResultsLog: Total build time: 9,69 seconds (Parallel executor: 3,09 seconds)
+[2018.12.07-11.15.50:462][441]LogMainFrame: MainFrame: Module compiling took 10.207 seconds
+[2018.12.07-11.15.50:523][441]LogHotReload: Re-instancing Paddle after hot-reload.
+[2018.12.07-11.15.50:599][441]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 6 classes and 2 folders.
+[2018.12.07-11.15.50:601][441]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.07-11.15.50:683][441]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 2658 classes and 624 folders.
+[2018.12.07-11.15.50:683][441]Display: HotReload took 10.4s.
+[2018.12.07-11.15.52:301][534]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.07-11.15.52:311][534]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.15.52:311][534]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.07-11.15.52:311][534]PIE: New page: PIE session: GameMap (7 gru 2018, 13:15:52)
+[2018.12.07-11.15.52:311][534]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
+[2018.12.07-11.15.52:312][534]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001496s)
+[2018.12.07-11.15.52:313][534]LogAIModule: Creating AISystem for world GameMap
+[2018.12.07-11.15.52:313][534]LogPlayLevel: PIE: World Init took: (0.000690s)
+[2018.12.07-11.15.52:313][534]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.002301s)
+[2018.12.07-11.15.52:335][534]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.07-11.15.52:344][534]LogInit: FAudioDevice initialized.
+[2018.12.07-11.15.52:373][534]LogLoad: Game class is 'TeyonPongGameModeBase'
+[2018.12.07-11.15.52:373][534]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.07-12.15.52
+[2018.12.07-11.15.52:374][534]LogWorld: Bringing up level for play took: 0.000455
+[2018.12.07-11.15.52:387][534]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap -0,183
+[2018.12.07-11.15.52:387][534]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.15.55:601][725]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.15.55:601][725]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.15.55:634][725]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.07-11.15.55:635][725]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-11.15.55:656][725]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-11.15.55:709][728]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2018.12.07-11.16.27:051][ 89]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.07-11.16.27:174][ 95]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.12.07-11.16.27:297][ 95]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMapD58229D24B73078088A8DD89E0032965.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap.umap'
+[2018.12.07-11.16.27:312][ 95]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/GameMap_BuiltData" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset" SILENT=true
+[2018.12.07-11.16.27:368][ 95]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/GameMap_BuiltData1A498022441CBCCC4695BEB216EC2DE6.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/GameMap_BuiltData.uasset'
+[2018.12.07-11.16.30:092][255]LogSlate: Window 'TeyonPong - Unreal Editor' being destroyed
+[2018.12.07-11.16.30:246][256]Cmd: QUIT_EDITOR
+[2018.12.07-11.16.30:339][256]LogExit: Preparing to exit.
+[2018.12.07-11.16.31:394][256]LogExit: Editor shut down
+[2018.12.07-11.16.31:394][256]LogExit: Transaction tracking system shut down
+[2018.12.07-11.16.31:604][256]LogExit: Object subsystem successfully closed.
+[2018.12.07-11.16.31:617][256]LogShaderCompilers: Display: Shaders left to compile 0
+[2018.12.07-11.16.31:621][256]LogD3D11RHI: Shutdown
+[2018.12.07-11.16.31:621][256]LogD3D11RHI: CleanupD3DDevice
+[2018.12.07-11.16.31:623][256]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.12.07-11.16.31:639][256]LogModuleManager: Shutting down and abandoning module TeyonPong (640)
+[2018.12.07-11.16.31:639][256]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (628)
+[2018.12.07-11.16.31:639][256]LogModuleManager: Shutting down and abandoning module Voice (626)
+[2018.12.07-11.16.31:639][256]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (624)
+[2018.12.07-11.16.31:639][256]LogModuleManager: Shutting down and abandoning module SceneOutliner (622)
+[2018.12.07-11.16.31:639][256]LogModuleManager: Shutting down and abandoning module AddContentDialog (620)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module WidgetCarousel (619)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module EditorWidgets (616)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module CollectionManager (614)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module StatsViewer (612)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module FoliageEdit (610)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module LandscapeEditor (608)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module MeshPaintMode (606)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (604)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module ActorPickerMode (602)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module GeometryMode (600)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module TextureAlignMode (598)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module BspMode (596)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (594)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (592)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module AutomationWorker (590)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (588)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (586)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (584)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module PlacementMode (583)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module MaterialEditor (582)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (578)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (576)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (574)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (572)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module WebMMedia (570)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (568)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (566)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module SequenceRecorder (565)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (562)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (560)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (558)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (556)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (554)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (552)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (550)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (548)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (546)
+[2018.12.07-11.16.31:640][256]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (544)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module CharacterAI (542)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module SmartSnapping (540)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module SessionServices (538)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module ViewportSnapping (536)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module ViewportInteraction (534)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module ClothPainter (532)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (531)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module LogVisualizer (528)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module IntroTutorials (526)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (525)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (522)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (520)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (518)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (516)
+[2018.12.07-11.16.31:641][256]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (515)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (512)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (510)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (508)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (506)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (504)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module InputBindingEditor (502)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module MergeActors (500)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (498)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module LocalizationService (497)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module HardwareTargeting (494)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (492)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module UndoHistory (490)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module XmlParser (488)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module Blutility (486)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (484)
+[2018.12.07-11.16.31:760][256]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (483)
+[2018.12.07-11.16.31:761][256]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (480)
+[2018.12.07-11.16.31:761][256]LogModuleManager: Shutting down and abandoning module SettingsEditor (478)
+[2018.12.07-11.16.31:761][256]LogModuleManager: Shutting down and abandoning module ProjectLauncher (476)
+[2018.12.07-11.16.31:761][256]LogModuleManager: Shutting down and abandoning module SessionFrontend (474)
+[2018.12.07-11.16.31:761][256]LogModuleManager: Shutting down and abandoning module ProfilerClient (472)
+[2018.12.07-11.16.31:761][256]LogModuleManager: Shutting down and abandoning module DeviceManager (470)
+[2018.12.07-11.16.31:761][256]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (469)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module AutomationController (466)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module AutomationWindow (464)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module Layers (462)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (460)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module DetailCustomizations (458)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module PackagesDialog (456)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module Persona (454)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (453)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module AnimGraph (451)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module Kismet (448)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module GraphEditor (446)
+[2018.12.07-11.16.31:811][256]LogModuleManager: Shutting down and abandoning module ClassViewer (444)
+[2018.12.07-11.16.31:812][256]LogModuleManager: Shutting down and abandoning module Toolbox (442)
+[2018.12.07-11.16.31:812][256]LogModuleManager: Shutting down and abandoning module DesktopPlatform (441)
+[2018.12.07-11.16.31:812][256]LogModuleManager: Shutting down and abandoning module ModuleUI (438)
+[2018.12.07-11.16.31:812][256]LogModuleManager: Shutting down and abandoning module MovieSceneTools (436)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module OutputLog (434)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module GammaUI (432)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module Documentation (430)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (428)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module MovieScene (426)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (424)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module LauncherPlatform (422)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module AnalyticsET (420)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module PortalServices (418)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module PortalRpc (416)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module MessagingRpc (414)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module AIModule (412)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module GameplayDebugger (411)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module AITestSuite (409)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module NavigationSystem (407)
+[2018.12.07-11.16.31:813][256]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (404)
+[2018.12.07-11.16.31:815][256]LogModuleManager: Shutting down and abandoning module ProfilerService (402)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module TaskGraph (400)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module SteamVRController (398)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (396)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (394)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module OculusInput (392)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (390)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module EditableMesh (388)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (386)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module CableComponent (384)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module AudioCapture (382)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (380)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module AndroidPermission (378)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (376)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (374)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module MediaCompositing (372)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module LinearTimecode (370)
+[2018.12.07-11.16.32:057][256]LogModuleManager: Shutting down and abandoning module ImgMedia (368)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module HTML5Networking (366)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (364)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (362)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module BackChannel (360)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module AppleVision (358)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (356)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module AppleImageUtils (354)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module AlembicImporter (352)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module AlembicLibrary (351)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module GeometryCache (350)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (349)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module VariantManagerContent (344)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (342)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (340)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module PluginBrowser (338)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (336)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module PolygonModeling (334)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module MeshEditor (332)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (330)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module CryptoKeys (328)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (326)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (324)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module UObjectPlugin (322)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (320)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (318)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module GitSourceControl (316)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module SourceControl (315)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (312)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (310)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (308)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (306)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (304)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (302)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module Paper2DEditor (300)
+[2018.12.07-11.16.32:060][256]LogModuleManager: Shutting down and abandoning module MeshPaint (299)
+[2018.12.07-11.16.32:061][256]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (294)
+[2018.12.07-11.16.32:061][256]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (292)
+[2018.12.07-11.16.32:061][256]LogModuleManager: Shutting down and abandoning module PhysXVehicles (290)
+[2018.12.07-11.16.32:061][256]LogModuleManager: Shutting down and abandoning module OculusEditor (288)
+[2018.12.07-11.16.32:061][256]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (286)
+[2018.12.07-11.16.32:061][256]LogModuleManager: Shutting down and abandoning module ActorSequence (284)
+[2018.12.07-11.16.32:061][256]LogModuleManager: Shutting down and abandoning module UdpMessaging (282)
+[2018.12.07-11.16.32:161][256]LogModuleManager: Shutting down and abandoning module TcpMessaging (280)
+[2018.12.07-11.16.32:359][256]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (278)
+[2018.12.07-11.16.32:359][256]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (276)
+[2018.12.07-11.16.32:359][256]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (274)
+[2018.12.07-11.16.32:359][256]LogModuleManager: Shutting down and abandoning module FacialAnimation (272)
+[2018.12.07-11.16.32:359][256]LogModuleManager: Shutting down and abandoning module DataValidation (270)
+[2018.12.07-11.16.32:359][256]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (268)
+[2018.12.07-11.16.32:360][256]LogModuleManager: Shutting down and abandoning module LevelEditor (267)
+[2018.12.07-11.16.32:361][256]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (266)
+[2018.12.07-11.16.32:361][256]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (264)
+[2018.12.07-11.16.32:361][256]LogModuleManager: Shutting down and abandoning module MainFrame (262)
+[2018.12.07-11.16.32:361][256]LogModuleManager: Shutting down and abandoning module HotReload (261)
+[2018.12.07-11.16.32:362][256]LogModuleManager: Shutting down and abandoning module ContentBrowser (257)
+[2018.12.07-11.16.32:363][256]LogModuleManager: Shutting down and abandoning module TreeMap (255)
+[2018.12.07-11.16.32:363][256]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (252)
+[2018.12.07-11.16.32:363][256]LogModuleManager: Shutting down and abandoning module AISupportModule (250)
+[2018.12.07-11.16.32:363][256]LogModuleManager: Shutting down and abandoning module Paper2D (248)
+[2018.12.07-11.16.32:363][256]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (246)
+[2018.12.07-11.16.32:363][256]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (244)
+[2018.12.07-11.16.32:363][256]LogModuleManager: Shutting down and abandoning module WmfMedia (242)
+[2018.12.07-11.16.32:363][256]LogModuleManager: Shutting down and abandoning module Media (241)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module PacketHandler (238)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (236)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (234)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module MediaAssets (232)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module Overlay (230)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module OverlayEditor (229)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module VREditor (226)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module StringTableEditor (224)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (222)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (220)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module FunctionalTesting (218)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (216)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (215)
+[2018.12.07-11.16.32:368][256]LogModuleManager: Shutting down and abandoning module UMG (212)
+[2018.12.07-11.16.32:369][256]LogModuleManager: Shutting down and abandoning module UMGEditor (211)
+[2018.12.07-11.16.32:369][256]LogModuleManager: Shutting down and abandoning module Sequencer (210)
+[2018.12.07-11.16.32:369][256]LogModuleManager: Shutting down and abandoning module MessageLog (207)
+[2018.12.07-11.16.32:369][256]LogModuleManager: Shutting down and abandoning module SlateReflector (202)
+[2018.12.07-11.16.32:369][256]LogModuleManager: Shutting down and abandoning module Slate (200)
+[2018.12.07-11.16.32:369][256]LogModuleManager: Shutting down and abandoning module EditorStyle (198)
+[2018.12.07-11.16.32:370][256]LogModuleManager: Shutting down and abandoning module MRMesh (196)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (194)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (192)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module XAudio2 (190)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module Networking (188)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module Core (186)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module LevelSequence (184)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module KismetCompiler (182)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module MeshUtilities (180)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (179)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (178)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (177)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (175)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (173)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (171)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module MaterialBaking (167)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (163)
+[2018.12.07-11.16.32:371][256]LogModuleManager: Shutting down and abandoning module DerivedDataCache (160)
+[2018.12.07-11.16.32:456][256]LogDerivedDataCache: Shutdown
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module XGEController (158)
+[2018.12.07-11.16.32:456][256]LogXGEController: Cleaning working directory: C:/Users/Nord/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module TargetPlatform (156)
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (155)
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (153)
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (151)
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (149)
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (147)
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (145)
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (143)
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (141)
+[2018.12.07-11.16.32:456][256]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (139)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (137)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module ImageWrapper (136)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (133)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (131)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (129)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (127)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (125)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (121)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (119)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (117)
+[2018.12.07-11.16.32:457][256]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (115)
+[2018.12.07-11.16.32:458][256]LogModuleManager: Shutting down and abandoning module Messaging (113)
+[2018.12.07-11.16.32:458][256]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (111)
+[2018.12.07-11.16.32:459][256]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (109)
+[2018.12.07-11.16.32:459][256]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (107)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (105)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (103)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (101)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (99)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (97)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (95)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (93)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (91)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (89)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module InputCore (86)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module Settings (84)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module PhysXCooking (82)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module SteamVR (80)
+[2018.12.07-11.16.32:464][256]LogHMD: Freeing OpenVRDLLHandle.
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module OculusHMD (78)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (76)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (74)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (72)
+[2018.12.07-11.16.32:464][256]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (68)
+[2018.12.07-11.16.32:465][256]LogModuleManager: Shutting down and abandoning module XMPP (63)
+[2018.12.07-11.16.32:465][256]LogModuleManager: Shutting down and abandoning module WebSockets (62)
+[2018.12.07-11.16.32:492][256]LogModuleManager: Shutting down and abandoning module HTTP (59)
+[2018.12.07-11.16.32:492][256]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.12.07-11.16.32:492][256]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B6E5CFA7E-4AB7-242C-660F-3EBD8972F56F%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.21.1-4613538%2B%2B%2BUE4%2BRelease-4.21&UserID=db18026b46ac53e8eeebd3a7293257fc%7C0e501aece8f444dc820be096c4415ee0%7Cbc539f50-f83d-4566-acca-4d6b531eb6f8&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.12.07-11.16.32:502][256]LogModuleManager: Shutting down and abandoning module SSL (58)
+[2018.12.07-11.16.32:503][256]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (54)
+[2018.12.07-11.16.32:503][256]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (52)
+[2018.12.07-11.16.32:503][256]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (50)
+[2018.12.07-11.16.32:503][256]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (48)
+[2018.12.07-11.16.32:503][256]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (46)
+[2018.12.07-11.16.32:503][256]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (44)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module MagicLeapController (42)
+[2018.12.07-11.16.32:504][256]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2018.12.07-11.16.32:504][256]LogSlate: Slate User Destroyed.  User Index 1, Is Virtual User: 0
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module MagicLeap (40)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module DatasmithContent (38)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.12.07-11.16.32:504][256]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.12.07-11.16.32:505][256]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.12.07-11.16.32:507][256]LogExit: Exiting.
+[2018.12.07-11.16.32:516][256]Log file closed, 12/07/18 12:16:32

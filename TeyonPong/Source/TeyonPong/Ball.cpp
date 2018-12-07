@@ -20,13 +20,16 @@ ABall::ABall()
 	mesh->SetRelativeScale3D(FVector(0.1f, 0.1f, 0.1f));
 	mesh->SetSimulatePhysics(true);
 	mesh->SetEnableGravity(false);
+	mesh->BodyInstance.bLockXRotation = true;
+	mesh->BodyInstance.bLockYRotation = true;
+	mesh->BodyInstance.bLockZRotation = true;
 }
 
 // Called when the game starts or when spawned
 void ABall::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	mesh->SetPhysicsLinearVelocity(FVector(200.0f, 0.0f, 0.0f));
 }
 
 // Called every frame

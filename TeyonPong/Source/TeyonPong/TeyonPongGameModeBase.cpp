@@ -3,6 +3,7 @@
 #include "TeyonPongGameModeBase.h"
 #include "Paddle.h"
 #include "PaddleController.h"
+#include "Ball.h"
 #include "PongCamera.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -26,6 +27,7 @@ void ATeyonPongGameModeBase::StartPlay()
 		paddle1->SetStartingPosition(FVector(480.0f, 0.0f, 0.0f));
 		paddle1->GetRootComponent()->SetRelativeLocation(FVector(480.0f, 0.0f, 0.0f));
 		ChoosePlayerStart(world->GetFirstPlayerController());		
+		world->SpawnActor<ABall>(ABall::StaticClass());
 	}
 	Super::StartPlay();
 }
