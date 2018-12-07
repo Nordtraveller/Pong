@@ -22,6 +22,8 @@ APaddle::APaddle()
 		mesh->SetStaticMesh(cubeMesh.Object);
 	}
 	mesh->SetRelativeScale3D(FVector(0.1f, 0.1f, 0.5f));
+	mesh->SetSimulatePhysics(true);
+	mesh->SetEnableGravity(false);
 }
 
 // Called when the game starts or when spawned
@@ -45,7 +47,8 @@ void APaddle::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void APaddle::Move(float axisValue)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, *FString("Input " + FString::FromInt((int)axisValue)));
+	//GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, *FString("Input " + FString::FromInt((int)axisValue)));
+	mesh->SetPhysicsLinearVelocity(FVector(0.0f, 0.0f, axisValue * 200.0f));
 }
 
 void APaddle::SetStartingPosition(FVector vec)

@@ -24,5 +24,6 @@ void APaddleController::SetupInputComponent()
 
 void APaddleController::Move(float axisValue)
 {
-	((APaddle*)GetPawn())->Move(axisValue);
+	float value = FMath::Clamp(axisValue, -1.0f, 1.0f);
+	((APaddle*)GetPawn())->Move(value);
 }
