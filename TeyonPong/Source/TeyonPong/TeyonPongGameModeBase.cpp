@@ -4,7 +4,7 @@
 #include "Paddle.h"
 #include "PaddleController.h"
 #include "PongCamera.h"
-#include "Engine/Classes/Kismet/GameplayStatics.h"
+#include "Kismet/GameplayStatics.h"
 
 ATeyonPongGameModeBase::ATeyonPongGameModeBase(const FObjectInitializer& ObjectInitializer)
 {

@@ -2,11 +2,10 @@
 
 #include "Paddle.h"
 #include "PaddleController.h"
-#include "Engine/Classes/Components/StaticMeshComponent.h"
-#include "Engine/Classes/Components/InputComponent.h"
-#include "CoreUObject/Public/UObject/ConstructorHelpers.h"
-#include "Engine/Classes/Kismet/GameplayStatics.h"
-#include "Engine.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/InputComponent.h"
+#include "UObject/ConstructorHelpers.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 APaddle::APaddle()
@@ -47,8 +46,21 @@ void APaddle::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void APaddle::Move(float axisValue)
 {
-	//GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, *FString("Input " + FString::FromInt((int)axisValue)));
-	mesh->SetPhysicsLinearVelocity(FVector(0.0f, 0.0f, axisValue * 200.0f));
+	FVector location = mesh->GetComponentLocation();
+	if (location.Z > 220.0f)
+	{
+		mesh->SetRelativeLocation(FVector(location.X, 0.0f, 219.0f));
+		mesh->SetPhysicsLinearVelocity(FVector(0.0f, 0.0f, 0.0f));
+	}
+	else if (location.Z < -220.0f)
+	{
+		mesh->SetRelativeLocation(FVector(location.X, 0.0f, -219.0f));
+		mesh->SetPhysicsLinearVelocity(FVector(0.0f, 0.0f, 0.0f));
+	}
+	else
+	{
+		mesh->SetPhysicsLinearVelocity(FVector(0.0f, 0.0f, axisValue * 200.0f));
+	}
 }
 
 void APaddle::SetStartingPosition(FVector vec)
