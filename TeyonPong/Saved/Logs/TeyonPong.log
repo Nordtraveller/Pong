@@ -743,3 +743,49 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2018.12.07-09.23.42:640][946]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2018.12.07-09.23.42:693][949]LogPlayLevel: Display: Destroying online subsystem :Context_7
 [2018.12.07-09.23.43:554][  0]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.07-09.24.20:546][507]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.07-09.24.22:581][616]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-09.24.22:581][616]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.07-09.24.22:582][616]PIE: New page: PIE session: GameMap (7 gru 2018, 11:24:22)
+[2018.12.07-09.24.22:582][616]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_GameMap
+[2018.12.07-09.24.22:584][616]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002212s)
+[2018.12.07-09.24.22:585][616]LogAIModule: Creating AISystem for world GameMap
+[2018.12.07-09.24.22:585][616]LogPlayLevel: PIE: World Init took: (0.001173s)
+[2018.12.07-09.24.22:585][616]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/GameMap.GameMap to /Game/Maps/UEDPIE_0_GameMap.GameMap (0.003542s)
+[2018.12.07-09.24.22:609][616]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.07-09.24.22:617][616]LogInit: FAudioDevice initialized.
+[2018.12.07-09.24.22:617][616]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.12.07-09.24.22:648][616]LogLoad: Game class is 'TeyonPongGameModeBase'
+[2018.12.07-09.24.22:648][616]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.07-10.24.22
+[2018.12.07-09.24.22:648][616]LogWorld: Bringing up level for play took: 0.000447
+[2018.12.07-09.24.22:661][616]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_GameMap 0,274
+[2018.12.07-09.24.22:661][616]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-09.24.23:509][667]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-09.24.23:509][667]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-09.24.23:539][667]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.07-09.24.23:540][667]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/GameMap.GameMap:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap' with GeneratedClass '/Game/Maps/GameMap.GameMap_C' with ClassGeneratedBy '/Game/Maps/GameMap.GameMap:PersistentLevel.GameMap'
+[2018.12.07-09.24.23:561][667]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.07-09.24.23:621][671]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2018.12.07-09.26.03:591][ 65]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.07-09.26.03:682][ 70]Candidate modules for hot reload:
+[2018.12.07-09.26.03:682][ 70]  TeyonPong
+[2018.12.07-09.26.03:682][ 70]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,3467 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.07-09.26.03:687][ 70]Warning: Starting HotReload took  0.0s.
+[2018.12.07-09.26.15:174][731]CompilerResultsLog: New page: Compilation - 7 gru 2018, 11:26:15
+[2018.12.07-09.26.15:174][731]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.07-09.26.15:174][731]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.07-09.26.15:174][731]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.07-09.26.15:174][731]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.07-09.26.15:174][731]CompilerResultsLog: Building 4 actions with 4 processes...
+[2018.12.07-09.26.15:174][731]CompilerResultsLog:   [1/4] Paddle.cpp
+[2018.12.07-09.26.15:174][731]CompilerResultsLog:   [2/4] TeyonPongGameModeBase.cpp
+[2018.12.07-09.26.15:174][731]CompilerResultsLog:   [3/4] UE4Editor-TeyonPong-3467.lib
+[2018.12.07-09.26.15:174][731]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-3467.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-3467.exp
+[2018.12.07-09.26.15:174][731]CompilerResultsLog:   [4/4] UE4Editor-TeyonPong-3467.dll
+[2018.12.07-09.26.15:174][731]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-3467.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-3467.suppressed.exp
+[2018.12.07-09.26.15:174][731]CompilerResultsLog: Total build time: 11,12 seconds (Parallel executor: 4,13 seconds)
+[2018.12.07-09.26.15:174][731]LogMainFrame: MainFrame: Module compiling took 11.494 seconds
+[2018.12.07-09.26.15:222][731]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 5 classes and 2 folders.
+[2018.12.07-09.26.15:224][731]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2018.12.07-09.26.15:298][731]LogContentBrowser: Native class hierarchy populated in 0.0095 seconds. Added 2657 classes and 624 folders.
+[2018.12.07-09.26.15:298][731]Display: HotReload took 11.6s.
