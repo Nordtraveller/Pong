@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeTeyonPong_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/TeyonPong",
 				PKG_CompiledIn | 0x00000000,
-				0x9A408754,
-				0x150BCFC5,
+				0x043C7D48,
+				0xFA56C65D,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

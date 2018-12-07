@@ -27,4 +27,5 @@ public:
 	void Move(float axisValue);
 
 	void SetStartingPosition(FVector vec);
+	UStaticMeshComponent* GetMesh();
 };

@@ -11,18 +11,20 @@ class TEYONPONG_API ABall : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
-	// Sets default values for this actor's properties
-	ABall();
-
-	UStaticMeshComponent* mesh;
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 public:	
-	// Called every frame
+	ABall();
+
+	UStaticMeshComponent* mesh;
+
+	float bounceSpeedBoostMultiplier = 1.05f;
+
 	virtual void Tick(float DeltaTime) override;
+
+	UFUNCTION()
+		void OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 };

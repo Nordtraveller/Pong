@@ -3,6 +3,8 @@
 #include "Ball.h"
 #include "Components/StaticMeshComponent.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Engine.h"
+#include "Paddle.h"
 
 // Sets default values
 ABall::ABall()
@@ -23,6 +25,8 @@ ABall::ABall()
 	mesh->BodyInstance.bLockXRotation = true;
 	mesh->BodyInstance.bLockYRotation = true;
 	mesh->BodyInstance.bLockZRotation = true;
+
+	mesh->OnComponentBeginOverlap.AddDynamic(this, &ABall::OnOverlapBegin);
 }
 
 // Called when the game starts or when spawned
@@ -36,6 +40,26 @@ void ABall::BeginPlay()
 void ABall::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+}
+
+void ABall::OnOverlapBegin(UPrimitiveComponent * OverlappedComp, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
+{
+	APaddle* paddle = Cast<APaddle>(OtherActor);
+	if (paddle)
+	{
+		FVector velocity = mesh->GetPhysicsLinearVelocity();
+		velocity.X = -velocity.X * bounceSpeedBoostMultiplier;
+		velocity.Z = velocity.Z + paddle->GetMesh()->GetPhysicsLinearVelocity().Z;
+		//GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString(velocity.ToString()));
+		mesh->SetPhysicsLinearVelocity(velocity);
+	}
+	else
+	{
+		FVector velocity = mesh->GetPhysicsLinearVelocity();
+		velocity.Z = -velocity.Z * bounceSpeedBoostMultiplier;
+		mesh->SetPhysicsLinearVelocity(velocity);
+	}
 
 }
 

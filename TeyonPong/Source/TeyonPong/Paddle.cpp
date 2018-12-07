@@ -72,3 +72,8 @@ void APaddle::SetStartingPosition(FVector vec)
 	startingPosition = vec;
 }
 
+UStaticMeshComponent * APaddle::GetMesh()
+{
+	return mesh;
+}
+
