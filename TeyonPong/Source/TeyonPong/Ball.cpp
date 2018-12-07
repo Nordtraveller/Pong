@@ -3,14 +3,16 @@
 #include "Ball.h"
 #include "Components/StaticMeshComponent.h"
 #include "UObject/ConstructorHelpers.h"
-#include "Engine.h"
 #include "Paddle.h"
+#include "Goal.h"
+#include "TeyonPongGameModeBase.h"
 
 // Sets default values
 ABall::ABall()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	SpawnCollisionHandlingMethod = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 	mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Cube Mesh"));
 	RootComponent = mesh;
 
@@ -33,7 +35,6 @@ ABall::ABall()
 void ABall::BeginPlay()
 {
 	Super::BeginPlay();
-	mesh->SetPhysicsLinearVelocity(FVector(200.0f, 0.0f, 0.0f));
 }
 
 // Called every frame
@@ -41,6 +42,11 @@ void ABall::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ABall::StartBall(float direction)
+{
+	mesh->SetPhysicsLinearVelocity(FVector(direction * 200.0f, 0.0f, 0.0f));
 }
 
 void ABall::OnOverlapBegin(UPrimitiveComponent * OverlappedComp, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
@@ -51,8 +57,11 @@ void ABall::OnOverlapBegin(UPrimitiveComponent * OverlappedComp, AActor * OtherA
 		FVector velocity = mesh->GetPhysicsLinearVelocity();
 		velocity.X = -velocity.X * bounceSpeedBoostMultiplier;
 		velocity.Z = velocity.Z + paddle->GetMesh()->GetPhysicsLinearVelocity().Z;
-		//GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString(velocity.ToString()));
 		mesh->SetPhysicsLinearVelocity(velocity);
+	}
+	else if (AGoal* goal = Cast<AGoal>(OtherActor))
+	{
+		Cast<ATeyonPongGameModeBase>(GetWorld()->GetAuthGameMode())->Goal(goal->playerdId);
 	}
 	else
 	{

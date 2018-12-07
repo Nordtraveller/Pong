@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TEYONPONG_TeyonPongGameModeBase_generated_h
 
-#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_RPC_WRAPPERS
-#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
+#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_RPC_WRAPPERS
+#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATeyonPongGameModeBase(); \
 	friend struct Z_Construct_UClass_ATeyonPongGameModeBase_Statics; \
@@ -24,7 +24,7 @@ public: \
 	DECLARE_SERIALIZER(ATeyonPongGameModeBase)
 
 
-#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_INCLASS \
+#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesATeyonPongGameModeBase(); \
 	friend struct Z_Construct_UClass_ATeyonPongGameModeBase_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(ATeyonPongGameModeBase)
 
 
-#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_STANDARD_CONSTRUCTORS \
+#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATeyonPongGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATeyonPongGameModeBase) \
@@ -46,7 +46,7 @@ private: \
 public:
 
 
-#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ATeyonPongGameModeBase(ATeyonPongGameModeBase&&); \
@@ -57,26 +57,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATeyonPongGameModeBase); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATeyonPongGameModeBase)
 
 
-#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET
-#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_12_PROLOG
-#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_GENERATED_BODY_LEGACY \
+#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_PRIVATE_PROPERTY_OFFSET
+#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_14_PROLOG
+#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_RPC_WRAPPERS \
-	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_INCLASS \
-	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_STANDARD_CONSTRUCTORS \
+	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_PRIVATE_PROPERTY_OFFSET \
+	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_RPC_WRAPPERS \
+	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_INCLASS \
+	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_GENERATED_BODY \
+#define TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
-	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_PRIVATE_PROPERTY_OFFSET \
+	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_INCLASS_NO_PURE_DECLS \
+	TeyonPong_Source_TeyonPong_TeyonPongGameModeBase_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

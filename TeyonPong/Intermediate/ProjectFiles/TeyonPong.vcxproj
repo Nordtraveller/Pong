@@ -506,9 +506,11 @@
     <None Include="..\..\Config\DefaultEngine.ini" />
     <None Include="..\..\Config\DefaultGame.ini" />
     <ClCompile Include="..\..\Source\TeyonPong\Ball.cpp" />
+    <ClCompile Include="..\..\Source\TeyonPong\Goal.cpp" />
     <ClCompile Include="..\..\Source\TeyonPong\LocalViewportClient.cpp" />
     <ClCompile Include="..\..\Source\TeyonPong\Paddle.cpp" />
     <ClInclude Include="..\..\Source\TeyonPong\Ball.h" />
+    <ClInclude Include="..\..\Source\TeyonPong\Goal.h" />
     <ClInclude Include="..\..\Source\TeyonPong\LocalViewportClient.h" />
     <ClInclude Include="..\..\Source\TeyonPong\Paddle.h" />
     <None Include="..\..\Source\TeyonPong\TeyonPong.Build.cs" />

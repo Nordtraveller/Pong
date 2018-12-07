@@ -15,6 +15,7 @@ class TEYONPONG_API APaddleController : public APlayerController
 	GENERATED_BODY()
 
 private:
+	int32 id;
 	
 public:
 	APaddleController(const FObjectInitializer& ObjectInitializer);
@@ -22,4 +23,6 @@ public:
 	void SetupInputComponent() override;
 
 	void Move(float axisValue);
+
+	bool haveBall = false;
 };
