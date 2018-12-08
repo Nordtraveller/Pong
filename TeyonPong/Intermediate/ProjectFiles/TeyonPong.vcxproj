@@ -499,6 +499,8 @@
     <NMakeOutput>..\..\Binaries\HTML5\TeyonPong-HTML5-Shipping.js</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\TeyonPong\TeyonPongMenuModeBase.cpp" />
+    <ClInclude Include="..\..\Source\TeyonPong\TeyonPongMenuModeBase.h" />
     <None Include="..\..\TeyonPong.uproject" />
     <None Include="..\..\Source\TeyonPong.Target.cs" />
     <None Include="..\..\Source\TeyonPongEditor.Target.cs" />
