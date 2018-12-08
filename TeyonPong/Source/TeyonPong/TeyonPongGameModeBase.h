@@ -6,6 +6,7 @@
 #include "GameFramework/GameModeBase.h"
 #include "Ball.h"
 #include "PaddleController.h"
+#include "Engine/TextRenderActor.h"
 #include "TeyonPongGameModeBase.generated.h"
 
 /**
@@ -20,15 +21,27 @@ private:
 	ABall* ball;
 	APaddleController* control0;
 	APaddleController* control1;
+	ATextRenderActor* player0ScoreText;
+	ATextRenderActor* player1ScoreText;
+	ATextRenderActor* timeText;
+	int player0Score = 0;
+	int player1Score = 0;
+
+	ATextRenderActor* SearchWithTag(FName tag);
+	FString TimeToString(float time);
 
 public:
 	ATeyonPongGameModeBase(const FObjectInitializer& ObjectInitializer);
 
 	virtual void StartPlay() override;	
 
+	virtual void Tick(float DeltaTime) override;
+
 	ABall* GetBall();
 
 	void Goal(int playerId);
 
 	void SpawnBall(FVector position);
+
+	float roundTime = 120.0f;
 };

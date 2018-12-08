@@ -4,10 +4,44 @@
 #include "Paddle.h"
 #include "PongCamera.h"
 #include "Kismet/GameplayStatics.h"
+#include "Classes/BlueprintGameplayTagLibrary.h"
 #include "Engine.h"
+
+ATextRenderActor * ATeyonPongGameModeBase::SearchWithTag(FName tag)
+{
+	TActorIterator< ATextRenderActor > ActorItr = TActorIterator< ATextRenderActor >(GetWorld());
+
+	while (ActorItr)
+	{
+		ATextRenderActor* actor = *ActorItr;
+		TArray<UTextRenderComponent*> children;
+		actor->GetComponents(children);
+		for (int i = 0; i < children.Num(); i++)
+		{
+			if (children[i]->ComponentHasTag(tag))
+			{
+				ATextRenderActor* actor = *ActorItr;
+				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Found by tag"));
+				return actor;
+			}
+		}
+		++ActorItr;
+	}
+	return nullptr;
+}
+
+FString ATeyonPongGameModeBase::TimeToString(float time)
+{
+	int32 minutes = time / 60;
+	int32 seconds = (int)time % 60;
+	if (seconds < 10) return FString(FString::FromInt(minutes) + ":0" + FString::FromInt(seconds));
+	else return FString(FString::FromInt(minutes) + ":" + FString::FromInt(seconds));
+}
 
 ATeyonPongGameModeBase::ATeyonPongGameModeBase(const FObjectInitializer& ObjectInitializer)
 {
+	PrimaryActorTick.bStartWithTickEnabled = true;
+	PrimaryActorTick.bCanEverTick = true;
 	DefaultPawnClass = APaddle::StaticClass();
 	PlayerControllerClass = APaddleController::StaticClass();
 }
@@ -23,8 +57,18 @@ void ATeyonPongGameModeBase::StartPlay()
 		Cast<APaddle>(control1->GetPawn())->SetStartingPosition(FVector(480.0f, 0.0f, 0.0f));
 		SpawnBall(FVector(-480.0f, 0.0f, 0.0f));
 		control0->haveBall = true;
+		player0ScoreText = SearchWithTag("ScoreP0");
+		player1ScoreText = SearchWithTag("ScoreP1");
+		timeText = SearchWithTag("TimeText");
 	}
 	Super::StartPlay();
+}
+
+void ATeyonPongGameModeBase::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	roundTime -= DeltaTime;
+	timeText->GetTextRender()->SetText(TimeToString(roundTime));
 }
 
 ABall * ATeyonPongGameModeBase::GetBall()
@@ -39,11 +83,15 @@ void ATeyonPongGameModeBase::Goal(int playerId)
 	{
 		SpawnBall(FVector(-480.0f, 0.0f, 0.0f));
 		control0->haveBall = true;
+		player1Score++;
+		player1ScoreText->GetTextRender()->SetText(FText::AsNumber(player1Score));
 	}
 	else
 	{
 		SpawnBall(FVector(480.0f, 0.0f, 0.0f));
 		control1->haveBall = true;
+		player0Score++;
+		player0ScoreText->GetTextRender()->SetText(FText::AsNumber(player0Score));
 	}
 	Cast<APaddle>(control0->GetPawn())->MoveToStartingPosition();
 	Cast<APaddle>(control1->GetPawn())->MoveToStartingPosition();
