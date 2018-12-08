@@ -2,3 +2,7 @@
 
 #include "PongGameInstance.h"
 
+UPongGameInstance::UPongGameInstance(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
+{
+}

@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodePaddle() {}
 	TEYONPONG_API UClass* Z_Construct_UClass_APaddle();
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
 	UPackage* Z_Construct_UPackage__Script_TeyonPong();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void APaddle::StaticRegisterNativesAPaddle()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodePaddle() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_mesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_mesh;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -45,6 +51,17 @@ void EmptyLinkFunctionForGeneratedCodePaddle() {}
 		{ "ModuleRelativePath", "Paddle.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APaddle_Statics::NewProp_mesh_MetaData[] = {
+		{ "Category", "Paddle" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Paddle.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APaddle_Statics::NewProp_mesh = { UE4CodeGen_Private::EPropertyClass::Object, "mesh", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000080009, 1, nullptr, STRUCT_OFFSET(APaddle, mesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APaddle_Statics::NewProp_mesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_APaddle_Statics::NewProp_mesh_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APaddle_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APaddle_Statics::NewProp_mesh,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APaddle_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APaddle>::IsAbstract,
 	};
@@ -53,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodePaddle() {}
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
 		0x009000A0u,
 		nullptr, 0,
-		nullptr, 0,
+		Z_Construct_UClass_APaddle_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_APaddle_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
@@ -68,7 +85,7 @@ void EmptyLinkFunctionForGeneratedCodePaddle() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APaddle, 2504835374);
+	IMPLEMENT_CLASS(APaddle, 3620545621);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_APaddle(Z_Construct_UClass_APaddle, &APaddle::StaticClass, TEXT("/Script/TeyonPong"), TEXT("APaddle"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APaddle);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -21,7 +21,6 @@ ATextRenderActor * ATeyonPongGameModeBase::SearchWithTag(FName tag)
 			if (children[i]->ComponentHasTag(tag))
 			{
 				ATextRenderActor* actor = *ActorItr;
-				GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Found by tag"));
 				return actor;
 			}
 		}

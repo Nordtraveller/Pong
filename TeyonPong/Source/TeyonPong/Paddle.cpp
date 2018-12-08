@@ -6,6 +6,7 @@
 #include "Components/InputComponent.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Kismet/GameplayStatics.h"
+#include "Engine.h"
 
 // Sets default values
 APaddle::APaddle()
@@ -30,20 +31,17 @@ APaddle::APaddle()
 	mesh->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Overlap);
 }
 
-// Called when the game starts or when spawned
 void APaddle::BeginPlay()
 {
 	MoveToStartingPosition();
 	Super::BeginPlay();	
 }
 
-// Called every frame
 void APaddle::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
 
-// Called to bind functionality to input
 void APaddle::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -52,6 +50,7 @@ void APaddle::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 void APaddle::Move(float axisValue)
 {
 	FVector location = mesh->GetComponentLocation();
+	if (axisValue != 0.0f)  GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, TEXT("Move Paddle!"));
 	if (location.Z > 220.0f)
 	{
 		mesh->SetRelativeLocation(FVector(location.X, 0.0f, 219.0f));
@@ -64,7 +63,9 @@ void APaddle::Move(float axisValue)
 	}
 	else
 	{
+		//mesh->SetRelativeLocation(FVector(location.X, 0.0f, location.Z + axisValue));
 		mesh->SetPhysicsLinearVelocity(FVector(0.0f, 0.0f, axisValue * 200.0f));
+		if (axisValue != 0.0f)  GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, TEXT("Move Paddle kurwa!"));
 	}
 }
 

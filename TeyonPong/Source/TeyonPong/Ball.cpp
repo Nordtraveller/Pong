@@ -52,6 +52,7 @@ void ABall::StartBall(float direction)
 void ABall::OnOverlapBegin(UPrimitiveComponent * OverlappedComp, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
 	APaddle* paddle = Cast<APaddle>(OtherActor);
+	GEngine->AddOnScreenDebugMessage(-1, 0.0f, FColor::Yellow, TEXT("Overlap!"));
 	if (paddle)
 	{
 		FVector velocity = mesh->GetPhysicsLinearVelocity();

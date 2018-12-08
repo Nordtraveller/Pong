@@ -13,7 +13,6 @@ class TEYONPONG_API APaddle : public APawn
 
 private:
 	FVector startingPosition;
-	UStaticMeshComponent* mesh;
 
 protected:
 	virtual void BeginPlay() override;
@@ -28,5 +27,9 @@ public:
 
 	void SetStartingPosition(FVector vec);
 	void MoveToStartingPosition();
+
+	UPROPERTY(EditAnywhere)
+		UStaticMeshComponent* mesh;
+
 	UStaticMeshComponent* GetMesh();
 };

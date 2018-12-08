@@ -14,4 +14,16 @@ class TEYONPONG_API UPongGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 	
+public:
+	UPongGameInstance(const FObjectInitializer& ObjectInitializer);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Pong)
+		int numberOfPlayers;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Pong)
+		float roundTime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Pong)
+		int maxScore;
+
 };
