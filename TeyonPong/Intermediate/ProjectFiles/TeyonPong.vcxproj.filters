@@ -67,6 +67,9 @@
     <ClInclude Include="..\..\Source\TeyonPong\TeyonPongMenuModeBase.h">
       <Filter>Source\TeyonPong</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\TeyonPong\PongGameInstance.h">
+      <Filter>Source\TeyonPong</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\TeyonPong\PongCamera.cpp">
@@ -85,6 +88,9 @@
       <Filter>Source\TeyonPong</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\TeyonPong\TeyonPongMenuModeBase.cpp">
+      <Filter>Source\TeyonPong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TeyonPong\PongGameInstance.cpp">
       <Filter>Source\TeyonPong</Filter>
     </ClCompile>
   </ItemGroup>
