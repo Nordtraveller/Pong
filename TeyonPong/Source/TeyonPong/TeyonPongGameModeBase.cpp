@@ -3,6 +3,7 @@
 #include "TeyonPongGameModeBase.h"
 #include "Paddle.h"
 #include "PongCamera.h"
+#include "PongGameInstance.h"
 #include "Kismet/GameplayStatics.h"
 #include "Classes/BlueprintGameplayTagLibrary.h"
 #include "Engine.h"
@@ -51,14 +52,15 @@ void ATeyonPongGameModeBase::StartPlay()
 	if (world)
 	{
 		control0 = Cast<APaddleController>(UGameplayStatics::GetPlayerController(world, 0));
-		Cast<APaddle>(control0->GetPawn())->SetStartingPosition(FVector(-480.0f, 0.0f, 0.0f));
+		Cast<APaddle>(control0->GetPawn())->SetStartingPosition(FVector(480.0f, 0.0f, 0.0f));
 		control1 = Cast<APaddleController>(UGameplayStatics::CreatePlayer(world, 1, true));
-		Cast<APaddle>(control1->GetPawn())->SetStartingPosition(FVector(480.0f, 0.0f, 0.0f));
-		SpawnBall(FVector(-480.0f, 0.0f, 0.0f));
+		Cast<APaddle>(control1->GetPawn())->SetStartingPosition(FVector(-480.0f, 0.0f, 0.0f));
+		SpawnBall(FVector(480.0f, 0.0f, 0.0f));
 		control0->haveBall = true;
 		player0ScoreText = SearchWithTag("ScoreP0");
 		player1ScoreText = SearchWithTag("ScoreP1");
 		timeText = SearchWithTag("TimeText");
+		roundTime = Cast<UPongGameInstance>(world->GetGameInstance())->roundTime;
 	}
 	Super::StartPlay();
 }
@@ -80,14 +82,14 @@ void ATeyonPongGameModeBase::Goal(int playerId)
 	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString("Goal " + FString::FromInt(playerId)));
 	if (playerId == 0)
 	{
-		SpawnBall(FVector(-480.0f, 0.0f, 0.0f));
+		SpawnBall(FVector(480.0f, 0.0f, 0.0f));
 		control0->haveBall = true;
 		player1Score++;
 		player1ScoreText->GetTextRender()->SetText(FText::AsNumber(player1Score));
 	}
 	else
 	{
-		SpawnBall(FVector(480.0f, 0.0f, 0.0f));
+		SpawnBall(FVector(-480.0f, 0.0f, 0.0f));
 		control1->haveBall = true;
 		player0Score++;
 		player0ScoreText->GetTextRender()->SetText(FText::AsNumber(player0Score));

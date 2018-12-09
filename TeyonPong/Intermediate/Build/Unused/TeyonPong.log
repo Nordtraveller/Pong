@@ -1,2 +1,40 @@
 ﻿  Cleaning TeyonPongEditor Binaries...
   Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+  Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+  Creating makefile for TeyonPongEditor (no existing makefile)
+  Performing full C++ include scan (no include cache file)
+  Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Parsing headers for TeyonPongEditor
+    Running UnrealHeaderTool "E:\Praca\Teyon test\Pong\TeyonPong\TeyonPong.uproject" "E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for TeyonPongEditor in 11,6822674 seconds
+  Building 24 actions with 4 processes...
+    [1/24] PCLaunch.rc
+    [2/24] SharedPCH.Engine.cpp
+    [3/24] PongCamera.gen.cpp
+    [4/24] TeyonPong.init.gen.cpp
+    [5/24] PongGameInstance.gen.cpp
+    [6/24] PaddleController.gen.cpp
+    [7/24] TeyonPongGameModeBase.gen.cpp
+    [8/24] Paddle.gen.cpp
+    [9/24] LocalViewportClient.gen.cpp
+    [10/24] Goal.gen.cpp
+    [11/24] Ball.gen.cpp
+    [12/24] PongGameInstance.cpp
+    [13/24] PongCamera.cpp
+    [14/24] TeyonPong.cpp
+    [15/24] TeyonPongGameModeBase.cpp
+E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\TeyonPongGameModeBase.cpp(70): warning C4996: 'UTextRenderComponent::SetText': Passing text as FString is deprecated, please use FText instead (likely via a LOCTEXT). Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h(108): note: see declaration of 'UTextRenderComponent::SetText'
+    [16/24] LocalViewportClient.cpp
+    [17/24] Goal.cpp
+    [18/24] PaddleController.cpp
+    [19/24] Paddle.cpp
+    [20/24] Ball.cpp
+    [21/24] TeyonPongMenuModeBase.cpp
+    [22/24] TeyonPongMenuModeBase.gen.cpp
+    [23/24] UE4Editor-TeyonPong.lib
+       Creating library E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.lib and object E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.exp
+    [24/24] UE4Editor-TeyonPong.dll
+       Creating library E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.suppressed.lib and object E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong.suppressed.exp
+  Deploying TeyonPongEditor Win64 Development...
+  Total build time: 75,87 seconds (Parallel executor: 58,29 seconds)

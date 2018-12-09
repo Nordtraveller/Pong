@@ -1,4 +1,4 @@
-﻿Log file open, 12/08/18 19:25:28
+﻿Log file open, 12/09/18 14:57:48
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogInit: Display: Running engine for game: TeyonPong
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 11 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.136897
+LogStats: Stats thread started at 0.239364
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -94,7 +94,7 @@ LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WebMMoviePlayer
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.074s to configure plugins.
+LogStreaming: Display: Took  0.246s to configure plugins.
 LogInit: Using libcurl 7.55.1-DEV
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2h
@@ -154,785 +154,967 @@ LogInit: Presizing for max 8388607 objects, including 0 objects not considered b
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.08-18.25.28:769][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2018.12.08-18.25.28:769][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2018.12.08-18.25.28:770][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2018.12.08-18.25.28:770][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
-[2018.12.08-18.25.28:770][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2018.12.08-18.25.28:770][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2018.12.08-18.25.28:770][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
-[2018.12.08-18.25.28:770][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2018.12.08-18.25.28:770][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2018.12.08-18.25.28:770][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2018.12.08-18.25.28:770][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2018.12.08-18.25.28:770][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.08-18.25.28:770][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.08-18.25.28:772][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:772][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2018.12.08-18.25.28:772][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2018.12.08-18.25.28:772][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:772][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2018.12.08-18.25.28:772][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:772][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2018.12.08-18.25.28:772][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2018.12.08-18.25.28:772][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2018.12.08-18.25.28:772][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2018.12.08-18.25.28:773][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2018.12.08-18.25.28:773][  0]LogInit: Selected Device Profile: [Windows]
-[2018.12.08-18.25.28:773][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.12.08-18.25.28:804][  0]LogHAL: Display: Platform has ~ 16 GB [17103699968 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
-[2018.12.08-18.25.28:804][  0]LogInit: Going up to parent DeviceProfile []
-[2018.12.08-18.25.28:804][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2018.12.08-18.25.28:804][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2018.12.08-18.25.28:805][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2018.12.08-18.25.28:805][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
-[2018.12.08-18.25.28:805][  0]LogInit: Computer: NORD-KOMPUTER
-[2018.12.08-18.25.28:805][  0]LogInit: User: Nord
-[2018.12.08-18.25.28:805][  0]LogInit: CPU Page size=4096, Cores=2
-[2018.12.08-18.25.28:805][  0]LogInit: High frequency timer resolution =2.825546 MHz
-[2018.12.08-18.25.28:806][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2018.12.08-18.25.28:806][  0]LogMemory: Platform Memory Stats for Windows
-[2018.12.08-18.25.28:806][  0]LogMemory: Process Physical Memory: 103.63 MB used, 103.63 MB peak
-[2018.12.08-18.25.28:806][  0]LogMemory: Process Virtual Memory: 87.19 MB used, 87.19 MB peak
-[2018.12.08-18.25.28:806][  0]LogMemory: Physical Memory: 6619.50 MB used,  9691.86 MB free, 16311.36 MB total
-[2018.12.08-18.25.28:806][  0]LogMemory: Virtual Memory: 478.05 MB used,  8388130.00 MB free, 8388608.00 MB total
-[2018.12.08-18.25.28:834][  0]LogInit: Using OS detected language (pl-PL).
-[2018.12.08-18.25.28:834][  0]LogInit: Using OS detected locale (pl-PL).
-[2018.12.08-18.25.28:836][  0]LogTextLocalizationManager: No specific localization for 'pl-PL' exists, so the 'pl' localization will be used.
-[2018.12.08-18.25.28:840][  0]LogStreaming: Display: Took  0.006s to InitEngineTextLocalization.
-[2018.12.08-18.25.28:841][  0]LogWindows: Failed to load 'shcore.dll' (GetLastError=126)
-[2018.12.08-18.25.28:841][  0]LogWindows: File 'shcore.dll' does not exist
-[2018.12.08-18.25.28:841][  0]LogInit: Setting process to DPI aware
-[2018.12.08-18.25.28:871][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2018.12.08-18.25.28:871][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2018.12.08-18.25.29:608][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.12.08-18.25.29:608][  0]LogD3D11RHI: D3D11 adapters:
-[2018.12.08-18.25.29:642][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
-[2018.12.08-18.25.29:642][  0]LogD3D11RHI:       1986/0/7899 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2018.12.08-18.25.29:662][  0]LogD3D11RHI:    1. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
-[2018.12.08-18.25.29:662][  0]LogD3D11RHI:       1986/0/7899 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
-[2018.12.08-18.25.29:662][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.12.08-18.25.29:681][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.12.08-18.25.29:681][  0]LogD3D11RHI:     GPU DeviceId: 0x1392 (for the marketing name, search the web for "GPU Device Id")
-[2018.12.08-18.25.29:681][  0]LogWindows: EnumDisplayDevices:
-[2018.12.08-18.25.29:682][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
-[2018.12.08-18.25.29:682][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2018.12.08-18.25.29:682][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
-[2018.12.08-18.25.29:682][  0]LogWindows:    3. 'NVIDIA GeForce GTX 860M' (P:0 D:0)
-[2018.12.08-18.25.29:682][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
-[2018.12.08-18.25.29:683][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
-[2018.12.08-18.25.29:683][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
-[2018.12.08-18.25.29:683][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter 
-[2018.12.08-18.25.29:683][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 860M
-[2018.12.08-18.25.29:683][  0]LogD3D11RHI:   Driver Version: 398.11 (internal:24.21.13.9811, unified:398.11)
-[2018.12.08-18.25.29:683][  0]LogD3D11RHI:      Driver Date: 6-1-2018
-[2018.12.08-18.25.29:683][  0]LogRHI: Texture pool is 1390 MB (70% of 1986 MB)
-[2018.12.08-18.25.29:703][  0]LogD3D11RHI: Async texture creation enabled
-[2018.12.08-18.25.29:719][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.12.08-18.25.30:260][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.12.08-18.25.30:290][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.12.08-18.25.30:309][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.12.08-18.25.30:333][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.12.08-18.25.30:367][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.12.08-18.25.30:382][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.12.08-18.25.30:396][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.12.08-18.25.30:411][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.12.08-18.25.30:417][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:513][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.12.08-18.25.30:526][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.12.08-18.25.30:613][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.12.08-18.25.30:613][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.12.08-18.25.30:646][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.12.08-18.25.30:646][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.12.08-18.25.30:668][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.12.08-18.25.30:688][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.12.08-18.25.30:710][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.12.08-18.25.30:732][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.12.08-18.25.30:801][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2018.12.08-18.25.30:801][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
-[2018.12.08-18.25.30:801][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.12.08-18.25.30:860][  0]LogShaderCompilers: Guid format shader working directory is 10 characters bigger than the processId version (E:/Praca/Teyon test/Pong/TeyonPong/Intermediate/Shaders/WorkingDirectory/11840/).
-[2018.12.08-18.25.30:860][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Nord/AppData/Local/Temp/UnrealShaderWorkingDir/690CE23145470DAB29D29B99BA14633D/'.
-[2018.12.08-18.25.30:862][  0]LogXGEController: Cleaning working directory: C:/Users/Nord/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2018.12.08-18.25.30:862][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2018.12.08-18.25.30:862][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2018.12.08-18.25.30:862][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.12.08-18.25.31:465][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.12.08-18.25.31:547][  0]LogDerivedDataCache: Loaded boot cache 0.08s 71MB C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2018.12.08-18.25.31:547][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
-[2018.12.08-18.25.31:547][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file E:/Praca/Teyon test/Pong/TeyonPong/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.12.08-18.25.31:547][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.12.08-18.25.31:547][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file E:/Praca/Teyon test/Pong/TeyonPong/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.12.08-18.25.31:547][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.12.08-18.25.31:566][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.12.08-18.25.31:566][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.12.08-18.25.31:566][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2018.12.08-18.25.31:579][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Nord/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.12.08-18.25.31:579][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2018.12.08-18.25.31:579][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2018.12.08-18.25.31:612][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.12.08-18.25.31:614][  0]LogSlate: Using FreeType 2.6.0
-[2018.12.08-18.25.31:614][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.12.08-18.25.31:720][  0]LogAssetRegistry: FAssetRegistry took 0.0341 seconds to start up
-[2018.12.08-18.25.32:057][  0]LogInit: Selected Device Profile: [Windows]
-[2018.12.08-18.25.32:234][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.12.08-18.25.32:238][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.12.08-18.25.32:238][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2018.12.08-18.25.32:238][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.12.08-18.25.32:238][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.12.08-18.25.32:253][  0]LogNetVersion: TeyonPong 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2572377658)
-[2018.12.08-18.25.32:915][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.084954 seconds
-[2018.12.08-18.25.32:923][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
-[2018.12.08-18.25.32:923][  0]LogUObjectAllocator: 6914664 out of 0 bytes used by permanent object pool.
-[2018.12.08-18.25.32:923][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.12.08-18.26.00:340][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.12.08-18.26.00:353][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.12.08-18.26.01:705][  0]SourceControl: Source control is disabled
-[2018.12.08-18.26.01:706][  0]SourceControl: Source control is disabled
-[2018.12.08-18.26.01:709][  0]SourceControl: Source control is disabled
-[2018.12.08-18.26.01:710][  0]SourceControl: Source control is disabled
-[2018.12.08-18.26.02:287][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.12.08-18.26.02:344][  0]LogOcInput: OculusInput pre-init called
-[2018.12.08-18.26.02:492][  0]LogEngine: Initializing Engine...
-[2018.12.08-18.26.02:493][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.12.08-18.26.02:494][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.12.08-18.26.02:494][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.12.08-18.26.02:495][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.12.08-18.26.02:495][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.12.08-18.26.02:811][  0]LogInit: Initializing FReadOnlyCVARCache
-[2018.12.08-18.26.02:834][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.12.08-18.26.02:849][  0]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.12.08-18.26.02:859][  0]LogInit: FAudioDevice initialized.
-[2018.12.08-18.26.02:859][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2018.12.08-18.26.03:073][  0]LogDerivedDataCache: Saved boot cache 0.21s 71MB C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
-[2018.12.08-18.26.03:077][  0]LogInit: Texture streaming: Enabled
-[2018.12.08-18.26.03:122][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.12.08-18.26.03:141][  0]LogInit: Transaction tracking system initialized
-[2018.12.08-18.26.03:314][  0]BlueprintLog: New page: Editor Load
-[2018.12.08-18.26.03:914][  0]LocalizationService: Localization service is disabled
-[2018.12.08-18.26.05:367][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/' took 0.01s
-[2018.12.08-18.26.05:367][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.12.08-18.26.05:367][  0]LogCook: Display: Mobile HDR setting 1
-[2018.12.08-18.26.05:367][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.12.08-18.26.05:367][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
-[2018.12.08-18.26.05:367][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.12.08-18.26.05:368][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
-[2018.12.08-18.26.05:368][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.12.08-18.26.06:414][  0]SourceControl: Source control is disabled
-[2018.12.08-18.26.06:414][  0]Cmd: MAP LOAD FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.12.08-18.26.06:414][  0]LightingResults: New page: Lighting Build
-[2018.12.08-18.26.06:434][  0]MapCheck: New page: Map Check
-[2018.12.08-18.26.06:434][  0]LightingResults: New page: Lighting Build
-[2018.12.08-18.26.06:599][  0]LogAIModule: Creating AISystem for world MainMenu
-[2018.12.08-18.26.06:600][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.12.08-18.26.06:619][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.12.08-18.26.06:619][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,082ms to complete.
-[2018.12.08-18.26.06:619][  0]LogFileHelpers: Loading map 'MainMenu' took 0.205
-[2018.12.08-18.26.06:798][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.08-18.26.06:805][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.08-18.26.06:814][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.08-18.26.06:822][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.08-18.26.06:863][  0]LogCollectionManager: Loaded 0 collections in 0.001984 seconds
-[2018.12.08-18.26.06:886][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/Collections/' took 0.01s
-[2018.12.08-18.26.06:886][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Developers/Nord/Collections/' took 0.00s
-[2018.12.08-18.26.06:886][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Collections/' took 0.00s
-[2018.12.08-18.26.06:886][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2018.12.08-18.26.06:896][  0]LogContentBrowser: Native class hierarchy populated in 0.0096 seconds. Added 2660 classes and 622 folders.
-[2018.12.08-18.26.06:926][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2018.12.08-18.26.06:944][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.06:965][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.06:966][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.06:968][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.06:980][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.06:982][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.06:984][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.06:985][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.06:987][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:012][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:014][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:015][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:017][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:019][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:020][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:021][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:023][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:024][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:043][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:044][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:046][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:048][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:049][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:051][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:052][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.07:054][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2018.12.08-18.26.08:149][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2018.12.08-18.26.08:176][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2018.12.08-18.26.08:309][  0]LogSlate: Took 0.028474 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.12.08-18.26.08:340][  0]LogSlate: Took 0.028438 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.12.08-18.26.08:360][  0]LogSlate: Took 0.014925 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.12.08-18.26.08:496][  0]LogRenderer: Reallocating scene render targets to support 800x392 Format 10 NumSamples 1 (Frame:1).
-[2018.12.08-18.26.08:706][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2018.12.08-18.26.08:706][  0]LogLoad: (Engine Initialization) Total time: 41.63 seconds
-[2018.12.08-18.26.08:706][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.12.08-18.26.08:776][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.12.08-18.26.08:816][  0]LogSlate: Took 0.014504 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.12.08-18.26.09:109][  2]LogAssetRegistry: Asset discovery search completed in 37.4094 seconds
-[2018.12.08-18.26.09:113][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000002 seconds (found 0 objects)
-[2018.12.08-18.26.09:113][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000170 seconds (updated 0 objects)
-[2018.12.08-18.26.12:264][191]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.08-18.26.16:708][457]LogTemp: Repeating last play command: Selected Viewport
-[2018.12.08-18.26.16:716][457]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
-[2018.12.08-18.26.16:717][457]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2018.12.08-18.26.16:717][457]PIE: New page: PIE session: MainMenu (8 gru 2018, 20:26:16)
-[2018.12.08-18.26.16:728][457]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
-[2018.12.08-18.26.16:729][457]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000942s)
-[2018.12.08-18.26.16:729][457]LogAIModule: Creating AISystem for world MainMenu
-[2018.12.08-18.26.16:730][457]LogPlayLevel: PIE: World Init took: (0.000753s)
-[2018.12.08-18.26.16:730][457]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.001936s)
-[2018.12.08-18.26.16:749][457]LogInit: XAudio2 using 'Głośniki (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
-[2018.12.08-18.26.16:765][457]LogInit: FAudioDevice initialized.
-[2018.12.08-18.26.16:802][457]LogLoad: Game class is 'BP_MenuGameMode_C'
-[2018.12.08-18.26.16:803][457]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 60) at 2018.12.08-19.26.16
-[2018.12.08-18.26.16:803][457]LogWorld: Bringing up level for play took: 0.000337
-[2018.12.08-18.26.16:819][457]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
-[2018.12.08-18.26.16:823][457]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu -0,104
-[2018.12.08-18.26.16:823][457]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
-[2018.12.08-18.26.17:684][508]LogNet: Browse: /Game/Maps/GameMap.GameMap
-[2018.12.08-18.26.17:684][508]LogLoad: LoadMap: /Game/Maps/GameMap.GameMap
-[2018.12.08-18.26.17:729][508]LogAIModule: Creating AISystem for world GameMap
-[2018.12.08-18.26.17:785][508]LogLoad: Game class is 'TeyonPongGameModeBase'
-[2018.12.08-18.26.17:785][508]LogWorld: Bringing World /Game/Maps/UEDPIE_0_GameMap.GameMap up for play (max tick rate 60) at 2018.12.08-19.26.17
-[2018.12.08-18.26.17:785][508]LogWorld: Bringing up level for play took: 0.000261
-[2018.12.08-18.26.17:786][508]LogLongPackageNames: Warning: URL: Game/Maps/GameMap.GameMap: Name may not contain the following characters: '.'
-[2018.12.08-18.26.17:786][508]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2018.12.08-18.26.17:786][508]LogSlate: New Slate User Created.  User Index 1, Is Virtual User: 0
-[2018.12.08-18.26.17:786][508]LogSlate: Slate User Registered.  User Index 1, Is Virtual User: 0
-[2018.12.08-18.26.17:787][508]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2018.12.08-18.26.17:787][508]LogLoad: Took 0.102890 seconds to LoadMap(/Game/Maps/GameMap.GameMap)
-[2018.12.08-18.26.22:905][815]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
-[2018.12.08-18.26.22:906][815]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.08-18.26.22:941][815]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2018.12.08-18.26.22:942][815]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
-[2018.12.08-18.26.22:963][815]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2018.12.08-18.26.23:005][817]LogPlayLevel: Display: Destroying online subsystem :Context_1
-[2018.12.08-18.26.23:662][856]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.12.08-18.26.54:881][409]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.12.08-18.26.55:039][415]LogSlate: Window 'TeyonPong - Unreal Editor' being destroyed
-[2018.12.08-18.26.55:185][416]Cmd: QUIT_EDITOR
-[2018.12.08-18.26.55:209][416]LogExit: Preparing to exit.
-[2018.12.08-18.26.55:453][416]LogExit: Editor shut down
-[2018.12.08-18.26.55:454][416]LogExit: Transaction tracking system shut down
-[2018.12.08-18.26.55:730][416]LogExit: Object subsystem successfully closed.
-[2018.12.08-18.26.55:961][416]LogShaderCompilers: Display: Shaders left to compile 0
-[2018.12.08-18.26.55:964][416]LogD3D11RHI: Shutdown
-[2018.12.08-18.26.55:964][416]LogD3D11RHI: CleanupD3DDevice
-[2018.12.08-18.26.55:981][416]LogD3D11RHI: ~FD3D11DynamicRHI
-[2018.12.08-18.26.55:998][416]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (628)
-[2018.12.08-18.26.55:998][416]LogModuleManager: Shutting down and abandoning module Voice (626)
-[2018.12.08-18.26.55:998][416]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (624)
-[2018.12.08-18.26.55:998][416]LogModuleManager: Shutting down and abandoning module SceneOutliner (622)
-[2018.12.08-18.26.55:998][416]LogModuleManager: Shutting down and abandoning module AddContentDialog (620)
-[2018.12.08-18.26.56:017][416]LogModuleManager: Shutting down and abandoning module WidgetCarousel (619)
-[2018.12.08-18.26.56:017][416]LogModuleManager: Shutting down and abandoning module EditorWidgets (616)
-[2018.12.08-18.26.56:017][416]LogModuleManager: Shutting down and abandoning module CollectionManager (614)
-[2018.12.08-18.26.56:017][416]LogModuleManager: Shutting down and abandoning module StatsViewer (612)
-[2018.12.08-18.26.56:017][416]LogModuleManager: Shutting down and abandoning module FoliageEdit (610)
-[2018.12.08-18.26.56:017][416]LogModuleManager: Shutting down and abandoning module LandscapeEditor (608)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module MeshPaintMode (606)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (604)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module ActorPickerMode (602)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module GeometryMode (600)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module TextureAlignMode (598)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module BspMode (596)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (594)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (592)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module AutomationWorker (590)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (588)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (586)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (584)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module PlacementMode (583)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module MaterialEditor (582)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (578)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (576)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (574)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (572)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module WebMMedia (570)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (568)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (566)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module SequenceRecorder (565)
-[2018.12.08-18.26.56:018][416]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (562)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (560)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (558)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (556)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (554)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (552)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (550)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (548)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (546)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (544)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module CharacterAI (542)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module SmartSnapping (540)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module SessionServices (538)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module ViewportSnapping (536)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module ViewportInteraction (534)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module ClothPainter (532)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (531)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module LogVisualizer (528)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module IntroTutorials (526)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (525)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (522)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (520)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (518)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (516)
-[2018.12.08-18.26.56:019][416]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (515)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (512)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (510)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (508)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (506)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (504)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module InputBindingEditor (502)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module MergeActors (500)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (498)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module LocalizationService (497)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module HardwareTargeting (494)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (492)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module UndoHistory (490)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module XmlParser (488)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module Blutility (486)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (484)
-[2018.12.08-18.26.56:475][416]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (483)
-[2018.12.08-18.26.56:476][416]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (480)
-[2018.12.08-18.26.56:476][416]LogModuleManager: Shutting down and abandoning module SettingsEditor (478)
-[2018.12.08-18.26.56:476][416]LogModuleManager: Shutting down and abandoning module ProjectLauncher (476)
-[2018.12.08-18.26.56:476][416]LogModuleManager: Shutting down and abandoning module SessionFrontend (474)
-[2018.12.08-18.26.56:476][416]LogModuleManager: Shutting down and abandoning module ProfilerClient (472)
-[2018.12.08-18.26.56:476][416]LogModuleManager: Shutting down and abandoning module DeviceManager (470)
-[2018.12.08-18.26.56:476][416]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (469)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module AutomationController (466)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module AutomationWindow (464)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module Layers (462)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (460)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module DetailCustomizations (458)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module PackagesDialog (456)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module Persona (454)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (453)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module AnimGraph (451)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module Kismet (448)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module GraphEditor (446)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module ClassViewer (444)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module Toolbox (442)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module DesktopPlatform (441)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module ModuleUI (438)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module MovieSceneTools (436)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module OutputLog (434)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module GammaUI (432)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module Documentation (430)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (428)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module MovieScene (426)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (424)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module LauncherPlatform (422)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module AnalyticsET (420)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module PortalServices (418)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module PortalRpc (416)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module MessagingRpc (414)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module AIModule (412)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module GameplayDebugger (411)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module AITestSuite (409)
-[2018.12.08-18.26.56:526][416]LogModuleManager: Shutting down and abandoning module NavigationSystem (407)
-[2018.12.08-18.26.56:527][416]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (404)
-[2018.12.08-18.26.56:528][416]LogModuleManager: Shutting down and abandoning module ProfilerService (402)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module TaskGraph (400)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module SteamVRController (398)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (396)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (394)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module OculusInput (392)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (390)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module EditableMesh (388)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (386)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module CableComponent (384)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module AudioCapture (382)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (380)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module AndroidPermission (378)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (376)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (374)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module MediaCompositing (372)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module LinearTimecode (370)
-[2018.12.08-18.26.56:622][416]LogModuleManager: Shutting down and abandoning module ImgMedia (368)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module HTML5Networking (366)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (364)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (362)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module BackChannel (360)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module AppleVision (358)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (356)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module AppleImageUtils (354)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module AlembicImporter (352)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module AlembicLibrary (351)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module GeometryCache (350)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (349)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module VariantManagerContent (344)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (342)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (340)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module PluginBrowser (338)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (336)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module PolygonModeling (334)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module MeshEditor (332)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (330)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module CryptoKeys (328)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (326)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (324)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module UObjectPlugin (322)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (320)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (318)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module GitSourceControl (316)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module SourceControl (315)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (312)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (310)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (308)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (306)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (304)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (302)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module Paper2DEditor (300)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module MeshPaint (299)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module TeyonPong (296)
-[2018.12.08-18.26.56:625][416]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (294)
-[2018.12.08-18.26.56:626][416]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (292)
-[2018.12.08-18.26.56:626][416]LogModuleManager: Shutting down and abandoning module PhysXVehicles (290)
-[2018.12.08-18.26.56:626][416]LogModuleManager: Shutting down and abandoning module OculusEditor (288)
-[2018.12.08-18.26.56:626][416]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (286)
-[2018.12.08-18.26.56:626][416]LogModuleManager: Shutting down and abandoning module ActorSequence (284)
-[2018.12.08-18.26.56:626][416]LogModuleManager: Shutting down and abandoning module UdpMessaging (282)
-[2018.12.08-18.26.56:726][416]LogModuleManager: Shutting down and abandoning module TcpMessaging (280)
-[2018.12.08-18.26.56:826][416]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (278)
-[2018.12.08-18.26.56:826][416]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (276)
-[2018.12.08-18.26.56:826][416]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (274)
-[2018.12.08-18.26.56:826][416]LogModuleManager: Shutting down and abandoning module FacialAnimation (272)
-[2018.12.08-18.26.56:826][416]LogModuleManager: Shutting down and abandoning module DataValidation (270)
-[2018.12.08-18.26.56:826][416]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (268)
-[2018.12.08-18.26.56:826][416]LogModuleManager: Shutting down and abandoning module LevelEditor (267)
-[2018.12.08-18.26.56:826][416]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (266)
-[2018.12.08-18.26.56:826][416]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (264)
-[2018.12.08-18.26.56:827][416]LogModuleManager: Shutting down and abandoning module MainFrame (262)
-[2018.12.08-18.26.56:827][416]LogModuleManager: Shutting down and abandoning module HotReload (261)
-[2018.12.08-18.26.56:827][416]LogModuleManager: Shutting down and abandoning module ContentBrowser (257)
-[2018.12.08-18.26.56:828][416]LogModuleManager: Shutting down and abandoning module TreeMap (255)
-[2018.12.08-18.26.56:828][416]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (252)
-[2018.12.08-18.26.56:828][416]LogModuleManager: Shutting down and abandoning module AISupportModule (250)
-[2018.12.08-18.26.56:828][416]LogModuleManager: Shutting down and abandoning module Paper2D (248)
-[2018.12.08-18.26.56:828][416]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (246)
-[2018.12.08-18.26.56:828][416]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (244)
-[2018.12.08-18.26.56:828][416]LogModuleManager: Shutting down and abandoning module WmfMedia (242)
-[2018.12.08-18.26.56:829][416]LogModuleManager: Shutting down and abandoning module Media (241)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module PacketHandler (238)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (236)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (234)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module MediaAssets (232)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module Overlay (230)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module OverlayEditor (229)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module VREditor (226)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module StringTableEditor (224)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (222)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (220)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module FunctionalTesting (218)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (216)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (215)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module UMG (212)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module UMGEditor (211)
-[2018.12.08-18.26.56:834][416]LogModuleManager: Shutting down and abandoning module Sequencer (210)
-[2018.12.08-18.26.56:835][416]LogModuleManager: Shutting down and abandoning module MessageLog (207)
-[2018.12.08-18.26.56:835][416]LogModuleManager: Shutting down and abandoning module SlateReflector (202)
-[2018.12.08-18.26.56:835][416]LogModuleManager: Shutting down and abandoning module Slate (200)
-[2018.12.08-18.26.56:835][416]LogModuleManager: Shutting down and abandoning module EditorStyle (198)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module MRMesh (196)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (194)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (192)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module XAudio2 (190)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module Networking (188)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module Core (186)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module LevelSequence (184)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module KismetCompiler (182)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module MeshUtilities (180)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (179)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (178)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (177)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (175)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (173)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (171)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module MaterialBaking (167)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (163)
-[2018.12.08-18.26.56:836][416]LogModuleManager: Shutting down and abandoning module DerivedDataCache (160)
-[2018.12.08-18.26.57:075][416]LogDerivedDataCache: Shutdown
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module XGEController (158)
-[2018.12.08-18.26.57:075][416]LogXGEController: Cleaning working directory: C:/Users/Nord/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module TargetPlatform (156)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (155)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (153)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (151)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (149)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (147)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (145)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (143)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (141)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (139)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (137)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module ImageWrapper (136)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (133)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (131)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (129)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (127)
-[2018.12.08-18.26.57:075][416]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (125)
-[2018.12.08-18.26.57:077][416]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
-[2018.12.08-18.26.57:077][416]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (121)
-[2018.12.08-18.26.57:077][416]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (119)
-[2018.12.08-18.26.57:077][416]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (117)
-[2018.12.08-18.26.57:077][416]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (115)
-[2018.12.08-18.26.57:077][416]LogModuleManager: Shutting down and abandoning module Messaging (113)
-[2018.12.08-18.26.57:077][416]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (111)
-[2018.12.08-18.26.57:078][416]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (109)
-[2018.12.08-18.26.57:078][416]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (107)
-[2018.12.08-18.26.57:084][416]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (105)
-[2018.12.08-18.26.57:084][416]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (103)
-[2018.12.08-18.26.57:084][416]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (101)
-[2018.12.08-18.26.57:084][416]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (99)
-[2018.12.08-18.26.57:084][416]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (97)
-[2018.12.08-18.26.57:084][416]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (95)
-[2018.12.08-18.26.57:084][416]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (93)
-[2018.12.08-18.26.57:084][416]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (91)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (89)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module InputCore (86)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module Settings (84)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module PhysXCooking (82)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module SteamVR (80)
-[2018.12.08-18.26.57:085][416]LogHMD: Freeing OpenVRDLLHandle.
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module OculusHMD (78)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (76)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (74)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (72)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (68)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module XMPP (63)
-[2018.12.08-18.26.57:085][416]LogModuleManager: Shutting down and abandoning module WebSockets (62)
-[2018.12.08-18.26.57:094][416]LogModuleManager: Shutting down and abandoning module HTTP (59)
-[2018.12.08-18.26.57:094][416]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2018.12.08-18.26.57:094][416]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B13DE9A0D-4A59-D99E-D013-B7902739C8C8%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.21.1-4613538%2B%2B%2BUE4%2BRelease-4.21&UserID=db18026b46ac53e8eeebd3a7293257fc%7C0e501aece8f444dc820be096c4415ee0%7Cbc539f50-f83d-4566-acca-4d6b531eb6f8&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2018.12.08-18.26.57:120][416]LogModuleManager: Shutting down and abandoning module SSL (58)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (54)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (52)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (50)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (48)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (46)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (44)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module MagicLeapController (42)
-[2018.12.08-18.26.57:121][416]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
-[2018.12.08-18.26.57:121][416]LogSlate: Slate User Destroyed.  User Index 1, Is Virtual User: 0
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module MagicLeap (40)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module DatasmithContent (38)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module Landscape (26)
-[2018.12.08-18.26.57:121][416]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module Renderer (16)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module Engine (14)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2018.12.08-18.26.57:122][416]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2018.12.08-18.26.57:124][416]LogExit: Exiting.
-[2018.12.08-18.26.57:128][416]Log file closed, 12/08/18 19:26:57
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.09-13.57.53:368][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2018.12.09-13.57.53:368][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:8388607]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.MergeGCClusters:0]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2018.12.09-13.57.53:369][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.09-13.57.53:369][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.09-13.57.53:371][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:371][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2018.12.09-13.57.53:371][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2018.12.09-13.57.53:372][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2018.12.09-13.57.53:372][  0]LogInit: Selected Device Profile: [Windows]
+[2018.12.09-13.57.53:372][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.12.09-13.57.53:433][  0]LogHAL: Display: Platform has ~ 16 GB [17103699968 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:1]]
+[2018.12.09-13.57.53:433][  0]LogInit: Going up to parent DeviceProfile []
+[2018.12.09-13.57.53:433][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Scalability.ini]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2018.12.09-13.57.53:433][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2018.12.09-13.57.53:484][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2018.12.09-13.57.53:484][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [E:/Praca/Teyon test/Pong/TeyonPong/Saved/Config/Windows/Engine.ini]
+[2018.12.09-13.57.53:485][  0]LogInit: Computer: NORD-KOMPUTER
+[2018.12.09-13.57.53:485][  0]LogInit: User: Nord
+[2018.12.09-13.57.53:485][  0]LogInit: CPU Page size=4096, Cores=2
+[2018.12.09-13.57.53:485][  0]LogInit: High frequency timer resolution =2.825546 MHz
+[2018.12.09-13.57.53:485][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.12.09-13.57.53:485][  0]LogMemory: Platform Memory Stats for Windows
+[2018.12.09-13.57.53:485][  0]LogMemory: Process Physical Memory: 103.54 MB used, 103.54 MB peak
+[2018.12.09-13.57.53:485][  0]LogMemory: Process Virtual Memory: 87.18 MB used, 87.18 MB peak
+[2018.12.09-13.57.53:485][  0]LogMemory: Physical Memory: 5866.00 MB used,  10445.36 MB free, 16311.36 MB total
+[2018.12.09-13.57.53:485][  0]LogMemory: Virtual Memory: 478.05 MB used,  8388130.00 MB free, 8388608.00 MB total
+[2018.12.09-13.57.56:755][  0]LogInit: Using OS detected language (pl-PL).
+[2018.12.09-13.57.56:755][  0]LogInit: Using OS detected locale (pl-PL).
+[2018.12.09-13.57.56:757][  0]LogTextLocalizationManager: No specific localization for 'pl-PL' exists, so the 'pl' localization will be used.
+[2018.12.09-13.57.56:895][  0]LogStreaming: Display: Took  0.140s to InitEngineTextLocalization.
+[2018.12.09-13.57.56:895][  0]LogWindows: Failed to load 'shcore.dll' (GetLastError=126)
+[2018.12.09-13.57.56:895][  0]LogWindows: File 'shcore.dll' does not exist
+[2018.12.09-13.57.56:895][  0]LogInit: Setting process to DPI aware
+[2018.12.09-13.57.57:646][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.12.09-13.57.57:646][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.12.09-13.58.09:905][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.09-13.58.09:905][  0]LogD3D11RHI: D3D11 adapters:
+[2018.12.09-13.58.10:007][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
+[2018.12.09-13.58.10:007][  0]LogD3D11RHI:       1986/0/7899 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.12.09-13.58.10:026][  0]LogD3D11RHI:    1. 'NVIDIA GeForce GTX 860M' (Feature Level 11_0)
+[2018.12.09-13.58.10:026][  0]LogD3D11RHI:       1986/0/7899 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x10de
+[2018.12.09-13.58.10:026][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.12.09-13.58.10:037][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.12.09-13.58.10:037][  0]LogD3D11RHI:     GPU DeviceId: 0x1392 (for the marketing name, search the web for "GPU Device Id")
+[2018.12.09-13.58.10:037][  0]LogWindows: EnumDisplayDevices:
+[2018.12.09-13.58.10:037][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2018.12.09-13.58.10:038][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.12.09-13.58.10:038][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.12.09-13.58.10:038][  0]LogWindows:    3. 'NVIDIA GeForce GTX 860M' (P:0 D:0)
+[2018.12.09-13.58.10:038][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2018.12.09-13.58.10:038][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2018.12.09-13.58.10:038][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2018.12.09-13.58.10:038][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter 
+[2018.12.09-13.58.10:038][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 860M
+[2018.12.09-13.58.10:039][  0]LogD3D11RHI:   Driver Version: 398.11 (internal:24.21.13.9811, unified:398.11)
+[2018.12.09-13.58.10:039][  0]LogD3D11RHI:      Driver Date: 6-1-2018
+[2018.12.09-13.58.10:039][  0]LogRHI: Texture pool is 1390 MB (70% of 1986 MB)
+[2018.12.09-13.58.10:061][  0]LogD3D11RHI: Async texture creation enabled
+[2018.12.09-13.58.10:077][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.12.09-13.58.11:182][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.12.09-13.58.11:302][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.12.09-13.58.11:432][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.12.09-13.58.11:566][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.12.09-13.58.11:627][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.12.09-13.58.11:804][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.12.09-13.58.11:979][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.12.09-13.58.12:117][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.12.09-13.58.12:263][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:524][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.12.09-13.58.12:632][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.12.09-13.58.13:082][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.12.09-13.58.13:082][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.12.09-13.58.13:199][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.12.09-13.58.13:199][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.12.09-13.58.13:363][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.12.09-13.58.13:537][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.12.09-13.58.13:628][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.12.09-13.58.13:749][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.12.09-13.58.13:963][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.12.09-13.58.13:963][  0]LogTemp: Display: Loaded TP LuminTargetPlatform
+[2018.12.09-13.58.13:963][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.12.09-13.58.16:495][  0]LogShaderCompilers: Guid format shader working directory is 11 characters bigger than the processId version (E:/Praca/Teyon test/Pong/TeyonPong/Intermediate/Shaders/WorkingDirectory/9832/).
+[2018.12.09-13.58.16:495][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Nord/AppData/Local/Temp/UnrealShaderWorkingDir/F061E3624F531FDEF61899B043756903/'.
+[2018.12.09-13.58.16:497][  0]LogXGEController: Cleaning working directory: C:/Users/Nord/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.12.09-13.58.16:497][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.12.09-13.58.16:497][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.12.09-13.58.16:497][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.12.09-13.58.17:237][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.12.09-13.58.19:156][  0]LogDerivedDataCache: Loaded boot cache 1.87s 71MB C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2018.12.09-13.58.19:156][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc
+[2018.12.09-13.58.19:156][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file E:/Praca/Teyon test/Pong/TeyonPong/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.12.09-13.58.19:156][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.12.09-13.58.19:156][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file E:/Praca/Teyon test/Pong/TeyonPong/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.12.09-13.58.19:156][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.12.09-13.58.19:577][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.12.09-13.58.19:577][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.12.09-13.58.19:577][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2018.12.09-13.58.19:681][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Nord/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.12.09-13.58.19:681][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.12.09-13.58.19:681][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.12.09-13.58.19:708][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.12.09-13.58.19:710][  0]LogSlate: Using FreeType 2.6.0
+[2018.12.09-13.58.19:710][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.12.09-13.58.19:814][  0]LogAssetRegistry: FAssetRegistry took 0.0333 seconds to start up
+[2018.12.09-13.58.20:163][  0]LogInit: Selected Device Profile: [Windows]
+[2018.12.09-13.58.21:300][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.12.09-13.58.21:457][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.12.09-13.58.21:457][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2018.12.09-13.58.21:457][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.12.09-13.58.21:457][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.12.09-13.58.21:619][  0]LogNetVersion: TeyonPong 1.0.0, NetCL: 4541578, EngineNetVer: 5, GameNetVer: 0 (Checksum: 2572377658)
+[2018.12.09-13.58.24:317][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 2 prioritized culture(s) in 0.075733 seconds
+[2018.12.09-13.58.24:325][  0]LogUObjectArray: 39775 objects as part of root set at end of initial load.
+[2018.12.09-13.58.24:325][  0]LogUObjectAllocator: 6914664 out of 0 bytes used by permanent object pool.
+[2018.12.09-13.58.24:325][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.12.09-13.58.50:102][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.12.09-13.58.50:241][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.12.09-13.58.55:443][  0]SourceControl: Source control is disabled
+[2018.12.09-13.58.55:443][  0]SourceControl: Source control is disabled
+[2018.12.09-13.58.55:777][  0]SourceControl: Source control is disabled
+[2018.12.09-13.58.55:952][  0]SourceControl: Source control is disabled
+[2018.12.09-13.59.01:050][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.12.09-13.59.01:963][  0]LogOcInput: OculusInput pre-init called
+[2018.12.09-13.59.02:751][  0]LogEngine: Initializing Engine...
+[2018.12.09-13.59.02:752][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.12.09-13.59.02:753][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.09-13.59.02:753][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.09-13.59.02:753][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.09-13.59.02:753][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.09-13.59.03:739][  0]LogInit: Initializing FReadOnlyCVARCache
+[2018.12.09-13.59.03:899][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.12.09-13.59.03:915][  0]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.09-13.59.03:926][  0]LogInit: FAudioDevice initialized.
+[2018.12.09-13.59.03:926][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2018.12.09-13.59.04:323][  0]LogDerivedDataCache: Saved boot cache 0.40s 71MB C:/Users/Nord/AppData/Local/UnrealEngine/4.21/DerivedDataCache/Boot.ddc.
+[2018.12.09-13.59.04:323][  0]LogInit: Texture streaming: Enabled
+[2018.12.09-13.59.04:970][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.12.09-13.59.07:549][  0]LogInit: Transaction tracking system initialized
+[2018.12.09-13.59.09:411][  0]BlueprintLog: New page: Editor Load
+[2018.12.09-13.59.15:250][  0]LocalizationService: Localization service is disabled
+[2018.12.09-13.59.25:837][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/' took 0.01s
+[2018.12.09-13.59.25:837][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.12.09-13.59.25:837][  0]LogCook: Display: Mobile HDR setting 1
+[2018.12.09-13.59.25:837][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.12.09-13.59.25:837][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2018.12.09-13.59.25:837][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.12.09-13.59.25:837][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2018.12.09-13.59.25:837][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.12.09-13.59.37:558][  0]SourceControl: Source control is disabled
+[2018.12.09-13.59.37:558][  0]Cmd: MAP LOAD FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/MainMenu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.12.09-13.59.37:691][  0]LightingResults: New page: Lighting Build
+[2018.12.09-13.59.37:694][  0]MapCheck: New page: Map Check
+[2018.12.09-13.59.37:694][  0]LightingResults: New page: Lighting Build
+[2018.12.09-13.59.38:455][  0]LogAIModule: Creating AISystem for world MainMenu
+[2018.12.09-13.59.38:455][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.12.09-13.59.38:483][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.12.09-13.59.38:483][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,107ms to complete.
+[2018.12.09-13.59.38:484][  0]LogFileHelpers: Loading map 'MainMenu' took 0.926
+[2018.12.09-13.59.39:057][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.09-13.59.39:070][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.09-13.59.39:080][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.09-13.59.39:090][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.09-13.59.39:386][  0]LogCollectionManager: Loaded 0 collections in 0.002149 seconds
+[2018.12.09-13.59.39:403][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/Collections/' took 0.01s
+[2018.12.09-13.59.39:403][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Developers/Nord/Collections/' took 0.00s
+[2018.12.09-13.59.39:403][  0]LogFileCache: Scanning file cache for directory 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Collections/' took 0.00s
+[2018.12.09-13.59.39:403][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.12.09-13.59.39:416][  0]LogContentBrowser: Native class hierarchy populated in 0.0124 seconds. Added 2660 classes and 622 folders.
+[2018.12.09-13.59.39:424][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2018.12.09-13.59.39:792][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.40:017][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.40:527][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.40:783][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.41:145][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.41:329][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.41:706][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.41:842][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.41:844][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.42:101][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.42:251][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.42:449][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.42:726][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.43:001][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.43:135][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.43:368][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.43:601][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.43:912][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.44:069][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.44:070][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.44:170][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.44:172][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.44:173][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.44:175][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.44:176][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.44:254][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
+[2018.12.09-13.59.48:398][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.12.09-13.59.48:686][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2018.12.09-13.59.48:978][  0]LogSlate: Took 0.101859 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.12.09-13.59.49:042][  0]LogSlate: Took 0.062259 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.12.09-13.59.49:096][  0]LogSlate: Took 0.048090 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.12.09-13.59.49:681][  0]LogRenderer: Reallocating scene render targets to support 800x392 Format 10 NumSamples 1 (Frame:1).
+[2018.12.09-13.59.50:035][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2018.12.09-13.59.50:036][  0]LogLoad: (Engine Initialization) Total time: 211.92 seconds
+[2018.12.09-13.59.50:036][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.12.09-13.59.50:114][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.12.09-13.59.50:147][  0]LogSlate: Took 0.000252 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.09-13.59.50:462][  3]LogAssetRegistry: Asset discovery search completed in 90.6666 seconds
+[2018.12.09-13.59.50:465][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2018.12.09-13.59.50:465][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000081 seconds (updated 0 objects)
+[2018.12.09-13.59.51:457][  6]LogSlate: Took 0.000243 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.12.09-14.00.22:732][243]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.12.09-14.00.22:832][249]LogTemp: Repeating last play command: Standalone Game
+[2018.12.09-14.01.50:717][294]LogAssetEditorManager: Opening Asset editor for WidgetBlueprint /Game/UI/UI_MenuDisplay.UI_MenuDisplay
+[2018.12.09-14.01.51:610][294]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 117 classes and 0 folders.
+[2018.12.09-14.01.52:616][294]LogSlate: Took 0.000283 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.12.09-14.01.54:275][375]LogSlate: Took 0.000291 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.12.09-14.03.53:741][479]BlueprintLog: New page: Compile UI_MenuDisplay
+[2018.12.09-14.05.28:304][ 77]BlueprintLog: New page: Compile UI_MenuDisplay
+[2018.12.09-14.05.29:248][118]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/UI_MenuDisplay" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset" SILENT=true
+[2018.12.09-14.05.29:331][118]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/UI_MenuDisplay6A547625483BEFC34CF42FAAC5212DBE.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset'
+[2018.12.09-14.07.23:298][905]BlueprintLog: New page: Compile UI_MenuDisplay
+[2018.12.09-14.07.24:334][948]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/UI_MenuDisplay" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset" SILENT=true
+[2018.12.09-14.07.24:429][948]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/UI_MenuDisplay9327B81549CD537073E1AAB70A4D27C7.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset'
+[2018.12.09-14.07.26:342][ 52]Candidate modules for hot reload:
+[2018.12.09-14.07.26:342][ 52]  TeyonPong
+[2018.12.09-14.07.26:342][ 52]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,2074 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.09-14.07.26:347][ 52]Warning: Starting HotReload took  0.1s.
+[2018.12.09-14.07.50:791][500]BlueprintLog: New page: Compile UI_MenuDisplay
+[2018.12.09-14.07.51:646][533]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/UI_MenuDisplay" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset" SILENT=true
+[2018.12.09-14.07.51:748][533]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/UI_MenuDisplay9C1E89504D9112B679150B9536B209B5.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset'
+[2018.12.09-14.09.25:992][463]CompilerResultsLog: New page: Compilation - 9 gru 2018, 16:09:25
+[2018.12.09-14.09.25:992][463]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.09-14.09.25:992][463]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (no existing makefile)
+[2018.12.09-14.09.25:992][463]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.09-14.09.25:992][463]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.09-14.09.25:992][463]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.09-14.09.25:992][463]LogMainFrame: MainFrame: Module compiling took 119.649 seconds
+[2018.12.09-14.09.25:992][463]Warning: HotReload failed, recompile failed
+[2018.12.09-14.09.26:730][506]Candidate modules for hot reload:
+[2018.12.09-14.09.26:730][506]  TeyonPong
+[2018.12.09-14.09.26:730][506]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,2339 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.09-14.09.26:734][506]Warning: Starting HotReload took  0.0s.
+[2018.12.09-14.11.13:985][935]CompilerResultsLog: New page: Compilation - 9 gru 2018, 16:11:13
+[2018.12.09-14.11.13:985][935]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.09-14.11.13:985][935]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.09-14.11.13:985][935]CompilerResultsLog: Performing full C++ include scan (no include cache file)
+[2018.12.09-14.11.13:985][935]CompilerResultsLog: Building 3 actions with 4 processes...
+[2018.12.09-14.11.13:985][935]CompilerResultsLog:   [1/3] Paddle.cpp
+[2018.12.09-14.11.13:985][935]CompilerResultsLog:   [2/3] UE4Editor-TeyonPong-2339.lib
+[2018.12.09-14.11.13:985][935]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-2339.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-2339.exp
+[2018.12.09-14.11.13:985][935]CompilerResultsLog:   [3/3] UE4Editor-TeyonPong-2339.dll
+[2018.12.09-14.11.13:985][935]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-2339.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-2339.suppressed.exp
+[2018.12.09-14.11.13:985][935]CompilerResultsLog: Total build time: 106,57 seconds (Parallel executor: 103,00 seconds)
+[2018.12.09-14.11.13:985][935]LogMainFrame: MainFrame: Module compiling took 107.256 seconds
+[2018.12.09-14.11.14:069][935]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 9 classes and 2 folders.
+[2018.12.09-14.11.14:072][935]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2018.12.09-14.11.14:462][935]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2661 classes and 624 folders.
+[2018.12.09-14.11.14:462][935]Display: HotReload took 107.7s.
+[2018.12.09-14.11.17:356][  6]LogTemp: Repeating last play command: Standalone Game
+[2018.12.09-14.13.35:165][621]BlueprintLog: New page: Compile UI_MenuDisplay
+[2018.12.09-14.13.35:817][645]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/UI_MenuDisplay" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset" SILENT=true
+[2018.12.09-14.13.35:904][645]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/UI_MenuDisplay1BDF01E64EC0902028C48C89DE5B3F6F.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset'
+[2018.12.09-14.13.38:730][810]LogTemp: Repeating last play command: Standalone Game
+[2018.12.09-14.14.57:123][361]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.09-14.14.57:124][361]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.09-14.14.57:124][361]PIE: New page: PIE session: MainMenu (9 gru 2018, 16:14:57)
+[2018.12.09-14.14.57:137][361]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2018.12.09-14.14.57:138][361]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001267s)
+[2018.12.09-14.14.57:139][361]LogAIModule: Creating AISystem for world MainMenu
+[2018.12.09-14.14.57:139][361]LogPlayLevel: PIE: World Init took: (0.000912s)
+[2018.12.09-14.14.57:139][361]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.002446s)
+[2018.12.09-14.14.57:183][361]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.09-14.14.57:192][361]LogInit: FAudioDevice initialized.
+[2018.12.09-14.14.57:233][361]LogLoad: Game class is 'BP_MenuGameMode_C'
+[2018.12.09-14.14.57:234][361]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 60) at 2018.12.09-15.14.57
+[2018.12.09-14.14.57:234][361]LogWorld: Bringing up level for play took: 0.000632
+[2018.12.09-14.14.57:279][361]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2018.12.09-14.14.57:283][361]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu 0,295
+[2018.12.09-14.14.57:283][361]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.09-14.15.20:784][768]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.09-14.15.20:785][768]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.09-14.15.20:818][768]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.09-14.15.20:819][768]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.09-14.15.20:861][768]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.09-14.15.20:884][769]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2018.12.09-14.15.25:455][ 30]LogSlate: Took 0.150858 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2018.12.09-14.16.15:109][886]BlueprintLog: New page: Compile UI_MenuDisplay
+[2018.12.09-14.16.15:809][912]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/UI_MenuDisplay" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset" SILENT=true
+[2018.12.09-14.16.15:893][912]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/UI_MenuDisplay032FD4AC41E1D7D79CB83C8FE7554767.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset'
+[2018.12.09-14.16.21:887][266]LogTemp: Repeating last play command: Selected Viewport
+[2018.12.09-14.16.21:905][266]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.09-14.16.21:905][266]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.12.09-14.16.21:905][266]PIE: New page: PIE session: MainMenu (9 gru 2018, 16:16:21)
+[2018.12.09-14.16.21:905][266]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_MainMenu
+[2018.12.09-14.16.21:907][266]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001585s)
+[2018.12.09-14.16.21:908][266]LogAIModule: Creating AISystem for world MainMenu
+[2018.12.09-14.16.21:908][266]LogPlayLevel: PIE: World Init took: (0.000873s)
+[2018.12.09-14.16.21:908][266]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu.MainMenu to /Game/Maps/UEDPIE_0_MainMenu.MainMenu (0.002647s)
+[2018.12.09-14.16.21:959][266]LogInit: XAudio2 using 'Głośniki (2 — Sound BlasterAxx SBX 8)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.12.09-14.16.21:969][266]LogInit: FAudioDevice initialized.
+[2018.12.09-14.16.22:000][266]LogLoad: Game class is 'BP_MenuGameMode_C'
+[2018.12.09-14.16.22:001][266]LogWorld: Bringing World /Game/Maps/UEDPIE_0_MainMenu.MainMenu up for play (max tick rate 60) at 2018.12.09-15.16.22
+[2018.12.09-14.16.22:001][266]LogWorld: Bringing up level for play took: 0.000457
+[2018.12.09-14.16.22:016][266]PIE: Play in editor start time for /Game/Maps/UEDPIE_0_MainMenu 1,027
+[2018.12.09-14.16.22:016][266]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.09-14.16.30:602][781]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.09-14.16.30:602][781]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.09-14.16.30:633][781]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2018.12.09-14.16.30:634][781]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/MainMenu.MainMenu:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu' with GeneratedClass '/Game/Maps/MainMenu.MainMenu_C' with ClassGeneratedBy '/Game/Maps/MainMenu.MainMenu:PersistentLevel.MainMenu'
+[2018.12.09-14.16.30:667][781]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2018.12.09-14.16.30:712][784]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2018.12.09-14.16.37:119][167]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/UI_MenuDisplay" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset" SILENT=true
+[2018.12.09-14.16.37:229][167]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/UI_MenuDisplay1A530F97490BE23BB2E491B65B8E37F6.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset'
+[2018.12.09-14.20.50:286][637]Candidate modules for hot reload:
+[2018.12.09-14.20.50:286][637]  TeyonPong
+[2018.12.09-14.20.50:286][637]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,9064 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.09-14.20.50:291][637]Warning: Starting HotReload took  0.0s.
+[2018.12.09-14.22.17:813][335]CompilerResultsLog: New page: Compilation - 9 gru 2018, 16:22:17
+[2018.12.09-14.22.17:813][335]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.09-14.22.17:813][335]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.09-14.22.17:813][335]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.09-14.22.17:813][335]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.09-14.22.17:813][335]CompilerResultsLog: Parsing headers for TeyonPongEditor
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:   Running UnrealHeaderTool "E:\Praca\Teyon test\Pong\TeyonPong\TeyonPong.uproject" "E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\TeyonPongEditor\Development\TeyonPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.12.09-14.22.17:813][335]CompilerResultsLog: Reflection code generated for TeyonPongEditor in 26,3495377 seconds
+[2018.12.09-14.22.17:813][335]CompilerResultsLog: Building 6 actions with 4 processes...
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:   [1/6] Ball.cpp
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:   [2/6] TeyonPongGameModeBase.gen.cpp
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:   [3/6] PaddleController.cpp
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:   [4/6] TeyonPongGameModeBase.cpp
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:   E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\TeyonPongGameModeBase.cpp(72): warning C4996: 'UTextRenderComponent::SetText': Passing text as FString is deprecated, please use FText instead (likely via a LOCTEXT). Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h(108): note: zobacz deklaracj? "UTextRenderComponent::SetText"
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:   [5/6] UE4Editor-TeyonPong-9064.lib
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-9064.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-9064.exp
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:   [6/6] UE4Editor-TeyonPong-9064.dll
+[2018.12.09-14.22.17:813][335]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-9064.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-9064.suppressed.exp
+[2018.12.09-14.22.17:813][335]CompilerResultsLog: Total build time: 86,88 seconds (Parallel executor: 53,66 seconds)
+[2018.12.09-14.22.17:813][335]LogMainFrame: MainFrame: Module compiling took 87.527 seconds
+[2018.12.09-14.22.17:887][335]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 9 classes and 2 folders.
+[2018.12.09-14.22.17:891][335]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2018.12.09-14.22.18:294][335]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2661 classes and 624 folders.
+[2018.12.09-14.22.18:294][335]Display: HotReload took 88.0s.
+[2018.12.09-14.22.20:680][380]LogTemp: Repeating last play command: Standalone Game
+[2018.12.09-14.26.30:231][929]BlueprintLog: New page: Compile UI_MenuDisplay
+[2018.12.09-14.26.33:174][ 83]LogTemp: Repeating last play command: Standalone Game
+[2018.12.09-14.26.34:703][ 83]LogSlate: Window 'Save Content' being destroyed
+[2018.12.09-14.26.34:731][ 83]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/UI/UI_MenuDisplay" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset" SILENT=true
+[2018.12.09-14.26.34:815][ 83]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/UI_MenuDisplay5B8A50F642354E3B9F493FA9A65BDB54.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/UI/UI_MenuDisplay.uasset'
+[2018.12.09-14.30.10:925][260]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2018.12.09-14.30.11:200][261]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.TeyonPong
+[2018.12.09-14.30.11:200][261]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.21\Engine\Binaries\DotNET\IOS
+[2018.12.09-14.30.11:200][261]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.21
+[2018.12.09-14.30.11:200][261]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.21\Engine\Binaries\DotNET\IOS
+[2018.12.09-14.30.11:200][261]LogTemp: BranchPath = NORD-KOMPUTER/C/Program Files/Epic Games/UE_4.21/Engine/Binaries --- GameBranchPath = NORD-KOMPUTER/C/Program Files/Epic Games/UE_4.21/Engine/Binaries
+[2018.12.09-14.30.11:333][262]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Nord\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2018.12.09-14.30.45:185][242]LogSlate: Window 'Project Settings' being destroyed
+[2018.12.09-14.30.45:187][242]LogSlate: Window 'Project Settings' being destroyed
+[2018.12.09-14.32.02:128][537]LogHttp: Warning: 000000004BB0FC40: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.12.09-14.32.02:128][537]LogHttp: Warning: 000000004BB0FC40: libcurl info message cache 0 (Connection 16 seems to be dead!)
+[2018.12.09-14.32.02:128][537]LogHttp: Warning: 000000004BB0FC40: libcurl info message cache 1 (Closing connection 16)
+[2018.12.09-14.32.02:128][537]LogHttp: Warning: 000000004BB0FC40: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2018.12.09-14.32.02:128][537]LogHttp: Warning: 000000004BB0FC40: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.12.09-14.32.02:128][537]LogHttp: Warning: 000000004BB0FC40: libcurl info message cache 4 (Closing connection 17)
+[2018.12.09-14.32.02:464][538]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B55CCCE63-4E28-F27F-C4E0-AF828170D76A%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.21.1-4613538%2B%2B%2BUE4%2BRelease-4.21&UserID=db18026b46ac53e8eeebd3a7293257fc%7C0e501aece8f444dc820be096c4415ee0%7Cbc539f50-f83d-4566-acca-4d6b531eb6f8&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2018.12.09-14.33.07:242][775]LogTemp: Repeating last play command: Standalone Game
+[2018.12.09-14.33.24:009][ 50]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2018.12.09-14.33.24:063][ 51]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.TeyonPong
+[2018.12.09-14.33.24:063][ 51]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.21\Engine\Binaries\DotNET\IOS
+[2018.12.09-14.33.24:063][ 51]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.21
+[2018.12.09-14.33.24:064][ 51]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.21\Engine\Binaries\DotNET\IOS
+[2018.12.09-14.33.24:064][ 51]LogTemp: BranchPath = NORD-KOMPUTER/C/Program Files/Epic Games/UE_4.21/Engine/Binaries --- GameBranchPath = NORD-KOMPUTER/C/Program Files/Epic Games/UE_4.21/Engine/Binaries
+[2018.12.09-14.33.24:087][ 52]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Nord\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2018.12.09-14.33.38:056][705]LogSlate: Window 'Project Settings' being destroyed
+[2018.12.09-14.33.38:057][705]LogSlate: Window 'Project Settings' being destroyed
+[2018.12.09-14.33.38:939][757]LogTemp: Repeating last play command: Standalone Game
+[2018.12.09-14.40.38:866][549]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/Blueprints/BP_MenuGameMode.BP_MenuGameMode
+[2018.12.09-14.40.46:290][919]BlueprintLog: New page: Compile BP_MenuGameMode
+[2018.12.09-14.40.48:423][ 16]LogTemp: Repeating last play command: Standalone Game
+[2018.12.09-14.40.49:697][ 16]LogSlate: Window 'Save Content' being destroyed
+[2018.12.09-14.40.49:723][ 16]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_MenuGameMode" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Blueprints/BP_MenuGameMode.uasset" SILENT=true
+[2018.12.09-14.40.49:789][ 16]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/BP_MenuGameMode480659224F6CAE58253C0AA0C1B17F93.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Blueprints/BP_MenuGameMode.uasset'
+[2018.12.09-14.41.03:791][304]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2018.12.09-14.41.46:511][844]BlueprintLog: New page: Compile BP_MenuGameMode
+[2018.12.09-14.42.15:911][202]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/MainMenu' took 0.040
+[2018.12.09-14.42.15:919][202]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/BP_MenuGameMode] ([1] browsable assets)...
+[2018.12.09-14.42.15:919][202]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/BP_MenuGameMode]
+[2018.12.09-14.42.15:919][202]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_MenuGameMode" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Saved/Autosaves/Game/Blueprints/BP_MenuGameMode_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2018.12.09-14.42.15:933][202]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/BP_MenuGameMode_Auto1985908F94A562EB2E644558CE5BC4556.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/Autosaves/Game/Blueprints/BP_MenuGameMode_Auto1.uasset'
+[2018.12.09-14.42.15:934][202]LogFileHelpers: Auto-saving content packages took 0.022
+[2018.12.09-14.45.26:053][ 85]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_MenuGameMode" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Blueprints/BP_MenuGameMode.uasset" SILENT=true
+[2018.12.09-14.45.26:069][ 85]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/BP_MenuGameMode2041DDA841D20ECEB5DD0DAAB6B681B0.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Blueprints/BP_MenuGameMode.uasset'
+[2018.12.09-14.47.01:138][186]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2018.12.09-14.47.01:190][187]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.TeyonPong
+[2018.12.09-14.47.01:190][187]LogTemp: CWD: C:\Program Files\Epic Games\UE_4.21\Engine\Binaries\DotNET\IOS
+[2018.12.09-14.47.01:190][187]LogTemp: Initial Dir: C:\Program Files\Epic Games\UE_4.21
+[2018.12.09-14.47.01:190][187]LogTemp: Env CWD: C:\Program Files\Epic Games\UE_4.21\Engine\Binaries\DotNET\IOS
+[2018.12.09-14.47.01:190][187]LogTemp: BranchPath = NORD-KOMPUTER/C/Program Files/Epic Games/UE_4.21/Engine/Binaries --- GameBranchPath = NORD-KOMPUTER/C/Program Files/Epic Games/UE_4.21/Engine/Binaries
+[2018.12.09-14.47.01:220][188]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Nord\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2018.12.09-14.47.28:447][782]LogSlate: Window 'Project Settings' being destroyed
+[2018.12.09-14.47.28:450][782]LogSlate: Window 'Project Settings' being destroyed
+[2018.12.09-14.48.25:863][539]Candidate modules for hot reload:
+[2018.12.09-14.48.25:863][539]  TeyonPong
+[2018.12.09-14.48.25:863][539]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.21/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=TeyonPong,5544 Win64 Development -TargetType=Editor -Project="E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" -canskiplink "E:/Praca/Teyon test/Pong/TeyonPong/TeyonPong.uproject" ]
+[2018.12.09-14.48.25:868][539]Warning: Starting HotReload took  0.0s.
+[2018.12.09-14.48.59:346][535]CompilerResultsLog: New page: Compilation - 9 gru 2018, 16:48:59
+[2018.12.09-14.48.59:346][535]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (E:\Praca\Teyon test\Pong).
+[2018.12.09-14.48.59:346][535]CompilerResultsLog: Creating makefile for hot reloading TeyonPongEditor (source directory changed)
+[2018.12.09-14.48.59:346][535]CompilerResultsLog: Compiling game modules for hot reload
+[2018.12.09-14.48.59:346][535]CompilerResultsLog: Using Visual Studio 2017 14.16.27023 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2018.12.09-14.48.59:347][535]CompilerResultsLog: Building 4 actions with 4 processes...
+[2018.12.09-14.48.59:347][535]CompilerResultsLog:   [1/4] PaddleController.cpp
+[2018.12.09-14.48.59:347][535]CompilerResultsLog:   [2/4] TeyonPongGameModeBase.cpp
+[2018.12.09-14.48.59:347][535]CompilerResultsLog:   E:\Praca\Teyon test\Pong\TeyonPong\Source\TeyonPong\TeyonPongGameModeBase.cpp(72): warning C4996: 'UTextRenderComponent::SetText': Passing text as FString is deprecated, please use FText instead (likely via a LOCTEXT). Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+[2018.12.09-14.48.59:347][535]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.21\Engine\Source\Runtime\Engine\Classes\Components/TextRenderComponent.h(108): note: zobacz deklaracj? "UTextRenderComponent::SetText"
+[2018.12.09-14.48.59:347][535]CompilerResultsLog:   [3/4] UE4Editor-TeyonPong-5544.lib
+[2018.12.09-14.48.59:347][535]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-5544.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-5544.exp
+[2018.12.09-14.48.59:347][535]CompilerResultsLog:   [4/4] UE4Editor-TeyonPong-5544.dll
+[2018.12.09-14.48.59:347][535]CompilerResultsLog:      Trwa tworzenie biblioteki E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-5544.suppressed.lib i obiektu E:\Praca\Teyon test\Pong\TeyonPong\Intermediate\Build\Win64\UE4Editor\Development\TeyonPong\UE4Editor-TeyonPong-5544.suppressed.exp
+[2018.12.09-14.48.59:347][535]CompilerResultsLog: Total build time: 33,13 seconds (Parallel executor: 25,70 seconds)
+[2018.12.09-14.48.59:347][535]LogMainFrame: MainFrame: Module compiling took 33.486 seconds
+[2018.12.09-14.48.59:438][535]LogContentBrowser: Native class hierarchy updated for 'TeyonPong' in 0.0005 seconds. Added 9 classes and 2 folders.
+[2018.12.09-14.48.59:444][535]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2018.12.09-14.48.59:817][535]LogContentBrowser: Native class hierarchy populated in 0.0092 seconds. Added 2661 classes and 624 folders.
+[2018.12.09-14.48.59:817][535]Display: HotReload took 34.0s.
+[2018.12.09-14.49.02:391][684]LogTemp: Repeating last play command: Standalone Game
+[2018.12.09-14.49.34:920][933]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/MainMenu" FILE="E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/MainMenu.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.12.09-14.49.35:176][933]LogSavePackage: Moving 'E:/Praca/Teyon test/Pong/TeyonPong/Saved/MainMenu8E57932A4677F41B9AF07AA1EE2E072E.tmp' to 'E:/Praca/Teyon test/Pong/TeyonPong/Content/Maps/MainMenu.umap'
+[2018.12.09-14.49.44:358][431]LogSlate: Window 'TeyonPong - Unreal Editor' being destroyed
+[2018.12.09-14.49.44:732][432]Cmd: QUIT_EDITOR
+[2018.12.09-14.49.45:089][432]LogExit: Preparing to exit.
+[2018.12.09-14.49.45:634][432]LogExit: Editor shut down
+[2018.12.09-14.49.45:635][432]LogExit: Transaction tracking system shut down
+[2018.12.09-14.49.46:315][432]LogExit: Object subsystem successfully closed.
+[2018.12.09-14.49.46:331][432]LogShaderCompilers: Display: Shaders left to compile 0
+[2018.12.09-14.49.46:334][432]LogD3D11RHI: Shutdown
+[2018.12.09-14.49.46:334][432]LogD3D11RHI: CleanupD3DDevice
+[2018.12.09-14.49.46:343][432]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.12.09-14.49.47:125][432]LogModuleManager: Shutting down and abandoning module TeyonPong (637)
+[2018.12.09-14.49.47:125][432]LogModuleManager: Shutting down and abandoning module ExternalImagePicker (636)
+[2018.12.09-14.49.47:125][432]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (633)
+[2018.12.09-14.49.47:125][432]LogModuleManager: Shutting down and abandoning module Voice (631)
+[2018.12.09-14.49.47:125][432]LogModuleManager: Shutting down and abandoning module SequencerWidgets (628)
+[2018.12.09-14.49.47:125][432]LogModuleManager: Shutting down and abandoning module BlueprintGraph (626)
+[2018.12.09-14.49.47:125][432]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (624)
+[2018.12.09-14.49.47:125][432]LogModuleManager: Shutting down and abandoning module SceneOutliner (622)
+[2018.12.09-14.49.47:157][432]LogModuleManager: Shutting down and abandoning module AddContentDialog (620)
+[2018.12.09-14.49.47:210][432]LogModuleManager: Shutting down and abandoning module WidgetCarousel (619)
+[2018.12.09-14.49.47:210][432]LogModuleManager: Shutting down and abandoning module EditorWidgets (616)
+[2018.12.09-14.49.47:210][432]LogModuleManager: Shutting down and abandoning module CollectionManager (614)
+[2018.12.09-14.49.47:276][432]LogModuleManager: Shutting down and abandoning module StatsViewer (612)
+[2018.12.09-14.49.47:368][432]LogModuleManager: Shutting down and abandoning module FoliageEdit (610)
+[2018.12.09-14.49.47:393][432]LogModuleManager: Shutting down and abandoning module LandscapeEditor (608)
+[2018.12.09-14.49.47:512][432]LogModuleManager: Shutting down and abandoning module MeshPaintMode (606)
+[2018.12.09-14.49.47:548][432]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (604)
+[2018.12.09-14.49.47:548][432]LogModuleManager: Shutting down and abandoning module ActorPickerMode (602)
+[2018.12.09-14.49.47:548][432]LogModuleManager: Shutting down and abandoning module GeometryMode (600)
+[2018.12.09-14.49.47:548][432]LogModuleManager: Shutting down and abandoning module TextureAlignMode (598)
+[2018.12.09-14.49.47:548][432]LogModuleManager: Shutting down and abandoning module BspMode (596)
+[2018.12.09-14.49.47:548][432]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (594)
+[2018.12.09-14.49.47:563][432]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (592)
+[2018.12.09-14.49.47:563][432]LogModuleManager: Shutting down and abandoning module AutomationWorker (590)
+[2018.12.09-14.49.47:563][432]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (588)
+[2018.12.09-14.49.47:563][432]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (586)
+[2018.12.09-14.49.47:602][432]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (584)
+[2018.12.09-14.49.47:838][432]LogModuleManager: Shutting down and abandoning module PlacementMode (583)
+[2018.12.09-14.49.47:838][432]LogModuleManager: Shutting down and abandoning module MaterialEditor (582)
+[2018.12.09-14.49.48:224][432]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (578)
+[2018.12.09-14.49.48:224][432]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (576)
+[2018.12.09-14.49.48:224][432]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (574)
+[2018.12.09-14.49.48:224][432]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (572)
+[2018.12.09-14.49.48:224][432]LogModuleManager: Shutting down and abandoning module WebMMedia (570)
+[2018.12.09-14.49.48:224][432]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (568)
+[2018.12.09-14.49.48:365][432]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (566)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module SequenceRecorder (565)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (562)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (560)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (558)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (556)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (554)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (552)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (550)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (548)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (546)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (544)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module CharacterAI (542)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module SmartSnapping (540)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module SessionServices (538)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module ViewportSnapping (536)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module ViewportInteraction (534)
+[2018.12.09-14.49.48:423][432]LogModuleManager: Shutting down and abandoning module ClothPainter (532)
+[2018.12.09-14.49.48:473][432]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (531)
+[2018.12.09-14.49.48:553][432]LogModuleManager: Shutting down and abandoning module LogVisualizer (528)
+[2018.12.09-14.49.48:644][432]LogModuleManager: Shutting down and abandoning module IntroTutorials (526)
+[2018.12.09-14.49.48:742][432]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (525)
+[2018.12.09-14.49.48:792][432]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (522)
+[2018.12.09-14.49.48:792][432]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (520)
+[2018.12.09-14.49.48:792][432]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (518)
+[2018.12.09-14.49.48:792][432]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (516)
+[2018.12.09-14.49.48:792][432]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (515)
+[2018.12.09-14.49.49:952][432]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (512)
+[2018.12.09-14.49.49:952][432]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (510)
+[2018.12.09-14.49.49:952][432]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (508)
+[2018.12.09-14.49.49:952][432]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (506)
+[2018.12.09-14.49.49:952][432]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (504)
+[2018.12.09-14.49.49:952][432]LogModuleManager: Shutting down and abandoning module InputBindingEditor (502)
+[2018.12.09-14.49.50:042][432]LogModuleManager: Shutting down and abandoning module MergeActors (500)
+[2018.12.09-14.49.50:080][432]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (498)
+[2018.12.09-14.49.50:146][432]LogModuleManager: Shutting down and abandoning module LocalizationService (497)
+[2018.12.09-14.49.50:229][432]LogModuleManager: Shutting down and abandoning module HardwareTargeting (494)
+[2018.12.09-14.49.50:229][432]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (492)
+[2018.12.09-14.49.50:267][432]LogModuleManager: Shutting down and abandoning module UndoHistory (490)
+[2018.12.09-14.49.50:345][432]LogModuleManager: Shutting down and abandoning module XmlParser (488)
+[2018.12.09-14.49.50:345][432]LogModuleManager: Shutting down and abandoning module Blutility (486)
+[2018.12.09-14.49.50:365][432]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (484)
+[2018.12.09-14.49.50:365][432]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (483)
+[2018.12.09-14.49.50:365][432]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (480)
+[2018.12.09-14.49.50:365][432]LogModuleManager: Shutting down and abandoning module SettingsEditor (478)
+[2018.12.09-14.49.50:365][432]LogModuleManager: Shutting down and abandoning module ProjectLauncher (476)
+[2018.12.09-14.49.50:388][432]LogModuleManager: Shutting down and abandoning module SessionFrontend (474)
+[2018.12.09-14.49.50:411][432]LogModuleManager: Shutting down and abandoning module ProfilerClient (472)
+[2018.12.09-14.49.50:452][432]LogModuleManager: Shutting down and abandoning module DeviceManager (470)
+[2018.12.09-14.49.50:475][432]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (469)
+[2018.12.09-14.49.50:525][432]LogModuleManager: Shutting down and abandoning module AutomationController (466)
+[2018.12.09-14.49.50:525][432]LogModuleManager: Shutting down and abandoning module AutomationWindow (464)
+[2018.12.09-14.49.50:545][432]LogModuleManager: Shutting down and abandoning module Layers (462)
+[2018.12.09-14.49.50:617][432]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (460)
+[2018.12.09-14.49.50:617][432]LogModuleManager: Shutting down and abandoning module DetailCustomizations (458)
+[2018.12.09-14.49.50:641][432]LogModuleManager: Shutting down and abandoning module PackagesDialog (456)
+[2018.12.09-14.49.50:641][432]LogModuleManager: Shutting down and abandoning module Persona (454)
+[2018.12.09-14.49.50:701][432]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (453)
+[2018.12.09-14.49.50:701][432]LogModuleManager: Shutting down and abandoning module AnimGraph (451)
+[2018.12.09-14.49.50:701][432]LogModuleManager: Shutting down and abandoning module Kismet (448)
+[2018.12.09-14.49.50:722][432]LogModuleManager: Shutting down and abandoning module GraphEditor (446)
+[2018.12.09-14.49.50:722][432]LogModuleManager: Shutting down and abandoning module ClassViewer (444)
+[2018.12.09-14.49.50:724][432]LogModuleManager: Shutting down and abandoning module Toolbox (442)
+[2018.12.09-14.49.50:724][432]LogModuleManager: Shutting down and abandoning module DesktopPlatform (441)
+[2018.12.09-14.49.50:746][432]LogModuleManager: Shutting down and abandoning module ModuleUI (438)
+[2018.12.09-14.49.50:768][432]LogModuleManager: Shutting down and abandoning module MovieSceneTools (436)
+[2018.12.09-14.49.50:768][432]LogModuleManager: Shutting down and abandoning module OutputLog (434)
+[2018.12.09-14.49.50:768][432]LogModuleManager: Shutting down and abandoning module GammaUI (432)
+[2018.12.09-14.49.50:801][432]LogModuleManager: Shutting down and abandoning module Documentation (430)
+[2018.12.09-14.49.50:801][432]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (428)
+[2018.12.09-14.49.50:801][432]LogModuleManager: Shutting down and abandoning module MovieScene (426)
+[2018.12.09-14.49.50:801][432]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (424)
+[2018.12.09-14.49.50:801][432]LogModuleManager: Shutting down and abandoning module LauncherPlatform (422)
+[2018.12.09-14.49.50:802][432]LogModuleManager: Shutting down and abandoning module AnalyticsET (420)
+[2018.12.09-14.49.50:802][432]LogModuleManager: Shutting down and abandoning module PortalServices (418)
+[2018.12.09-14.49.50:802][432]LogModuleManager: Shutting down and abandoning module PortalRpc (416)
+[2018.12.09-14.49.50:802][432]LogModuleManager: Shutting down and abandoning module MessagingRpc (414)
+[2018.12.09-14.49.50:802][432]LogModuleManager: Shutting down and abandoning module AIModule (412)
+[2018.12.09-14.49.50:802][432]LogModuleManager: Shutting down and abandoning module GameplayDebugger (411)
+[2018.12.09-14.49.50:802][432]LogModuleManager: Shutting down and abandoning module AITestSuite (409)
+[2018.12.09-14.49.50:802][432]LogModuleManager: Shutting down and abandoning module NavigationSystem (407)
+[2018.12.09-14.49.50:802][432]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (404)
+[2018.12.09-14.49.50:804][432]LogModuleManager: Shutting down and abandoning module ProfilerService (402)
+[2018.12.09-14.49.51:011][432]LogModuleManager: Shutting down and abandoning module TaskGraph (400)
+[2018.12.09-14.49.51:011][432]LogModuleManager: Shutting down and abandoning module SteamVRController (398)
+[2018.12.09-14.49.51:011][432]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (396)
+[2018.12.09-14.49.51:011][432]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (394)
+[2018.12.09-14.49.51:011][432]LogModuleManager: Shutting down and abandoning module OculusInput (392)
+[2018.12.09-14.49.51:011][432]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (390)
+[2018.12.09-14.49.51:011][432]LogModuleManager: Shutting down and abandoning module EditableMesh (388)
+[2018.12.09-14.49.51:011][432]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (386)
+[2018.12.09-14.49.51:011][432]LogModuleManager: Shutting down and abandoning module CableComponent (384)
+[2018.12.09-14.49.51:011][432]LogModuleManager: Shutting down and abandoning module AudioCapture (382)
+[2018.12.09-14.49.51:012][432]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (380)
+[2018.12.09-14.49.51:012][432]LogModuleManager: Shutting down and abandoning module AndroidPermission (378)
+[2018.12.09-14.49.51:012][432]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (376)
+[2018.12.09-14.49.51:012][432]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (374)
+[2018.12.09-14.49.51:012][432]LogModuleManager: Shutting down and abandoning module MediaCompositing (372)
+[2018.12.09-14.49.51:012][432]LogModuleManager: Shutting down and abandoning module LinearTimecode (370)
+[2018.12.09-14.49.51:012][432]LogModuleManager: Shutting down and abandoning module ImgMedia (368)
+[2018.12.09-14.49.51:015][432]LogModuleManager: Shutting down and abandoning module HTML5Networking (366)
+[2018.12.09-14.49.51:015][432]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (364)
+[2018.12.09-14.49.51:015][432]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (362)
+[2018.12.09-14.49.51:015][432]LogModuleManager: Shutting down and abandoning module BackChannel (360)
+[2018.12.09-14.49.51:015][432]LogModuleManager: Shutting down and abandoning module AppleVision (358)
+[2018.12.09-14.49.51:015][432]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (356)
+[2018.12.09-14.49.51:015][432]LogModuleManager: Shutting down and abandoning module AppleImageUtils (354)
+[2018.12.09-14.49.51:015][432]LogModuleManager: Shutting down and abandoning module AlembicImporter (352)
+[2018.12.09-14.49.51:015][432]LogModuleManager: Shutting down and abandoning module AlembicLibrary (351)
+[2018.12.09-14.49.51:016][432]LogModuleManager: Shutting down and abandoning module GeometryCache (350)
+[2018.12.09-14.49.51:016][432]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (349)
+[2018.12.09-14.49.51:016][432]LogModuleManager: Shutting down and abandoning module VariantManagerContent (344)
+[2018.12.09-14.49.51:016][432]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (342)
+[2018.12.09-14.49.51:016][432]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (340)
+[2018.12.09-14.49.51:016][432]LogModuleManager: Shutting down and abandoning module PluginBrowser (338)
+[2018.12.09-14.49.51:313][432]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (336)
+[2018.12.09-14.49.51:353][432]LogModuleManager: Shutting down and abandoning module PolygonModeling (334)
+[2018.12.09-14.49.51:353][432]LogModuleManager: Shutting down and abandoning module MeshEditor (332)
+[2018.12.09-14.49.51:397][432]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (330)
+[2018.12.09-14.49.51:397][432]LogModuleManager: Shutting down and abandoning module CryptoKeys (328)
+[2018.12.09-14.49.51:397][432]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (326)
+[2018.12.09-14.49.51:398][432]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (324)
+[2018.12.09-14.49.51:398][432]LogModuleManager: Shutting down and abandoning module UObjectPlugin (322)
+[2018.12.09-14.49.51:398][432]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (320)
+[2018.12.09-14.49.51:398][432]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (318)
+[2018.12.09-14.49.51:398][432]LogModuleManager: Shutting down and abandoning module GitSourceControl (316)
+[2018.12.09-14.49.51:468][432]LogModuleManager: Shutting down and abandoning module SourceControl (315)
+[2018.12.09-14.49.51:468][432]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (312)
+[2018.12.09-14.49.51:468][432]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (310)
+[2018.12.09-14.49.51:468][432]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (308)
+[2018.12.09-14.49.51:468][432]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (306)
+[2018.12.09-14.49.51:468][432]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (304)
+[2018.12.09-14.49.51:468][432]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (302)
+[2018.12.09-14.49.51:468][432]LogModuleManager: Shutting down and abandoning module Paper2DEditor (300)
+[2018.12.09-14.49.51:563][432]LogModuleManager: Shutting down and abandoning module MeshPaint (299)
+[2018.12.09-14.49.51:582][432]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (294)
+[2018.12.09-14.49.51:582][432]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (292)
+[2018.12.09-14.49.51:582][432]LogModuleManager: Shutting down and abandoning module PhysXVehicles (290)
+[2018.12.09-14.49.51:583][432]LogModuleManager: Shutting down and abandoning module OculusEditor (288)
+[2018.12.09-14.49.51:617][432]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (286)
+[2018.12.09-14.49.51:617][432]LogModuleManager: Shutting down and abandoning module ActorSequence (284)
+[2018.12.09-14.49.51:617][432]LogModuleManager: Shutting down and abandoning module UdpMessaging (282)
+[2018.12.09-14.49.51:717][432]LogModuleManager: Shutting down and abandoning module TcpMessaging (280)
+[2018.12.09-14.49.51:817][432]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (278)
+[2018.12.09-14.49.51:817][432]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (276)
+[2018.12.09-14.49.51:817][432]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (274)
+[2018.12.09-14.49.51:817][432]LogModuleManager: Shutting down and abandoning module FacialAnimation (272)
+[2018.12.09-14.49.51:817][432]LogModuleManager: Shutting down and abandoning module DataValidation (270)
+[2018.12.09-14.49.51:817][432]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (268)
+[2018.12.09-14.49.51:817][432]LogModuleManager: Shutting down and abandoning module LevelEditor (267)
+[2018.12.09-14.49.51:852][432]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (266)
+[2018.12.09-14.49.51:872][432]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (264)
+[2018.12.09-14.49.51:872][432]LogModuleManager: Shutting down and abandoning module MainFrame (262)
+[2018.12.09-14.49.51:873][432]LogModuleManager: Shutting down and abandoning module HotReload (261)
+[2018.12.09-14.49.51:873][432]LogModuleManager: Shutting down and abandoning module ContentBrowser (257)
+[2018.12.09-14.49.51:874][432]LogModuleManager: Shutting down and abandoning module TreeMap (255)
+[2018.12.09-14.49.51:874][432]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (252)
+[2018.12.09-14.49.51:874][432]LogModuleManager: Shutting down and abandoning module AISupportModule (250)
+[2018.12.09-14.49.51:874][432]LogModuleManager: Shutting down and abandoning module Paper2D (248)
+[2018.12.09-14.49.51:874][432]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (246)
+[2018.12.09-14.49.51:874][432]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (244)
+[2018.12.09-14.49.51:874][432]LogModuleManager: Shutting down and abandoning module WmfMedia (242)
+[2018.12.09-14.49.51:875][432]LogModuleManager: Shutting down and abandoning module Media (241)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module PacketHandler (238)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (236)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (234)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module MediaAssets (232)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module Overlay (230)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module OverlayEditor (229)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module VREditor (226)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module StringTableEditor (224)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (222)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (220)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module FunctionalTesting (218)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (216)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (215)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module UMG (212)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module UMGEditor (211)
+[2018.12.09-14.49.51:881][432]LogModuleManager: Shutting down and abandoning module Sequencer (210)
+[2018.12.09-14.49.51:916][432]LogModuleManager: Shutting down and abandoning module MessageLog (207)
+[2018.12.09-14.49.51:916][432]LogModuleManager: Shutting down and abandoning module SlateReflector (202)
+[2018.12.09-14.49.51:916][432]LogModuleManager: Shutting down and abandoning module Slate (200)
+[2018.12.09-14.49.51:916][432]LogModuleManager: Shutting down and abandoning module EditorStyle (198)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module MRMesh (196)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (194)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (192)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module XAudio2 (190)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module Networking (188)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module Core (186)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module LevelSequence (184)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module KismetCompiler (182)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module MeshUtilities (180)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (179)
+[2018.12.09-14.49.51:917][432]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (178)
+[2018.12.09-14.49.51:918][432]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (177)
+[2018.12.09-14.49.51:918][432]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (175)
+[2018.12.09-14.49.51:918][432]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (173)
+[2018.12.09-14.49.51:918][432]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (171)
+[2018.12.09-14.49.51:918][432]LogModuleManager: Shutting down and abandoning module MaterialBaking (167)
+[2018.12.09-14.49.51:918][432]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (163)
+[2018.12.09-14.49.51:918][432]LogModuleManager: Shutting down and abandoning module DerivedDataCache (160)
+[2018.12.09-14.49.51:989][432]LogDerivedDataCache: Shutdown
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module XGEController (158)
+[2018.12.09-14.49.51:989][432]LogXGEController: Cleaning working directory: C:/Users/Nord/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module TargetPlatform (156)
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (155)
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (153)
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (151)
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (149)
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (147)
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (145)
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (143)
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (141)
+[2018.12.09-14.49.51:989][432]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (139)
+[2018.12.09-14.49.51:990][432]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (137)
+[2018.12.09-14.49.51:990][432]LogModuleManager: Shutting down and abandoning module ImageWrapper (136)
+[2018.12.09-14.49.51:990][432]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (133)
+[2018.12.09-14.49.51:990][432]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (131)
+[2018.12.09-14.49.51:990][432]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (129)
+[2018.12.09-14.49.51:990][432]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (127)
+[2018.12.09-14.49.51:990][432]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (125)
+[2018.12.09-14.49.51:991][432]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
+[2018.12.09-14.49.51:991][432]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (121)
+[2018.12.09-14.49.51:991][432]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (119)
+[2018.12.09-14.49.51:991][432]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (117)
+[2018.12.09-14.49.51:991][432]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (115)
+[2018.12.09-14.49.52:007][432]LogModuleManager: Shutting down and abandoning module Messaging (113)
+[2018.12.09-14.49.52:007][432]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (111)
+[2018.12.09-14.49.52:008][432]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (109)
+[2018.12.09-14.49.52:008][432]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (107)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (105)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (103)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (101)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (99)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (97)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (95)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (93)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (91)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (89)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module InputCore (86)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module Settings (84)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module PhysXCooking (82)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module SteamVR (80)
+[2018.12.09-14.49.52:013][432]LogHMD: Freeing OpenVRDLLHandle.
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module OculusHMD (78)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (76)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (74)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (72)
+[2018.12.09-14.49.52:013][432]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (68)
+[2018.12.09-14.49.52:014][432]LogModuleManager: Shutting down and abandoning module XMPP (63)
+[2018.12.09-14.49.52:014][432]LogModuleManager: Shutting down and abandoning module WebSockets (62)
+[2018.12.09-14.49.52:023][432]LogModuleManager: Shutting down and abandoning module HTTP (59)
+[2018.12.09-14.49.52:023][432]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.12.09-14.49.52:023][432]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B55CCCE63-4E28-F27F-C4E0-AF828170D76A%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.21.1-4613538%2B%2B%2BUE4%2BRelease-4.21&UserID=db18026b46ac53e8eeebd3a7293257fc%7C0e501aece8f444dc820be096c4415ee0%7Cbc539f50-f83d-4566-acca-4d6b531eb6f8&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.12.09-14.49.52:047][432]LogModuleManager: Shutting down and abandoning module SSL (58)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (54)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (52)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (50)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (48)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (46)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (44)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module MagicLeapController (42)
+[2018.12.09-14.49.52:048][432]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module MagicLeap (40)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module DatasmithContent (38)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2018.12.09-14.49.52:048][432]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.12.09-14.49.52:049][432]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.12.09-14.49.52:051][432]LogExit: Exiting.
+[2018.12.09-14.49.52:060][432]Log file closed, 12/09/18 15:49:52

@@ -31,12 +31,12 @@ void APaddleController::Move(float axisValue)
 	{
 		if (id == 0)
 		{
-			Cast<ATeyonPongGameModeBase>(GetWorld()->GetAuthGameMode())->GetBall()->StartBall(1);
+			Cast<ATeyonPongGameModeBase>(GetWorld()->GetAuthGameMode())->GetBall()->StartBall(-1);
 			haveBall = false;
 		}
 		else
 		{
-			Cast<ATeyonPongGameModeBase>(GetWorld()->GetAuthGameMode())->GetBall()->StartBall(-1);
+			Cast<ATeyonPongGameModeBase>(GetWorld()->GetAuthGameMode())->GetBall()->StartBall(1);
 			haveBall = false;
 		}
 	}
