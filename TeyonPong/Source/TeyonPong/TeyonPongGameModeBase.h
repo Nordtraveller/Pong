@@ -26,8 +26,8 @@ private:
 	ATextRenderActor* player1ScoreText;
 	ATextRenderActor* timeText;
 	UPongGameInstance* pongGameInstance;
-	int player0Score = 0;
-	int player1Score = 0;
+	int player0Score;
+	int player1Score;
 
 	ATextRenderActor* SearchWithTag(FName tag);
 	FString TimeToString(float time);
