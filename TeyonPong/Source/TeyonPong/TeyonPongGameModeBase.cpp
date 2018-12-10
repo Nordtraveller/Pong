@@ -52,9 +52,10 @@ void ATeyonPongGameModeBase::StartPlay()
 	if (world)
 	{
 		control0 = Cast<APaddleController>(UGameplayStatics::GetPlayerController(world, 0));
-		Cast<APaddle>(control0->GetPawn())->SetStartingPosition(FVector(480.0f, 0.0f, 0.0f));
-		control1 = Cast<APaddleController>(UGameplayStatics::CreatePlayer(world, 1, true));
-		Cast<APaddle>(control1->GetPawn())->SetStartingPosition(FVector(-480.0f, 0.0f, 0.0f));
+		if (control0) Cast<APaddle>(control0->GetPawn())->SetStartingPosition(FVector(480.0f, 0.0f, 0.0f));
+		control1 = Cast<APaddleController>(UGameplayStatics::GetPlayerController(world, 1));
+		if (!control1) control1 = Cast<APaddleController>(UGameplayStatics::CreatePlayer(world, 1, true));
+		if (control1) Cast<APaddle>(control1->GetPawn())->SetStartingPosition(FVector(-480.0f, 0.0f, 0.0f));
 		SpawnBall(FVector(480.0f, 0.0f, 0.0f));
 		control0->haveBall = true;
 		player0ScoreText = SearchWithTag("ScoreP0");
@@ -64,7 +65,7 @@ void ATeyonPongGameModeBase::StartPlay()
 		roundTime = pongGameInstance->roundTime;
 	}
 	player0Score = 0;
-	player1Score = 1;
+	player1Score = 0;
 	Super::StartPlay();
 }
 
@@ -91,19 +92,19 @@ void ATeyonPongGameModeBase::Goal(int playerId)
 	if (playerId == 0)
 	{
 		SpawnBall(FVector(480.0f, 0.0f, 0.0f));
-		control0->haveBall = true;
+		if (control0) control0->haveBall = true;
 		player1Score++;
 		player1ScoreText->GetTextRender()->SetText(FText::AsNumber(player1Score));
 	}
 	else
 	{
 		SpawnBall(FVector(-480.0f, 0.0f, 0.0f));
-		control1->haveBall = true;
+		if (control1) control1->haveBall = true;
 		player0Score++;
 		player0ScoreText->GetTextRender()->SetText(FText::AsNumber(player0Score));
 	}
-	Cast<APaddle>(control0->GetPawn())->MoveToStartingPosition();
-	Cast<APaddle>(control1->GetPawn())->MoveToStartingPosition();
+	if (control0) Cast<APaddle>(control0->GetPawn())->MoveToStartingPosition();
+	if (control1) Cast<APaddle>(control1->GetPawn())->MoveToStartingPosition();
 }
 
 void ATeyonPongGameModeBase::SpawnBall(FVector position)
