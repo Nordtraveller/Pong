@@ -6,6 +6,7 @@
 #include "GameFramework/GameModeBase.h"
 #include "Ball.h"
 #include "PaddleController.h"
+#include "PongGameInstance.h"
 #include "Engine/TextRenderActor.h"
 #include "TeyonPongGameModeBase.generated.h"
 
@@ -24,6 +25,7 @@ private:
 	ATextRenderActor* player0ScoreText;
 	ATextRenderActor* player1ScoreText;
 	ATextRenderActor* timeText;
+	UPongGameInstance* pongGameInstance;
 	int player0Score = 0;
 	int player1Score = 0;
 

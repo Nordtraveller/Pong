@@ -60,7 +60,8 @@ void ATeyonPongGameModeBase::StartPlay()
 		player0ScoreText = SearchWithTag("ScoreP0");
 		player1ScoreText = SearchWithTag("ScoreP1");
 		timeText = SearchWithTag("TimeText");
-		roundTime = Cast<UPongGameInstance>(world->GetGameInstance())->roundTime;
+		pongGameInstance = Cast<UPongGameInstance>(world->GetGameInstance());
+		roundTime = pongGameInstance->roundTime;
 	}
 	Super::StartPlay();
 }
@@ -68,8 +69,13 @@ void ATeyonPongGameModeBase::StartPlay()
 void ATeyonPongGameModeBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if (roundTime < 0.0f || player0Score == pongGameInstance->maxScore || player1Score == pongGameInstance->maxScore)
+	{
+		UGameplayStatics::OpenLevel(GetWorld(), "/Game/Maps/EndMenu.GameMap");
+	}
 	roundTime -= DeltaTime;
-	timeText->GetTextRender()->SetText(TimeToString(roundTime));
+	timeText->GetTextRender()->SetText(FText::FromString(TimeToString(roundTime)));
 }
 
 ABall * ATeyonPongGameModeBase::GetBall()
