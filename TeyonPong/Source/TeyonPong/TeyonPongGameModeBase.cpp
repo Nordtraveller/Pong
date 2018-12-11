@@ -2,6 +2,7 @@
 
 #include "TeyonPongGameModeBase.h"
 #include "Paddle.h"
+#include "EnemyPaddle.h"
 #include "PongCamera.h"
 #include "PongGameInstance.h"
 #include "EnemyPaddleCOntroller.h"
@@ -63,7 +64,7 @@ void ATeyonPongGameModeBase::StartPlay()
 		}
 		else
 		{
-			APaddle* bot = world->SpawnActor<APaddle>(APaddle::StaticClass());
+			AEnemyPaddle* bot = world->SpawnActor<AEnemyPaddle>(AEnemyPaddle::StaticClass());
 			enemy = Cast<AEnemyPaddleController>(bot->GetController());
 			if(enemy) bot->SetStartingPosition(FVector(-480.0f, 0.0f, 0.0f));
 		}
@@ -111,13 +112,17 @@ void ATeyonPongGameModeBase::Goal(int playerId)
 	{
 		SpawnBall(FVector(-480.0f, 0.0f, 0.0f));
 		if (control1) control1->haveBall = true;
-		if (enemy) enemy->haveBall = true; enemy->FindBall();
+		if (enemy) enemy->haveBall = true;
 		player0Score++;
 		player0ScoreText->GetTextRender()->SetText(FText::AsNumber(player0Score));
 	}
 	if (control0) Cast<APaddle>(control0->GetPawn())->MoveToStartingPosition();
 	if (control1) Cast<APaddle>(control1->GetPawn())->MoveToStartingPosition();
-	if (enemy) Cast<APaddle>(enemy->GetPawn())->MoveToStartingPosition();
+	if (enemy)
+	{
+		Cast<APaddle>(enemy->GetPawn())->MoveToStartingPosition();
+		enemy->FindBall();
+	}
 }
 
 void ATeyonPongGameModeBase::SpawnBall(FVector position)
