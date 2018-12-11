@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+#include "Ball.h"
+#include "Paddle.h"
 #include "EnemyPaddleController.generated.h"
 
 /**
@@ -14,8 +16,16 @@ class TEYONPONG_API AEnemyPaddleController : public AAIController
 {
 	GENERATED_BODY()
 	
+private:
+	APaddle* paddle;
+	ABall* ball;
+
 public:
+	virtual void Tick(float DeltaTime) override;
+
 	void Move(float axisValue);
+
+	void FindBall();
 
 	bool haveBall = false;
 };

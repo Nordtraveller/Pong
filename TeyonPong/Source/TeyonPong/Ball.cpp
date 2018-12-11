@@ -46,7 +46,7 @@ void ABall::Tick(float DeltaTime)
 
 void ABall::StartBall(float direction)
 {
-	mesh->SetPhysicsLinearVelocity(FVector(direction * 200.0f, 0.0f, 0.0f));
+	mesh->SetPhysicsLinearVelocity(FVector(direction * 300.0f, 0.0f, 0.0f));
 }
 
 void ABall::OnOverlapBegin(UPrimitiveComponent * OverlappedComp, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)

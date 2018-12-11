@@ -111,11 +111,13 @@ void ATeyonPongGameModeBase::Goal(int playerId)
 	{
 		SpawnBall(FVector(-480.0f, 0.0f, 0.0f));
 		if (control1) control1->haveBall = true;
+		if (enemy) enemy->haveBall = true; enemy->FindBall();
 		player0Score++;
 		player0ScoreText->GetTextRender()->SetText(FText::AsNumber(player0Score));
 	}
 	if (control0) Cast<APaddle>(control0->GetPawn())->MoveToStartingPosition();
 	if (control1) Cast<APaddle>(control1->GetPawn())->MoveToStartingPosition();
+	if (enemy) Cast<APaddle>(enemy->GetPawn())->MoveToStartingPosition();
 }
 
 void ATeyonPongGameModeBase::SpawnBall(FVector position)
