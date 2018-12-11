@@ -26,4 +26,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Pong)
 		int maxScore;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Pong)
+		int playerLeftPoints;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Pong)
+		int playerRightPoints;
+
 };

@@ -87,6 +87,8 @@ void ATeyonPongGameModeBase::Tick(float DeltaTime)
 
 	if (roundTime < 0.0f || player0Score == pongGameInstance->maxScore || player1Score == pongGameInstance->maxScore)
 	{
+		pongGameInstance->playerRightPoints = player0Score;
+		pongGameInstance->playerLeftPoints = player1Score;
 		UGameplayStatics::OpenLevel(GetWorld(), "/Game/Maps/EndMenu");
 	}
 	roundTime -= DeltaTime;
