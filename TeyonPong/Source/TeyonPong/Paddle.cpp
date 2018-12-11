@@ -2,6 +2,7 @@
 
 #include "Paddle.h"
 #include "PaddleController.h"
+#include "EnemyPaddleController.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/InputComponent.h"
 #include "UObject/ConstructorHelpers.h"
@@ -13,6 +14,9 @@ APaddle::APaddle()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	SpawnCollisionHandlingMethod = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+	AIControllerClass = AEnemyPaddleController::StaticClass();
+	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
+
 	mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Cube Mesh"));
 	RootComponent = mesh;
 

@@ -4,6 +4,7 @@
 #include "Paddle.h"
 #include "PongCamera.h"
 #include "PongGameInstance.h"
+#include "EnemyPaddleCOntroller.h"
 #include "Kismet/GameplayStatics.h"
 #include "Classes/BlueprintGameplayTagLibrary.h"
 #include "Engine.h"
@@ -51,11 +52,21 @@ void ATeyonPongGameModeBase::StartPlay()
 	UWorld* const world = GetWorld();
 	if (world)
 	{
+		pongGameInstance = Cast<UPongGameInstance>(world->GetGameInstance());
 		control0 = Cast<APaddleController>(UGameplayStatics::GetPlayerController(world, 0));
 		if (control0) Cast<APaddle>(control0->GetPawn())->SetStartingPosition(FVector(480.0f, 0.0f, 0.0f));
-		control1 = Cast<APaddleController>(UGameplayStatics::GetPlayerController(world, 1));
-		if (!control1) control1 = Cast<APaddleController>(UGameplayStatics::CreatePlayer(world, 1, true));
-		if (control1) Cast<APaddle>(control1->GetPawn())->SetStartingPosition(FVector(-480.0f, 0.0f, 0.0f));
+		if (pongGameInstance->numberOfPlayers == 2)
+		{
+			control1 = Cast<APaddleController>(UGameplayStatics::GetPlayerController(world, 1));
+			if (!control1) control1 = Cast<APaddleController>(UGameplayStatics::CreatePlayer(world, 1, true));
+			if (control1) Cast<APaddle>(control1->GetPawn())->SetStartingPosition(FVector(-480.0f, 0.0f, 0.0f));
+		}
+		else
+		{
+			APaddle* bot = world->SpawnActor<APaddle>(APaddle::StaticClass());
+			enemy = Cast<AEnemyPaddleController>(bot->GetController());
+			if(enemy) bot->SetStartingPosition(FVector(-480.0f, 0.0f, 0.0f));
+		}
 		SpawnBall(FVector(480.0f, 0.0f, 0.0f));
 		control0->haveBall = true;
 		player0ScoreText = SearchWithTag("ScoreP0");
