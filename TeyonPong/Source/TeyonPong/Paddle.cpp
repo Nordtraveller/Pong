@@ -2,7 +2,6 @@
 
 #include "Paddle.h"
 #include "PaddleController.h"
-#include "EnemyPaddleController.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/InputComponent.h"
 #include "UObject/ConstructorHelpers.h"
@@ -14,16 +13,18 @@ APaddle::APaddle()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	SpawnCollisionHandlingMethod = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
-	AIControllerClass = AEnemyPaddleController::StaticClass();
-	AutoPossessAI = EAutoPossessAI::PlacedInWorldOrSpawned;
 
 	mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Cube Mesh"));
 	RootComponent = mesh;
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> cubeMesh(TEXT("StaticMesh'/Engine/EngineMeshes/Cube.Cube'"));
-	if (cubeMesh.Succeeded())
+	if (cubeMesh.Succeeded()) mesh->SetStaticMesh(cubeMesh.Object);
+	static ConstructorHelpers::FObjectFinder<UMaterial> material(TEXT("Material'/Game/MAT_White.MAT_White'"));
+	if (material.Succeeded())
 	{
-		mesh->SetStaticMesh(cubeMesh.Object);
+		UMaterial* uMaterial = (UMaterial*)material.Object;
+		UMaterialInstanceDynamic* materialInstance = UMaterialInstanceDynamic::Create(uMaterial, mesh);
+		mesh->SetMaterial(0, materialInstance);
 	}
 	mesh->SetRelativeScale3D(FVector(0.1f, 0.1f, 0.5f));
 	mesh->SetSimulatePhysics(true);

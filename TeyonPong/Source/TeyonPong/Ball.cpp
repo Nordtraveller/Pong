@@ -17,9 +17,13 @@ ABall::ABall()
 	RootComponent = mesh;
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> cubeMesh(TEXT("StaticMesh'/Engine/EngineMeshes/Cube.Cube'"));
-	if (cubeMesh.Succeeded())
+	if (cubeMesh.Succeeded()) mesh->SetStaticMesh(cubeMesh.Object);
+	static ConstructorHelpers::FObjectFinder<UMaterial> material(TEXT("Material'/Game/MAT_White.MAT_White'"));
+	if (material.Succeeded())
 	{
-		mesh->SetStaticMesh(cubeMesh.Object);
+		UMaterial* uMaterial = (UMaterial*)material.Object;
+		UMaterialInstanceDynamic* materialInstance = UMaterialInstanceDynamic::Create(uMaterial, mesh);
+		mesh->SetMaterial(0, materialInstance);
 	}
 	mesh->SetRelativeScale3D(FVector(0.1f, 0.1f, 0.1f));
 	mesh->SetSimulatePhysics(true);
