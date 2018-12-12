@@ -56,14 +56,17 @@ void ATeyonPongGameModeBase::StartPlay()
 		pongGameInstance = Cast<UPongGameInstance>(world->GetGameInstance());
 		control0 = Cast<APaddleController>(UGameplayStatics::GetPlayerController(world, 0));
 		if (control0) Cast<APaddle>(control0->GetPawn())->SetStartingPosition(FVector(480.0f, 0.0f, 0.0f));
+		control1 = Cast<APaddleController>(UGameplayStatics::GetPlayerController(world, 1));
 		if (pongGameInstance->numberOfPlayers == 2)
 		{
-			control1 = Cast<APaddleController>(UGameplayStatics::GetPlayerController(world, 1));
 			if (!control1) control1 = Cast<APaddleController>(UGameplayStatics::CreatePlayer(world, 1, true));
 			if (control1) Cast<APaddle>(control1->GetPawn())->SetStartingPosition(FVector(-480.0f, 0.0f, 0.0f));
 		}
 		else
 		{
+			control1->GetPawn()->Destroy();
+			control1->Destroy();
+			control1 = nullptr;
 			AEnemyPaddle* bot = world->SpawnActor<AEnemyPaddle>(AEnemyPaddle::StaticClass());
 			enemy = Cast<AEnemyPaddleController>(bot->GetController());
 			if(enemy) bot->SetStartingPosition(FVector(-480.0f, 0.0f, 0.0f));
@@ -102,7 +105,6 @@ ABall * ATeyonPongGameModeBase::GetBall()
 
 void ATeyonPongGameModeBase::Goal(int playerId)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString("Goal " + FString::FromInt(playerId)));
 	if (playerId == 0)
 	{
 		SpawnBall(FVector(480.0f, 0.0f, 0.0f));
